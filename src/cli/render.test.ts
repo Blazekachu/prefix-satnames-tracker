@@ -31,4 +31,12 @@ describe("renderText", () => {
     const out = renderText(buildReport("zzzzzzzzzzz", 900_000));
     expect(out).toContain("No real series");
   });
+
+  it("prints the name range in the same direction as the sat range", () => {
+    // satStart's name (bhangzzzzzz) is the lower sat; satEnd's name
+    // (bhangaaaaaa) is the higher sat. The name range must read
+    // low-sat -> high-sat so it matches the ascending sat range.
+    const out = renderText(buildReport("bhang", 900_000));
+    expect(out).toContain("bhangzzzzzz … bhangaaaaaa");
+  });
 });

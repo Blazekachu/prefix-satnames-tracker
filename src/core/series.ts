@@ -4,10 +4,10 @@ export interface SeriesRange {
   /** 1 = 11-letter names; equals 12 - nameLength. */
   id: number;
   nameLength: number;
-  /** Alphabetically-first name (prefix + "aa...a"). */
-  firstName: string;
-  /** Alphabetically-last existing name (prefix + "zz...z", or the clamped boundary). */
-  lastName: string;
+  /** Name of satStart -- the lowest sat (prefix + "zz...z", or the clamped boundary). */
+  satStartName: string;
+  /** Name of satEnd -- the highest sat (prefix + "aa...a"). */
+  satEndName: string;
   /** Lowest in-supply sat of the series (clamped to 0 on a supply straddle). */
   satStart: bigint;
   /** Highest sat of the series. */
@@ -24,12 +24,13 @@ export function buildSeriesRanges(prefix: string): SeriesRange[] {
   const result: SeriesRange[] = [];
   for (let nameLength = 11; nameLength >= prefix.length; nameLength--) {
     const suffixLen = nameLength - prefix.length;
-    const firstName = prefix + "a".repeat(suffixLen);
-    let lastName = prefix + "z".repeat(suffixLen);
+    // "aa...a" suffix -> smaller x -> larger sat (satEnd);
+    // "zz...z" suffix -> larger x -> smaller sat (satStart).
+    const satEndName = prefix + "a".repeat(suffixLen);
+    let satStartName = prefix + "z".repeat(suffixLen);
 
-    // "aa...a" suffix -> smaller x -> larger sat; "zz...z" -> larger x -> smaller sat.
-    const satEnd = nameToSat(firstName);
-    let satStart = nameToSat(lastName);
+    const satEnd = nameToSat(satEndName);
+    let satStart = nameToSat(satStartName);
 
     // Existence rule: sats must lie in [0, SUPPLY-1].
     if (satEnd < 0n) {
@@ -38,14 +39,14 @@ export function buildSeriesRanges(prefix: string): SeriesRange[] {
     if (satStart < 0n) {
       // Supply straddle: keep only the existing portion.
       satStart = 0n;
-      lastName = satToName(satStart);
+      satStartName = satToName(satStart);
     }
 
     result.push({
       id: 12 - nameLength,
       nameLength,
-      firstName,
-      lastName,
+      satStartName,
+      satEndName,
       satStart,
       satEnd,
       satCount: satEnd - satStart + 1n,

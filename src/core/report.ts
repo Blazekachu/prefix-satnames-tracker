@@ -26,8 +26,8 @@ export interface BlockSummary {
 export interface ReportSeries {
   id: number;
   nameLength: number;
-  firstName: string;
-  lastName: string;
+  satStartName: string;
+  satEndName: string;
   satStart: bigint;
   satEnd: bigint;
   satCount: bigint;
@@ -110,8 +110,8 @@ function toReportSeries(
   const base: ReportSeries = {
     id: r.id,
     nameLength: r.nameLength,
-    firstName: r.firstName,
-    lastName: r.lastName,
+    satStartName: r.satStartName,
+    satEndName: r.satEndName,
     satStart: r.satStart,
     satEnd: r.satEnd,
     satCount: r.satCount,

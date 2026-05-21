@@ -184,7 +184,7 @@ function SeriesCard({ series }: { series: PrefixReport["series"][number] }) {
     >
       <div style={{ fontWeight: 600 }}>
         Series {series.id} · {series.nameLength}-letter names ·{" "}
-        {series.firstName} … {series.lastName}{" "}
+        {series.satStartName} … {series.satEndName}{" "}
         <span style={{ color: statusColor(series.overallStatus) }}>
           ● {series.overallStatus}
         </span>

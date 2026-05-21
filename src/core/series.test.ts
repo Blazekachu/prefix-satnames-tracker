@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { buildSeriesRanges } from "./series";
+import { satToName } from "./sat-math";
 
 describe("buildSeriesRanges", () => {
   it("yields 7 series for a 5-letter prefix, name lengths 11 down to 5", () => {
@@ -11,8 +12,9 @@ describe("buildSeriesRanges", () => {
 
   it("Series 1 matches the BHANG spec exactly", () => {
     const s1 = buildSeriesRanges("bhang")[0];
-    expect(s1.firstName).toBe("bhangaaaaaa");
-    expect(s1.lastName).toBe("bhangzzzzzz");
+    // satStart is the lower sat -> its name is the "zz...z" name.
+    expect(s1.satStartName).toBe("bhangzzzzzz");
+    expect(s1.satEndName).toBe("bhangaaaaaa");
     expect(s1.satStart).toBe(1_773_906_020_861_562n);
     expect(s1.satEnd).toBe(1_773_906_329_777_337n);
     expect(s1.satCount).toBe(308_915_776n);
@@ -22,9 +24,20 @@ describe("buildSeriesRanges", () => {
     const series = buildSeriesRanges("bhang");
     const last = series[series.length - 1];
     expect(last.nameLength).toBe(5);
-    expect(last.firstName).toBe("bhang");
-    expect(last.lastName).toBe("bhang");
+    expect(last.satStartName).toBe("bhang");
+    expect(last.satEndName).toBe("bhang");
     expect(last.satCount).toBe(1n);
+  });
+
+  it("name fields match the names of their sat-range endpoints", () => {
+    // satStartName must be the name of satStart, satEndName the name of satEnd --
+    // so the name range always reads in the same direction as the sat range.
+    for (const prefix of ["bhang", "weed", "satoshi", "a"]) {
+      for (const s of buildSeriesRanges(prefix)) {
+        expect(s.satStartName).toBe(satToName(s.satStart));
+        expect(s.satEndName).toBe(satToName(s.satEnd));
+      }
+    }
   });
 
   it("an 11-letter prefix yields exactly one single-sat series", () => {

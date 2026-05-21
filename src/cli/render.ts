@@ -24,7 +24,7 @@ function renderSeries(s: ReportSeries): string {
   const lines: string[] = [];
   lines.push(
     `Series ${s.id}  ·  ${s.nameLength}-letter names  ·  ` +
-      `${s.firstName} … ${s.lastName}  [${s.overallStatus}]`,
+      `${s.satStartName} … ${s.satEndName}  [${s.overallStatus}]`,
   );
   lines.push(
     `  sats ${formatBigInt(s.satStart)} … ${formatBigInt(s.satEnd)}  ` +
