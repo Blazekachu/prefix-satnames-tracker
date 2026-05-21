@@ -73,3 +73,7 @@ npm test
 - `scripts/cli.ts` — the command-line interface.
 
 Design notes are in `docs/superpowers/`.
+
+## License
+
+[MIT](LICENSE) — free to use, copy, modify, and distribute. No warranty.
