@@ -6,16 +6,33 @@ import { buildReport, PrefixReport } from "@/core/report";
 import { fetchTipHeight } from "@/lib/tip";
 import { formatBigInt } from "@/lib/format";
 
+const COLLAPSE_AT = 10;
+
+function statusColor(status: string): string {
+  if (status === "mined") return "#3ddc84";
+  if (status === "future") return "#f7931a";
+  return "#e8b84b"; // partial
+}
+
 export default function Home() {
   const [input, setInput] = useState("");
   const [report, setReport] = useState<PrefixReport | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [manualTip, setManualTip] = useState("");
+  const [pendingPrefix, setPendingPrefix] = useState<string | null>(null);
+
+  function compute(prefix: string, tip: number) {
+    setReport(buildReport(prefix, tip, { collapse: false }));
+    setError(null);
+    setPendingPrefix(null);
+  }
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
     setReport(null);
+    setPendingPrefix(null);
 
     const validated = validatePrefix(input.trim());
     if (!validated.ok) {
@@ -26,12 +43,25 @@ export default function Home() {
     setLoading(true);
     try {
       const tip = await fetchTipHeight();
-      setReport(buildReport(validated.prefix, tip));
+      compute(validated.prefix, tip);
     } catch {
-      setError("Couldn't reach mempool.space. Try again in a moment.");
+      setError(
+        "Couldn't reach mempool.space. Enter the current block height manually below.",
+      );
+      setPendingPrefix(validated.prefix);
     } finally {
       setLoading(false);
     }
+  }
+
+  function onManualSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    const tip = Number(manualTip);
+    if (!Number.isInteger(tip) || tip <= 0) {
+      setError("Enter a valid positive block height.");
+      return;
+    }
+    if (pendingPrefix) compute(pendingPrefix, tip);
   }
 
   return (
@@ -44,7 +74,10 @@ export default function Home() {
         falls in.
       </p>
 
-      <form onSubmit={onSubmit} style={{ marginTop: 20, display: "flex", gap: 8 }}>
+      <form
+        onSubmit={onSubmit}
+        style={{ marginTop: 20, display: "flex", gap: 8 }}
+      >
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -75,8 +108,41 @@ export default function Home() {
         </button>
       </form>
 
-      {error && (
-        <p style={{ color: "#ff6b6b", marginTop: 12 }}>{error}</p>
+      {error && <p style={{ color: "#ff6b6b", marginTop: 12 }}>{error}</p>}
+
+      {pendingPrefix && (
+        <form
+          onSubmit={onManualSubmit}
+          style={{ marginTop: 8, display: "flex", gap: 8 }}
+        >
+          <input
+            value={manualTip}
+            onChange={(e) => setManualTip(e.target.value)}
+            placeholder="current block height"
+            inputMode="numeric"
+            style={{
+              flex: 1,
+              padding: "0.5rem 0.8rem",
+              background: "#1a1a1f",
+              border: "1px solid #333",
+              borderRadius: 6,
+              color: "inherit",
+            }}
+          />
+          <button
+            type="submit"
+            style={{
+              padding: "0.5rem 1rem",
+              background: "#333",
+              border: "1px solid #555",
+              borderRadius: 6,
+              color: "inherit",
+              cursor: "pointer",
+            }}
+          >
+            Use height
+          </button>
+        </form>
       )}
 
       {report && report.seriesCount === 0 && (
@@ -101,11 +167,11 @@ export default function Home() {
   );
 }
 
-function SeriesCard({
-  series,
-}: {
-  series: PrefixReport["series"][number];
-}) {
+function SeriesCard({ series }: { series: PrefixReport["series"][number] }) {
+  const [expanded, setExpanded] = useState(false);
+  const segments = series.blockSegments ?? [];
+  const collapsed = segments.length > COLLAPSE_AT && !expanded;
+
   return (
     <section
       style={{
@@ -118,32 +184,47 @@ function SeriesCard({
     >
       <div style={{ fontWeight: 600 }}>
         Series {series.id} · {series.nameLength}-letter names ·{" "}
-        {series.firstName} … {series.lastName}
+        {series.firstName} … {series.lastName}{" "}
+        <span style={{ color: statusColor(series.overallStatus) }}>
+          ● {series.overallStatus}
+        </span>
       </div>
       <div style={{ opacity: 0.7, fontSize: "0.9rem", marginTop: 2 }}>
         sats {formatBigInt(series.satStart)} … {formatBigInt(series.satEnd)} (
-        {formatBigInt(series.satCount)} sats) · {series.overallStatus}
+        {formatBigInt(series.satCount)} sats)
       </div>
 
-      {series.blockSummary && (
+      {collapsed ? (
         <div style={{ marginTop: 8, fontSize: "0.9rem" }}>
-          blocks {formatBigInt(BigInt(series.blockSummary.startHeight))} …{" "}
-          {formatBigInt(BigInt(series.blockSummary.endHeight))} (
-          {formatBigInt(BigInt(series.blockSummary.blockCount))} blocks,{" "}
-          {series.blockSummary.status})
+          blocks {formatBigInt(BigInt(segments[0].height))} …{" "}
+          {formatBigInt(BigInt(segments[segments.length - 1].height))} (
+          {formatBigInt(BigInt(segments.length))} blocks){" "}
+          <button
+            onClick={() => setExpanded(true)}
+            style={{
+              background: "none",
+              border: "1px solid #444",
+              borderRadius: 4,
+              color: "inherit",
+              cursor: "pointer",
+              fontSize: "0.8rem",
+              padding: "1px 6px",
+            }}
+          >
+            show all blocks
+          </button>
         </div>
-      )}
-
-      {series.blockSegments && (
+      ) : (
         <ul style={{ marginTop: 8, fontSize: "0.9rem", listStyle: "none" }}>
-          {series.blockSegments.map((seg) => (
+          {segments.map((seg) => (
             <li key={seg.height} style={{ marginTop: 2 }}>
-              block {formatBigInt(BigInt(seg.height))} · sats{" "}
-              {formatBigInt(seg.satRangeStart)} … {formatBigInt(seg.satRangeEnd)}{" "}
-              ({formatBigInt(seg.satCount)}) ·{" "}
+              <span style={{ color: statusColor(seg.status) }}>●</span> block{" "}
+              {formatBigInt(BigInt(seg.height))} · sats{" "}
+              {formatBigInt(seg.satRangeStart)} …{" "}
+              {formatBigInt(seg.satRangeEnd)} ({formatBigInt(seg.satCount)}) ·{" "}
               {seg.status === "mined"
-                ? "✓ mined"
-                : `⧗ future ~${seg.estimatedYear}`}
+                ? "mined"
+                : `future ~${seg.estimatedYear}`}
             </li>
           ))}
         </ul>
