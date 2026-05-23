@@ -38,11 +38,20 @@ export interface ReportSeries {
   blockSummary?: BlockSummary;
 }
 
+export type Series1Status = "present" | "missing" | "partial";
+
 export interface PrefixReport {
   prefix: string;
   prefixLength: number;
   seriesCount: number;
   tipHeight: number;
+  /**
+   * Whether the 11-letter Series 1 exists in full ("present"), exists only
+   * partially because its low end ran past Bitcoin's sat supply ("partial"),
+   * or doesn't exist at all because the whole 11-letter range is past supply
+   * ("missing").
+   */
+  series1Status: Series1Status;
   series: ReportSeries[];
 }
 
@@ -62,14 +71,20 @@ export function buildReport(
   const now = opts.now ?? new Date();
   const collapse = opts.collapse ?? true;
   const tip = BigInt(tipHeight);
-  const series = buildSeriesRanges(prefix).map((r) =>
-    toReportSeries(r, tip, now, collapse),
-  );
+  const ranges = buildSeriesRanges(prefix);
+  const series = ranges.map((r) => toReportSeries(r, tip, now, collapse));
+  const series1 = ranges.find((r) => r.nameLength === 11);
+  const series1Status: Series1Status = !series1
+    ? "missing"
+    : series1.clamped
+      ? "partial"
+      : "present";
   return {
     prefix,
     prefixLength: prefix.length,
     seriesCount: series.length,
     tipHeight,
+    series1Status,
     series,
   };
 }

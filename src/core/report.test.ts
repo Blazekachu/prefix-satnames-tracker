@@ -44,4 +44,21 @@ describe("buildReport", () => {
     expect(r.seriesCount).toBe(0);
     expect(r.series).toEqual([]);
   });
+
+  it("marks series1Status 'present' when 11-letter series is whole", () => {
+    const r = buildReport("bhang", 900_000);
+    expect(r.series1Status).toBe("present");
+  });
+
+  it("marks series1Status 'missing' when 11-letter series is past supply", () => {
+    // 'ordpool' (7 letters): 11-letter range maps past SUPPLY entirely.
+    const r = buildReport("ordpool", 900_000);
+    expect(r.series1Status).toBe("missing");
+  });
+
+  it("marks series1Status 'partial' when 11-letter series straddles supply", () => {
+    // Prefix 'n': 11-letter satEnd is in supply but satStart clamps from negative.
+    const r = buildReport("n", 900_000);
+    expect(r.series1Status).toBe("partial");
+  });
 });

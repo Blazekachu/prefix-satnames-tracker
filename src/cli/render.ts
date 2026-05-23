@@ -1,5 +1,6 @@
 import { PrefixReport, ReportSeries } from "../core/report";
 import { formatBigInt } from "../lib/format";
+import { series1Banner } from "../lib/banner";
 
 /** Render a PrefixReport as human-readable text for the terminal. */
 export function renderText(report: PrefixReport): string {
@@ -12,6 +13,11 @@ export function renderText(report: PrefixReport): string {
     lines.push("");
     lines.push("No real series exist for this prefix (all beyond sat supply).");
     return lines.join("\n");
+  }
+  const banner = series1Banner(report);
+  if (banner) {
+    lines.push("");
+    lines.push(banner);
   }
   for (const s of report.series) {
     lines.push("");

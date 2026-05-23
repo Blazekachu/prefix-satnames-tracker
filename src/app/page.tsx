@@ -5,6 +5,7 @@ import { validatePrefix } from "@/core/prefix";
 import { buildReport, PrefixReport } from "@/core/report";
 import { fetchTipHeight } from "@/lib/tip";
 import { formatBigInt } from "@/lib/format";
+import { series1Banner } from "@/lib/banner";
 
 const COLLAPSE_AT = 10;
 
@@ -158,6 +159,21 @@ export default function Home() {
             {report.seriesCount} series · tip height{" "}
             {formatBigInt(BigInt(report.tipHeight))}
           </p>
+          {series1Banner(report) && (
+            <div
+              style={{
+                background: "#1f1a10",
+                border: "1px solid #6b521f",
+                borderRadius: 6,
+                padding: "0.6rem 0.8rem",
+                marginBottom: 12,
+                fontSize: "0.9rem",
+                color: "#f0d99a",
+              }}
+            >
+              {series1Banner(report)}
+            </div>
+          )}
           {report.series.map((s) => (
             <SeriesCard key={s.id} series={s} />
           ))}

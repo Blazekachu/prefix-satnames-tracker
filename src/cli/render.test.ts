@@ -39,4 +39,40 @@ describe("renderText", () => {
     const out = renderText(buildReport("bhang", 900_000));
     expect(out).toContain("bhangzzzzzz … bhangaaaaaa");
   });
+
+  describe("Series 1 supply banner", () => {
+    it("shows the missing banner above series for a prefix whose 11-letter range is past supply", () => {
+      const out = renderText(buildReport("ordpool", 900_000));
+      // Banner names the prefix and its z..a 11-letter range
+      expect(out).toContain("No 11-letter series exists for `ordpool`");
+      // Range example is in z..a order (sat-ascending), names within ~10 chars of each other
+      expect(out).toMatch(/ordpoolzzzz.{1,10}ordpoolaaaa/);
+      expect(out).toContain("21M-BTC supply");
+      // Positioned BEFORE the first series-card header (which uses ` · ` separator)
+      expect(out.indexOf("No 11-letter series")).toBeLessThan(
+        out.indexOf("Series 2  ·"),
+      );
+    });
+
+    it("shows the partial banner for a prefix whose 11-letter series straddles supply", () => {
+      // Prefix 'n' straddles: satStart was clamped from negative.
+      const out = renderText(buildReport("n", 900_000));
+      expect(out).toContain("Series 1 (11-letter names) is partial for `n`");
+      expect(out).toContain("21M-BTC supply");
+      expect(out.indexOf("is partial for")).toBeLessThan(
+        out.indexOf("Series 1  ·"),
+      );
+    });
+
+    it("shows no Series 1 banner for a prefix whose 11-letter series is whole", () => {
+      const out = renderText(buildReport("bhang", 900_000));
+      expect(out).not.toContain("No 11-letter series");
+      expect(out).not.toContain("is partial for");
+    });
+
+    it("uses the user-supplied prefix verbatim in the banner, not a placeholder", () => {
+      const out = renderText(buildReport("ordpool", 900_000));
+      expect(out).not.toMatch(/`prefix`|\{prefix\}/);
+    });
+  });
 });

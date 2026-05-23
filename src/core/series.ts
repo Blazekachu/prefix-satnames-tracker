@@ -13,6 +13,8 @@ export interface SeriesRange {
   /** Highest sat of the series. */
   satEnd: bigint;
   satCount: bigint;
+  /** True when the natural low end of the series fell past supply and was clamped to 0. */
+  clamped: boolean;
 }
 
 /**
@@ -31,6 +33,7 @@ export function buildSeriesRanges(prefix: string): SeriesRange[] {
 
     const satEnd = nameToSat(satEndName);
     let satStart = nameToSat(satStartName);
+    let clamped = false;
 
     // Existence rule: sats must lie in [0, SUPPLY-1].
     if (satEnd < 0n) {
@@ -40,6 +43,7 @@ export function buildSeriesRanges(prefix: string): SeriesRange[] {
       // Supply straddle: keep only the existing portion.
       satStart = 0n;
       satStartName = satToName(satStart);
+      clamped = true;
     }
 
     result.push({
@@ -50,6 +54,7 @@ export function buildSeriesRanges(prefix: string): SeriesRange[] {
       satStart,
       satEnd,
       satCount: satEnd - satStart + 1n,
+      clamped,
     });
   }
   return result;
