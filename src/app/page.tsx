@@ -47,7 +47,7 @@ export default function Home() {
       compute(validated.prefix, tip);
     } catch {
       setError(
-        "Couldn't reach mempool.space. Enter the current block height manually below.",
+        "Couldn't reach any block-height source. Enter the current block height manually below.",
       );
       setPendingPrefix(validated.prefix);
     } finally {

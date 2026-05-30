@@ -1,11 +1,33 @@
-const TIP_URL = "https://mempool.space/api/blocks/tip/height";
+/**
+ * Public Esplora providers, tried in order. All expose the same Esplora REST
+ * shape. memepool.space is a separate ordinals-focused explorer (NOT a typo for
+ * mempool.space) kept as a last-resort fallback. To go self-sovereign, prepend
+ * your own node's Esplora URL (e.g. "http://localhost:3000/api") — it becomes
+ * the first-priority source and the public ones stay as fallback.
+ */
+export const ESPLORA_PROVIDERS = [
+  "https://mempool.space/api",
+  "https://blockstream.info/api",
+  "https://memepool.space/api",
+];
 
-/** Fetch the current Bitcoin tip height. Retries once before throwing. */
-export async function fetchTipHeight(): Promise<number> {
+/** Per-provider timeout. A slow/unreachable provider fails fast and we move on. */
+const TIMEOUT_MS = 4000;
+
+/**
+ * Fetch the current Bitcoin tip height, trying each Esplora provider in order.
+ * Each request has a short timeout so a hung provider can't stall the UI — it
+ * fails fast and we fall through to the next. Throws only if every provider fails.
+ */
+export async function fetchTipHeight(
+  providers: string[] = ESPLORA_PROVIDERS,
+): Promise<number> {
   let lastErr: unknown;
-  for (let attempt = 0; attempt < 2; attempt++) {
+  for (const base of providers) {
     try {
-      const res = await fetch(TIP_URL);
+      const res = await fetch(`${base}/blocks/tip/height`, {
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const text = (await res.text()).trim();
       const height = Number(text);
@@ -15,12 +37,11 @@ export async function fetchTipHeight(): Promise<number> {
       return height;
     } catch (err) {
       lastErr = err;
-      if (attempt === 0) {
-        await new Promise((resolve) => setTimeout(resolve, 500));
-      }
     }
   }
   throw new Error(
-    `Could not fetch tip height from mempool.space: ${String(lastErr)}`,
+    `Could not fetch tip height from any Esplora provider (${providers.join(
+      ", ",
+    )}): ${String(lastErr)}`,
   );
 }
