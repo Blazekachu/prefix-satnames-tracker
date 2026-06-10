@@ -94,7 +94,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="privacy-pill">Client-side math</div>
+          <div className="header-actions">
+            <a href="inscriptions-on-satnames/" className="header-link">
+              Inscriptions on satnames
+            </a>
+            <div className="privacy-pill">Client-side math</div>
+          </div>
         </div>
 
         <form onSubmit={onSubmit} className="search-form">
