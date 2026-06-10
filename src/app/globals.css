@@ -67,6 +67,22 @@ button:disabled {
   align-items: flex-start;
 }
 
+.brand-lockup {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.site-logo {
+  width: clamp(64px, 9vw, 96px);
+  height: clamp(64px, 9vw, 96px);
+  flex: 0 0 auto;
+  border: 1px solid rgba(247, 147, 26, 0.32);
+  border-radius: 8px;
+  background: #000;
+  object-fit: cover;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   color: var(--latte);
@@ -388,6 +404,15 @@ button:disabled {
   .search-form,
   .manual-form {
     flex-direction: column;
+  }
+
+  .brand-lockup {
+    gap: 14px;
+  }
+
+  .site-logo {
+    width: 64px;
+    height: 64px;
   }
 
   .privacy-pill {

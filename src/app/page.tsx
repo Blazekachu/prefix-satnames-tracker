@@ -79,13 +79,20 @@ export default function Home() {
     <main className="page-shell">
       <section className="tracker-panel">
         <div className="header-row">
-          <div>
-            <p className="eyebrow">Ordinal sat-name range finder</p>
-            <h1 className="title">Prefix Satnames Tracker</h1>
-            <p className="lede">
-              Enter a prefix to see every sat-name series, the exact sat ranges,
-              and the Bitcoin blocks where those names land.
-            </p>
+          <div className="brand-lockup">
+            <img
+              src="satname-search-logo.png"
+              alt="Prefix Satnames Tracker logo"
+              className="site-logo"
+            />
+            <div>
+              <p className="eyebrow">Ordinal sat-name range finder</p>
+              <h1 className="title">Prefix Satnames Tracker</h1>
+              <p className="lede">
+                Enter a prefix to see every sat-name series, the exact sat
+                ranges, and the Bitcoin blocks where those names land.
+              </p>
+            </div>
           </div>
           <div className="privacy-pill">Client-side math</div>
         </div>
