@@ -298,6 +298,7 @@ button:disabled {
 }
 
 .stat-card {
+  min-width: 0;
   border: 1px solid rgba(216, 185, 137, 0.26);
   border-radius: 8px;
   background: rgba(13, 13, 15, 0.55);
@@ -309,6 +310,12 @@ button:disabled {
   color: var(--text);
   font-size: 1.35rem;
   font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+.stat-value-long {
+  font-size: clamp(0.92rem, 1.35vw, 1.08rem);
+  line-height: 1.35;
 }
 
 .stat-label {
@@ -327,12 +334,25 @@ button:disabled {
 
 .breakdown li {
   display: grid;
-  grid-template-columns: 64px 1fr;
+  grid-template-columns: minmax(118px, 0.35fr) minmax(0, 1fr);
   gap: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.09);
   padding: 11px 0;
   color: var(--muted);
   line-height: 1.45;
+}
+
+.breakdown span {
+  min-width: 0;
+}
+
+.breakdown small {
+  display: block;
+  margin-top: 3px;
+  color: #9f968c;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .example-actions {
@@ -384,6 +404,10 @@ button:disabled {
   }
 
   .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .breakdown li {
     grid-template-columns: 1fr;
   }
 }

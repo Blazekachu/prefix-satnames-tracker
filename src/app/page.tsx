@@ -247,30 +247,48 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
             <span className="stat-label">sat-name series</span>
           </div>
           <div className="stat-card">
-            <span className="stat-value">0.000000000033476%</span>
+            <span className="stat-value stat-value-long">
+              0.000000000033476%
+            </span>
             <span className="stat-label">of all Bitcoin sats</span>
           </div>
         </div>
 
         <ul className="breakdown">
           <li>
-            <strong>676</strong>
             <span>
-              sats in 11-letter names, from <strong>exquisiteaa</strong>{" "}
-              through <strong>exquisitezz</strong>
+              <strong>676</strong>
+              <small>mined in block 294,053</small>
+            </span>
+            <span>
+              11-letter names: <strong>exquisitezz</strong> to{" "}
+              <strong>exquisiteaa</strong>
+              <small>
+                sats 1,260,134,692,559,694 to 1,260,134,692,560,369
+              </small>
             </span>
           </li>
           <li>
-            <strong>26</strong>
             <span>
-              sats in 10-letter names, from <strong>exquisitea</strong> through{" "}
-              <strong>exquisitez</strong>
+              <strong>26</strong>
+              <small>future block 1,266,527, around 2033</small>
+            </span>
+            <span>
+              10-letter names: <strong>exquisitez</strong> to{" "}
+              <strong>exquisitea</strong>
+              <small>
+                sats 2,067,697,485,954,220 to 2,067,697,485,954,245
+              </small>
             </span>
           </li>
           <li>
-            <strong>1</strong>
             <span>
-              sat for the exact 9-letter name <strong>exquisite</strong>
+              <strong>1</strong>
+              <small>future block 2,265,555, around 2052</small>
+            </span>
+            <span>
+              exact 9-letter name: <strong>exquisite</strong>
+              <small>sat 2,098,757,593,392,471</small>
             </span>
           </li>
         </ul>

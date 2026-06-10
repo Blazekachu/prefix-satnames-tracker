@@ -44,9 +44,9 @@ The page should still read as a utility: clear input, readable results, compact 
    - State that only `703` sats across all `exquisite*` satnames exist out of `2,100,000,000,000,000` total Bitcoin sats.
    - Show the percentage: `0.000000000033476%` of all Bitcoin sats.
    - Show the deterministic breakdown:
-     - `676` sats in 11-letter names: `exquisiteaa` through `exquisitezz`
-     - `26` sats in 10-letter names: `exquisitea` through `exquisitez`
-     - `1` sat for the exact 9-letter name: `exquisite`
+     - `676` sats in 11-letter names: `exquisitezz` to `exquisiteaa`; sats `1,260,134,692,559,694` to `1,260,134,692,560,369`; mined in block `294,053`
+     - `26` sats in 10-letter names: `exquisitez` to `exquisitea`; sats `2,067,697,485,954,220` to `2,067,697,485,954,245`; future block `1,266,527`, around `2033`
+     - `1` sat for the exact 9-letter name: `exquisite`; sat `2,098,757,593,392,471`; future block `2,265,555`, around `2052`
    - Include an action that lets the user try the `exquisite` prefix in the tracker.
 
 ## Data And Behavior
