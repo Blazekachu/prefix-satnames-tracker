@@ -8,11 +8,16 @@ import { formatBigInt } from "@/lib/format";
 import { series1Banner } from "@/lib/banner";
 
 const COLLAPSE_AT = 10;
+const EXQUISITE_PREFIX = "exquisite";
+const EXQUISITE_INSCRIPTION_ID =
+  "db044cb57073abf71bbab6111415e3c0a38cce1428d364c8f275e9d8995252dbi201";
+const EXQUISITE_INSCRIPTION_URL = `https://ordinals.com/inscription/${EXQUISITE_INSCRIPTION_ID}`;
+const EXQUISITE_PREVIEW_URL = `https://ordinals.com/preview/${EXQUISITE_INSCRIPTION_ID}`;
 
 function statusColor(status: string): string {
-  if (status === "mined") return "#3ddc84";
+  if (status === "mined") return "#68d391";
   if (status === "future") return "#f7931a";
-  return "#e8b84b"; // partial
+  return "#d8b989";
 }
 
 export default function Home() {
@@ -29,18 +34,18 @@ export default function Home() {
     setPendingPrefix(null);
   }
 
-  async function onSubmit(e: React.FormEvent) {
-    e.preventDefault();
+  async function runPrefix(prefix: string) {
     setError(null);
     setReport(null);
     setPendingPrefix(null);
 
-    const validated = validatePrefix(input.trim());
+    const validated = validatePrefix(prefix.trim().toLowerCase());
     if (!validated.ok) {
       setError(validated.error);
       return;
     }
 
+    setInput(validated.prefix);
     setLoading(true);
     try {
       const tip = await fetchTipHeight();
@@ -55,6 +60,11 @@ export default function Home() {
     }
   }
 
+  function onSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    void runPrefix(input);
+  }
+
   function onManualSubmit(e: React.FormEvent) {
     e.preventDefault();
     const tip = Number(manualTip);
@@ -66,119 +76,75 @@ export default function Home() {
   }
 
   return (
-    <main style={{ maxWidth: 860, margin: "0 auto", padding: "2rem 1rem" }}>
-      <h1 style={{ fontSize: "1.6rem", fontWeight: 700 }}>
-        Prefix Satnames Tracker
-      </h1>
-      <p style={{ opacity: 0.7, marginTop: 4 }}>
-        Enter a prefix to see every sat-name series and the Bitcoin blocks it
-        falls in.
-      </p>
+    <main className="page-shell">
+      <section className="tracker-panel">
+        <div className="header-row">
+          <div>
+            <p className="eyebrow">Ordinal sat-name range finder</p>
+            <h1 className="title">Prefix Satnames Tracker</h1>
+            <p className="lede">
+              Enter a prefix to see every sat-name series, the exact sat ranges,
+              and the Bitcoin blocks where those names land.
+            </p>
+          </div>
+          <div className="privacy-pill">Client-side math</div>
+        </div>
 
-      <form
-        onSubmit={onSubmit}
-        style={{ marginTop: 20, display: "flex", gap: 8 }}
-      >
-        <input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="e.g. bhang"
-          style={{
-            flex: 1,
-            padding: "0.6rem 0.8rem",
-            background: "#1a1a1f",
-            border: "1px solid #333",
-            borderRadius: 6,
-            color: "inherit",
-          }}
-        />
-        <button
-          type="submit"
-          disabled={loading}
-          style={{
-            padding: "0.6rem 1.2rem",
-            background: "#f7931a",
-            border: "none",
-            borderRadius: 6,
-            color: "#000",
-            fontWeight: 600,
-            cursor: "pointer",
-          }}
-        >
-          {loading ? "…" : "Track"}
-        </button>
-      </form>
-
-      {error && <p style={{ color: "#ff6b6b", marginTop: 12 }}>{error}</p>}
-
-      {pendingPrefix && (
-        <form
-          onSubmit={onManualSubmit}
-          style={{ marginTop: 8, display: "flex", gap: 8 }}
-        >
+        <form onSubmit={onSubmit} className="search-form">
           <input
-            value={manualTip}
-            onChange={(e) => setManualTip(e.target.value)}
-            placeholder="current block height"
-            inputMode="numeric"
-            style={{
-              flex: 1,
-              padding: "0.5rem 0.8rem",
-              background: "#1a1a1f",
-              border: "1px solid #333",
-              borderRadius: 6,
-              color: "inherit",
-            }}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="e.g. bhang"
+            className="text-input"
+            aria-label="Sat-name prefix"
           />
-          <button
-            type="submit"
-            style={{
-              padding: "0.5rem 1rem",
-              background: "#333",
-              border: "1px solid #555",
-              borderRadius: 6,
-              color: "inherit",
-              cursor: "pointer",
-            }}
-          >
-            Use height
+          <button type="submit" disabled={loading} className="primary-button">
+            {loading ? "Tracing..." : "Track"}
           </button>
         </form>
-      )}
 
-      {report && report.seriesCount === 0 && (
-        <p style={{ marginTop: 16, opacity: 0.7 }}>
-          No real series exist for &quot;{report.prefix}&quot; — every series
-          maps beyond Bitcoin&apos;s sat supply.
-        </p>
-      )}
+        {error && <p className="error-text">{error}</p>}
 
-      {report && report.seriesCount > 0 && (
-        <div style={{ marginTop: 20 }}>
-          <p style={{ opacity: 0.7, marginBottom: 12 }}>
-            {report.seriesCount} series · tip height{" "}
-            {formatBigInt(BigInt(report.tipHeight))}
+        {pendingPrefix && (
+          <form onSubmit={onManualSubmit} className="manual-form">
+            <input
+              value={manualTip}
+              onChange={(e) => setManualTip(e.target.value)}
+              placeholder="current block height"
+              inputMode="numeric"
+              className="text-input"
+              aria-label="Current block height"
+            />
+            <button type="submit" className="secondary-button">
+              Use height
+            </button>
+          </form>
+        )}
+
+        {report && report.seriesCount === 0 && (
+          <p className="empty-text">
+            No real series exist for &quot;{report.prefix}&quot; because every
+            series maps beyond Bitcoin&apos;s sat supply.
           </p>
-          {series1Banner(report) && (
-            <div
-              style={{
-                background: "#1f1a10",
-                border: "1px solid #6b521f",
-                borderRadius: 6,
-                padding: "0.6rem 0.8rem",
-                marginBottom: 12,
-                fontSize: "0.9rem",
-                color: "#f0d99a",
-              }}
-            >
-              {series1Banner(report)}
-            </div>
-          )}
-          {report.series.map((s) => (
-            <SeriesCard key={s.id} series={s} />
-          ))}
-        </div>
-      )}
+        )}
+
+        {report && report.seriesCount > 0 && (
+          <div className="report">
+            <p className="report-meta">
+              {report.seriesCount} series | tip height{" "}
+              {formatBigInt(BigInt(report.tipHeight))}
+            </p>
+            {series1Banner(report) && (
+              <div className="banner">{series1Banner(report)}</div>
+            )}
+            {report.series.map((s) => (
+              <SeriesCard key={s.id} series={s} />
+            ))}
+          </div>
+        )}
+      </section>
+
+      <ExampleShowcase onTry={() => void runPrefix(EXQUISITE_PREFIX)} />
     </main>
   );
 }
@@ -187,57 +153,57 @@ function SeriesCard({ series }: { series: PrefixReport["series"][number] }) {
   const [expanded, setExpanded] = useState(false);
   const segments = series.blockSegments ?? [];
   const collapsed = segments.length > COLLAPSE_AT && !expanded;
+  const seriesStatusColor = statusColor(series.overallStatus);
 
   return (
-    <section
-      style={{
-        border: "1px solid #2a2a30",
-        borderRadius: 8,
-        padding: "1rem",
-        marginBottom: 12,
-        background: "#141418",
-      }}
-    >
-      <div style={{ fontWeight: 600 }}>
-        Series {series.id} · {series.nameLength}-letter names ·{" "}
-        {series.satStartName} … {series.satEndName}{" "}
-        <span style={{ color: statusColor(series.overallStatus) }}>
-          ● {series.overallStatus}
+    <section className="series-card">
+      <div className="series-title">
+        <span>
+          Series {series.id} | {series.nameLength}-letter names |{" "}
+          {series.satStartName} ... {series.satEndName}
+        </span>
+        <span
+          className="status-label"
+          style={{ "--status-color": seriesStatusColor } as React.CSSProperties}
+        >
+          status: {series.overallStatus}
         </span>
       </div>
-      <div style={{ opacity: 0.7, fontSize: "0.9rem", marginTop: 2 }}>
-        sats {formatBigInt(series.satStart)} … {formatBigInt(series.satEnd)} (
+      <div className="series-range">
+        sats {formatBigInt(series.satStart)} ... {formatBigInt(series.satEnd)} (
         {formatBigInt(series.satCount)} sats)
       </div>
 
       {collapsed ? (
-        <div style={{ marginTop: 8, fontSize: "0.9rem" }}>
-          blocks {formatBigInt(BigInt(segments[0].height))} …{" "}
+        <div className="collapsed-blocks">
+          blocks {formatBigInt(BigInt(segments[0].height))} ...{" "}
           {formatBigInt(BigInt(segments[segments.length - 1].height))} (
           {formatBigInt(BigInt(segments.length))} blocks){" "}
           <button
+            type="button"
             onClick={() => setExpanded(true)}
-            style={{
-              background: "none",
-              border: "1px solid #444",
-              borderRadius: 4,
-              color: "inherit",
-              cursor: "pointer",
-              fontSize: "0.8rem",
-              padding: "1px 6px",
-            }}
+            className="ghost-button"
           >
             show all blocks
           </button>
         </div>
       ) : (
-        <ul style={{ marginTop: 8, fontSize: "0.9rem", listStyle: "none" }}>
+        <ul className="block-list">
           {segments.map((seg) => (
-            <li key={seg.height} style={{ marginTop: 2 }}>
-              <span style={{ color: statusColor(seg.status) }}>●</span> block{" "}
-              {formatBigInt(BigInt(seg.height))} · sats{" "}
-              {formatBigInt(seg.satRangeStart)} …{" "}
-              {formatBigInt(seg.satRangeEnd)} ({formatBigInt(seg.satCount)}) ·{" "}
+            <li key={seg.height}>
+              <span
+                className="status-dot"
+                style={
+                  {
+                    "--status-color": statusColor(seg.status),
+                  } as React.CSSProperties
+                }
+              >
+                status:
+              </span>{" "}
+              block {formatBigInt(BigInt(seg.height))} | sats{" "}
+              {formatBigInt(seg.satRangeStart)} ...{" "}
+              {formatBigInt(seg.satRangeEnd)} ({formatBigInt(seg.satCount)}) |{" "}
               {seg.status === "mined"
                 ? "mined"
                 : `future ~${seg.estimatedYear}`}
@@ -245,6 +211,84 @@ function SeriesCard({ series }: { series: PrefixReport["series"][number] }) {
           ))}
         </ul>
       )}
+    </section>
+  );
+}
+
+function ExampleShowcase({ onTry }: { onTry: () => void }) {
+  return (
+    <section className="example-panel" aria-labelledby="example-title">
+      <div className="inscription-frame-wrap">
+        <iframe
+          className="inscription-frame"
+          title="Exquisite #1042 ordinal inscription preview"
+          src={EXQUISITE_PREVIEW_URL}
+          sandbox="allow-scripts"
+          loading="lazy"
+        />
+      </div>
+      <div className="example-content">
+        <p className="eyebrow">On-chain example</p>
+        <h2 id="example-title">Example: exquisite</h2>
+        <p className="example-copy">
+          The tracker follows every sat-name that starts with a prefix. For{" "}
+          <strong>exquisite*</strong>, only <strong>703 sats</strong> exist out
+          of <strong>2,100,000,000,000,000</strong> total Bitcoin sats:{" "}
+          <strong>0.000000000033476%</strong> of the full supply.
+        </p>
+
+        <div className="stat-grid" aria-label="Exquisite sat-name rarity stats">
+          <div className="stat-card">
+            <span className="stat-value">703</span>
+            <span className="stat-label">matching sats total</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-value">3</span>
+            <span className="stat-label">sat-name series</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-value">0.000000000033476%</span>
+            <span className="stat-label">of all Bitcoin sats</span>
+          </div>
+        </div>
+
+        <ul className="breakdown">
+          <li>
+            <strong>676</strong>
+            <span>
+              sats in 11-letter names, from <strong>exquisiteaa</strong>{" "}
+              through <strong>exquisitezz</strong>
+            </span>
+          </li>
+          <li>
+            <strong>26</strong>
+            <span>
+              sats in 10-letter names, from <strong>exquisitea</strong> through{" "}
+              <strong>exquisitez</strong>
+            </span>
+          </li>
+          <li>
+            <strong>1</strong>
+            <span>
+              sat for the exact 9-letter name <strong>exquisite</strong>
+            </span>
+          </li>
+        </ul>
+
+        <div className="example-actions">
+          <button type="button" onClick={onTry} className="secondary-button">
+            Try exquisite
+          </button>
+          <a
+            href={EXQUISITE_INSCRIPTION_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inscription-link"
+          >
+            View inscription
+          </a>
+        </div>
+      </div>
     </section>
   );
 }
