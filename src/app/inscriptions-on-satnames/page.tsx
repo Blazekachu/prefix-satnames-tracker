@@ -209,6 +209,55 @@ const entries: SatnameInscription[] = [
     ],
     externalLinks: [],
   },
+  {
+    satname: "cyclisation",
+    role: "Single asset in a parented collection",
+    summary:
+      "The satname carries one JPEG inscription with one parent and no direct children. The parent inscription has 82 visible children, and this entry is tracked as a Satgods collection asset.",
+    sat: {
+      number: "1540035249036520",
+      block: "406014",
+      timestamp: "2016-04-06 12:33:19 UTC",
+      rarity: "common",
+    },
+    inscription: {
+      id: "3c201fe5d5cf26ddee63dbb115c68f40f80b8dad837da0292da97950cadcb785i0",
+      number: "56637533",
+      contentType: "image/jpeg",
+      contentLength: "33706 bytes",
+      timestamp: "2024-01-21 03:47:39 UTC",
+      height: "826626",
+      value: "546 sats",
+      fee: "459086 sats",
+      teleburnAddress: "0xd25fd327e4598c07E811f915A2f8170Ef3D67586",
+    },
+    relationship: {
+      label: "Parent-child trace",
+      facts: [
+        {
+          label: "Parent",
+          value:
+            "4a5e29c6546d2230022fd6fec1f41b4b9da4d42687927951d6275b65bb284181i0",
+        },
+        {
+          label: "Parent details",
+          value: "Inscription 50753967, image/jpeg, 10199 bytes",
+        },
+        {
+          label: "Parent children",
+          value: "82 visible children",
+        },
+        { label: "Direct children", value: "none found by /r/children" },
+      ],
+    },
+    metadata: [
+      { label: "Collection", value: "Satgods" },
+      { label: "Collection source", value: "Owner-provided classification" },
+      { label: "Parent charm", value: "9️⃣ nineball" },
+      { label: "Parent satname", value: "nvsxsrccvbl" },
+    ],
+    externalLinks: [],
+  },
 ];
 
 function ordinalsPath(path: string) {
