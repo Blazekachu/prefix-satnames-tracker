@@ -17,6 +17,11 @@ type Lineage = {
   facts: Fact[];
 };
 
+type Descendants = {
+  label: string;
+  satnames: string[];
+};
+
 export type SatnameInscription = {
   satname: string;
   tabs: RegistryTabId[];
@@ -44,6 +49,7 @@ export type SatnameInscription = {
     facts: Fact[];
   };
   lineage?: Lineage;
+  descendants?: Descendants;
   metadata: Fact[];
   externalLinks: SourceLink[];
 };
@@ -55,20 +61,20 @@ export const REGISTRY_TABS: Array<{ id: RegistryTabId; label: string; note: stri
     id: "ord-father",
     label: "Named Sats by ORD FATHER",
     note:
-      "Curated named-sat lineage verified under inscription 0. The root and branch cards show how far each satname sits from inscription 0 and which named-sat descendants are already confirmed.",
+      "Curated named-sat lineage verified under inscription 0. This tab starts from the named-sat branches under inscription 0 and shows their verified descendants directly inside each branch card.",
   },
   {
     id: "all",
     label: "All named sats tracked yet",
     note:
-      "Broader manual registry of named sats carrying inscriptions. This includes the inscription 0 anchors above plus other named-sat inscriptions tracked from manual ordinals research.",
+      "Broader manual registry of named sats carrying inscriptions outside the dedicated ORD FATHER lineage tab.",
   },
 ];
 
 export const registryEntries: SatnameInscription[] = [
   {
     satname: "ezcubunuovm",
-    tabs: ["ord-father", "all"],
+    tabs: [],
     role: "Inscription 0 root on a named sat",
     summary:
       "Inscription 0 sits on the named sat ezcubunuovm. This featured tab tracks the verified named-sat branch rooted there, starting with five direct named-sat children and a smaller descendant tree already confirmed from recursive child endpoints.",
@@ -130,7 +136,7 @@ export const registryEntries: SatnameInscription[] = [
   },
   {
     satname: "falsecolors",
-    tabs: ["ord-father", "all"],
+    tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
       "This direct child of inscription 0 sits on a named sat and carries the clearest small named-sat subtree currently verified under the root. The branch has 8 direct children and each confirmed child lands on its own named sat.",
@@ -174,6 +180,19 @@ export const registryEntries: SatnameInscription[] = [
         { label: "Branch", value: "8 verified named-sat descendants" },
       ],
     },
+    descendants: {
+      label: "Verified falsecolors children on named sats",
+      satnames: [
+        "badgertooth",
+        "zonefruits",
+        "abysscalled",
+        "cactusseeds",
+        "carpetyarns",
+        "necrowizard",
+        "ghostflight",
+        "breathelast",
+      ],
+    },
     metadata: [
       { label: "Burn metadata", value: "skull" },
       { label: "Address", value: "burned inscription on named sat falsecolors" },
@@ -183,7 +202,7 @@ export const registryEntries: SatnameInscription[] = [
   },
   {
     satname: "daddyplease",
-    tabs: ["ord-father", "all"],
+    tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
       "This direct child of inscription 0 sits on daddyplease and opens into a much larger branch. The card anchors the branch in the featured tab, but the named-sat descendants under its 1000-child set are not fully curated yet.",
@@ -237,7 +256,7 @@ export const registryEntries: SatnameInscription[] = [
   },
   {
     satname: "cargobroker",
-    tabs: ["ord-father", "all"],
+    tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
       "This direct child of inscription 0 sits on cargobroker and currently exposes one verified named-sat descendant. It works well as a compact example of a small branch that still retains explicit ancestry back to inscription 0.",
@@ -276,6 +295,10 @@ export const registryEntries: SatnameInscription[] = [
         { label: "Branch", value: "1 verified named-sat descendant" },
       ],
     },
+    descendants: {
+      label: "Verified cargobroker child on a named sat",
+      satnames: ["hazasvignzf"],
+    },
     metadata: [
       { label: "Child inscription number", value: "70281661" },
       { label: "Child branch note", value: "The only verified child branch currently lands on named sat hazasvignzf." },
@@ -284,7 +307,7 @@ export const registryEntries: SatnameInscription[] = [
   },
   {
     satname: "acquisitive",
-    tabs: ["ord-father", "all"],
+    tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
       "This direct child of inscription 0 sits on acquisitive. It currently shows no visible children on its inscription page, but it still belongs in the featured tab because it is one of the verified named-sat anchors directly under inscription 0.",
@@ -331,7 +354,7 @@ export const registryEntries: SatnameInscription[] = [
   },
   {
     satname: "mixnetworks",
-    tabs: ["ord-father", "all"],
+    tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
       "This direct child of inscription 0 sits on mixnetworks and exposes one verified named-sat descendant. It rounds out the currently confirmed named-sat anchors directly under the root inscription.",
@@ -369,6 +392,10 @@ export const registryEntries: SatnameInscription[] = [
         { label: "Path", value: "ezcubunuovm -> mixnetworks" },
         { label: "Branch", value: "1 verified named-sat descendant" },
       ],
+    },
+    descendants: {
+      label: "Verified mixnetworks child on a named sat",
+      satnames: ["highwaystar"],
     },
     metadata: [
       { label: "Child inscription number", value: "85720883" },

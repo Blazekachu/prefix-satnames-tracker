@@ -22,6 +22,25 @@ function FieldList({ facts }: { facts: Fact[] }) {
   );
 }
 
+function DescendantList({
+  label,
+  satnames,
+}: {
+  label: string;
+  satnames: string[];
+}) {
+  return (
+    <section>
+      <h3>{label}</h3>
+      <ul className="descendant-list">
+        {satnames.map((satname) => (
+          <li key={satname}>{satname}</li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 function RegistryPanel({ tabId }: { tabId: "ord-father" | "all" }) {
   const entries = getEntriesForTab(tabId);
   const tab = REGISTRY_TABS.find((item) => item.id === tabId);
@@ -29,6 +48,13 @@ function RegistryPanel({ tabId }: { tabId: "ord-father" | "all" }) {
   return (
     <section className={`registry-panel registry-panel-${tabId}`}>
       <div className="registry-note lineage-banner">{tab?.note}</div>
+      {tabId === "ord-father" ? (
+        <div className="registry-note">
+          Root context: inscription 0 is on satname <strong>ezcubunuovm</strong>.
+          This tab focuses on the verified named-sat branches under that root,
+          rather than repeating the root itself as a tracked card.
+        </div>
+      ) : null}
 
       <section
         className="asset-gallery"
@@ -136,6 +162,15 @@ function RegistryPanel({ tabId }: { tabId: "ord-father" | "all" }) {
                     <FieldList facts={entry.metadata} />
                   </section>
                 </div>
+
+                {entry.descendants ? (
+                  <div className="satname-sections">
+                    <DescendantList
+                      label={entry.descendants.label}
+                      satnames={entry.descendants.satnames}
+                    />
+                  </div>
+                ) : null}
 
                 <div
                   className="source-links"

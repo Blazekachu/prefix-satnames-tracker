@@ -3,9 +3,8 @@ import { describe, expect, it } from "vitest";
 import { getEntriesForTab } from "./registry";
 
 describe("getEntriesForTab", () => {
-  it("returns the inscription 0 lineage entries in featured order", () => {
+  it("returns only named-sat branch entries in featured order", () => {
     expect(getEntriesForTab("ord-father").map((entry) => entry.satname)).toEqual([
-      "ezcubunuovm",
       "falsecolors",
       "daddyplease",
       "cargobroker",
@@ -19,8 +18,24 @@ describe("getEntriesForTab", () => {
 
     expect(allSatnames).toContain("agooddoctor");
     expect(allSatnames).toContain("blobnwthems");
-    expect(allSatnames.length).toBeGreaterThan(
-      getEntriesForTab("ord-father").length,
+    expect(allSatnames).not.toContain("falsecolors");
+    expect(allSatnames).not.toContain("daddyplease");
+  });
+
+  it("keeps the verified falsecolors descendants available on the featured branch card", () => {
+    const falsecolors = getEntriesForTab("ord-father").find(
+      (entry) => entry.satname === "falsecolors",
     );
+
+    expect(
+      falsecolors?.relationship.facts.find(
+        (fact) => fact.label === "Verified named-sat descendants",
+      )?.value,
+    ).toContain("badgertooth");
+    expect(
+      falsecolors?.relationship.facts.find(
+        (fact) => fact.label === "Verified named-sat descendants",
+      )?.value,
+    ).toContain("breathelast");
   });
 });

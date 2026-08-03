@@ -658,6 +658,17 @@ button:disabled {
   overflow-wrap: anywhere;
 }
 
+.descendant-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.descendant-list li + li {
+  margin-top: 6px;
+}
+
 .source-links,
 .external-links {
   display: flex;
