@@ -428,6 +428,59 @@ button:disabled {
   padding: 14px;
 }
 
+.registry-tabs {
+  position: relative;
+  margin-top: 18px;
+}
+
+.registry-tab-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.registry-tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.registry-tab-label {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(20, 20, 24, 0.88);
+  color: var(--muted);
+  cursor: pointer;
+  padding: 10px 14px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+#registry-tab-ord-father:checked ~ .registry-tab-list label[for="registry-tab-ord-father"],
+#registry-tab-all:checked ~ .registry-tab-list label[for="registry-tab-all"] {
+  border-color: rgba(247, 147, 26, 0.72);
+  background: rgba(247, 147, 26, 0.12);
+  color: var(--text);
+}
+
+.registry-panel {
+  display: none;
+}
+
+#registry-tab-ord-father:checked ~ .registry-panel-ord-father,
+#registry-tab-all:checked ~ .registry-panel-all {
+  display: block;
+}
+
+.lineage-banner {
+  border-color: rgba(247, 147, 26, 0.28);
+  background:
+    linear-gradient(135deg, rgba(247, 147, 26, 0.09), rgba(75, 91, 171, 0.08)),
+    rgba(13, 13, 15, 0.52);
+}
+
 .asset-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
