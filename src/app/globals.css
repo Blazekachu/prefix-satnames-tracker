@@ -669,6 +669,32 @@ button:disabled {
   margin-top: 6px;
 }
 
+.nested-asset-wrap {
+  margin-top: 18px;
+}
+
+.nested-asset-heading {
+  margin: 0 0 10px;
+  color: var(--latte);
+  font-size: 0.9rem;
+  letter-spacing: 0;
+}
+
+.nested-asset-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.nested-asset-card {
+  background: rgba(13, 13, 15, 0.62);
+  box-shadow: none;
+}
+
+.nested-asset-gallery .asset-card[open] {
+  grid-column: auto;
+}
+
 .source-links,
 .external-links {
   display: flex;
@@ -746,6 +772,10 @@ button:disabled {
 
   .asset-gallery,
   .satname-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .nested-asset-gallery {
     grid-template-columns: 1fr;
   }
 

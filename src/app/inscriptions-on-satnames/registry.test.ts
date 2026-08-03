@@ -38,4 +38,21 @@ describe("getEntriesForTab", () => {
       )?.value,
     ).toContain("breathelast");
   });
+
+  it("stores the falsecolors descendants as nested child cards", () => {
+    const falsecolors = getEntriesForTab("ord-father").find(
+      (entry) => entry.satname === "falsecolors",
+    );
+
+    expect(falsecolors?.children?.map((child) => child.satname)).toEqual([
+      "badgertooth",
+      "zonefruits",
+      "abysscalled",
+      "cactusseeds",
+      "carpetyarns",
+      "necrowizard",
+      "ghostflight",
+      "breathelast",
+    ]);
+  });
 });

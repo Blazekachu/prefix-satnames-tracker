@@ -49,6 +49,7 @@ export type SatnameInscription = {
     facts: Fact[];
   };
   lineage?: Lineage;
+  children?: SatnameInscription[];
   descendants?: Descendants;
   metadata: Fact[];
   externalLinks: SourceLink[];
@@ -70,6 +71,86 @@ export const REGISTRY_TABS: Array<{ id: RegistryTabId; label: string; note: stri
       "Broader manual registry of named sats carrying inscriptions outside the dedicated ORD FATHER lineage tab.",
   },
 ];
+
+function createFalsecolorsChild({
+  satname,
+  sat,
+  value,
+  inscriptionId,
+  inscriptionNumber,
+  contentLength,
+  teleburnAddress,
+  output,
+  location,
+}: {
+  satname: string;
+  sat: string;
+  value: string;
+  inscriptionId: string;
+  inscriptionNumber: string;
+  contentLength: string;
+  teleburnAddress: string;
+  output: string;
+  location: string;
+}): SatnameInscription {
+  return {
+    satname,
+    tabs: [],
+    role: "Grandchild via falsecolors",
+    summary:
+      "This named sat sits one branch below falsecolors, making it a verified grandchild of inscription 0 inside the smallest fully mapped ORD FATHER subtree on the page.",
+    sat: {
+      number: sat,
+      block: "834616",
+      timestamp: "2024-03-14 04:49:37 UTC",
+      rarity: "common",
+    },
+    inscription: {
+      id: inscriptionId,
+      number: inscriptionNumber,
+      contentType: "image/png",
+      contentLength,
+      timestamp: "2024-03-14 04:49:37 UTC",
+      height: "834616",
+      value,
+      fee: "9080 sats",
+      teleburnAddress,
+    },
+    relationship: {
+      label: "Parent-child trace",
+      facts: [
+        { label: "Parent", value: "falsecolors" },
+        {
+          label: "Root lineage",
+          value: "inscription 0 -> falsecolors -> " + satname,
+        },
+        {
+          label: "Direct children",
+          value: "none visible on inscription page",
+        },
+      ],
+    },
+    lineage: {
+      badge: "Grandchild via falsecolors",
+      depth: 2,
+      branch: "falsecolors branch",
+      facts: [
+        { label: "Depth", value: "2 hops from inscription 0" },
+        {
+          label: "Path",
+          value: "ezcubunuovm -> falsecolors -> " + satname,
+        },
+        { label: "Branch", value: "falsecolors subtree" },
+      ],
+    },
+    metadata: [
+      { label: "Address", value: "verified on ordinals.com sat page" },
+      { label: "Output", value: output },
+      { label: "Location", value: location },
+    ],
+    externalLinks: [],
+  };
+}
 
 export const registryEntries: SatnameInscription[] = [
   {
@@ -193,6 +274,120 @@ export const registryEntries: SatnameInscription[] = [
         "breathelast",
       ],
     },
+    children: [
+      createFalsecolorsChild({
+        satname: "badgertooth",
+        sat: "1811343003917260",
+        value: "546 sats",
+        inscriptionId:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei0",
+        inscriptionNumber: "64332810",
+        contentLength: "1317 bytes",
+        teleburnAddress: "0x5B737BAD5b800d5992DB234d419FfbE1f38B07Af",
+        output:
+          "78ccdf1ee2bf14f36e83653a99586329b2931a17f786ffa8e6e0b79650d2bc40:0",
+        location:
+          "78ccdf1ee2bf14f36e83653a99586329b2931a17f786ffa8e6e0b79650d2bc40:0:0",
+      }),
+      createFalsecolorsChild({
+        satname: "zonefruits",
+        sat: "1955586426257097",
+        value: "547 sats",
+        inscriptionId:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei1",
+        inscriptionNumber: "64332811",
+        contentLength: "1168 bytes",
+        teleburnAddress: "0x7eb107037ECD33C9FE9E38D3FC9EeDeF90EbcEfb",
+        output:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:2",
+        location:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:2:0",
+      }),
+      createFalsecolorsChild({
+        satname: "abysscalled",
+        sat: "1942594707950922",
+        value: "546 sats",
+        inscriptionId:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei2",
+        inscriptionNumber: "64332812",
+        contentLength: "1230 bytes",
+        teleburnAddress: "0x733d9d79ADf245e6b234e717C68fE5ACeD91a81d",
+        output:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:3",
+        location:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:3:0",
+      }),
+      createFalsecolorsChild({
+        satname: "cactusseeds",
+        sat: "1670275367902281",
+        value: "10000 sats",
+        inscriptionId:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei3",
+        inscriptionNumber: "64332813",
+        contentLength: "1365 bytes",
+        teleburnAddress: "0x03fa02ab60cb74316BB8CeeF7712b471DFFB2056",
+        output:
+          "5ad0e2ab71c31231f3a894305aeed44419fd3778d39607e429719ccc31283203:0",
+        location:
+          "5ad0e2ab71c31231f3a894305aeed44419fd3778d39607e429719ccc31283203:0:0",
+      }),
+      createFalsecolorsChild({
+        satname: "carpetyarns",
+        sat: "1667180017264785",
+        value: "546 sats",
+        inscriptionId:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei4",
+        inscriptionNumber: "64332814",
+        contentLength: "1182 bytes",
+        teleburnAddress: "0x021097869bc7eB5A61f331a5eB8Aab555DC4Dc52",
+        output:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:5",
+        location:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:5:0",
+      }),
+      createFalsecolorsChild({
+        satname: "necrowizard",
+        sat: "95737174791764",
+        value: "546 sats",
+        inscriptionId:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei5",
+        inscriptionNumber: "64332815",
+        contentLength: "1419 bytes",
+        teleburnAddress: "0x4F77E3Fd42331eb52a605149694fc9eAB2D2A70E",
+        output:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:6",
+        location:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:6:0",
+      }),
+      createFalsecolorsChild({
+        satname: "ghostflight",
+        sat: "1065103033071944",
+        value: "546 sats",
+        inscriptionId:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei6",
+        inscriptionNumber: "64332816",
+        contentLength: "1395 bytes",
+        teleburnAddress: "0x310745119e9eb6097506698b8d23961046fe7e6B",
+        output:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:7",
+        location:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:7:0",
+      }),
+      createFalsecolorsChild({
+        satname: "breathelast",
+        sat: "1718876297165114",
+        value: "546 sats",
+        inscriptionId:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei7",
+        inscriptionNumber: "64332817",
+        contentLength: "942 bytes",
+        teleburnAddress: "0x4B5366459a7278586Fa89e8B7b216A3c3b89b968",
+        output:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:8",
+        location:
+          "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29e:8:0",
+      }),
+    ],
     metadata: [
       { label: "Burn metadata", value: "skull" },
       { label: "Address", value: "burned inscription on named sat falsecolors" },
