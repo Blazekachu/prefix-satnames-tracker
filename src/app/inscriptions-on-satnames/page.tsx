@@ -39,6 +39,54 @@ function displaySatname(entry: SatnameInscription): string {
   return entry.namedSatBranch ? `${entry.satname}*` : entry.satname;
 }
 
+function BlobChildBrowserPanel({
+  entry,
+}: {
+  entry: SatnameInscription & {
+    childBrowser: NonNullable<SatnameInscription["childBrowser"]>;
+  };
+}) {
+  return (
+    <div className="blob-child-browser">
+      <p className="eyebrow">Blob child browser</p>
+      <h3>{entry.satname}</h3>
+      <dl className="blob-child-browser-fields">
+        <div>
+          <dt>Parent inscription</dt>
+          <dd>#{entry.inscription.number}</dd>
+        </div>
+        <div>
+          <dt>Verified child count</dt>
+          <dd>{entry.childBrowser.count}</dd>
+        </div>
+        <div>
+          <dt>Child satname range</dt>
+          <dd>
+            {entry.childBrowser.satnameRangeStart} -&gt;{" "}
+            {entry.childBrowser.satnameRangeEnd}
+          </dd>
+        </div>
+        <div>
+          <dt>Child sat range</dt>
+          <dd>
+            {entry.childBrowser.satRangeStart} -&gt;{" "}
+            {entry.childBrowser.satRangeEnd}
+          </dd>
+        </div>
+      </dl>
+      <p className="blob-child-browser-note">{entry.childBrowser.note}</p>
+      <a
+        href={entry.childBrowser.browseUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="primary-button discovery-link-button"
+      >
+        {entry.childBrowser.browseLabel}
+      </a>
+    </div>
+  );
+}
+
 function FieldList({ facts }: { facts: Fact[] }) {
   return (
     <dl className="satname-fields">
@@ -86,6 +134,7 @@ function InscriptionCard({
   const satUrl = ordinalsPath(`/sat/${entry.satname}`);
   const satnameLabel = displaySatname(entry);
   const summaryLabel = cardSummaryLabel(entry);
+  const [showChildBrowser, setShowChildBrowser] = useState(false);
 
   return (
     <details
@@ -208,6 +257,30 @@ function InscriptionCard({
               satnames={entry.descendants.satnames}
             />
           </div>
+        ) : null}
+
+        {entry.childBrowser ? (
+          <div className="blob-child-browser-actions">
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={() => setShowChildBrowser((value) => !value)}
+            >
+              {showChildBrowser
+                ? "Hide child browser"
+                : "Browse 10,000 children"}
+            </button>
+          </div>
+        ) : null}
+
+        {entry.childBrowser && showChildBrowser ? (
+          <BlobChildBrowserPanel
+            entry={
+              entry as SatnameInscription & {
+                childBrowser: NonNullable<SatnameInscription["childBrowser"]>;
+              }
+            }
+          />
         ) : null}
 
         <div

@@ -22,12 +22,24 @@ type Descendants = {
   satnames: string[];
 };
 
+export type ChildBrowserSummary = {
+  count: string;
+  satnameRangeStart: string;
+  satnameRangeEnd: string;
+  satRangeStart: string;
+  satRangeEnd: string;
+  browseUrl: string;
+  browseLabel: string;
+  note: string;
+};
+
 export type SatnameInscription = {
   satname: string;
   tabs: RegistryTabId[];
   role: string;
   summary: string;
   namedSatBranch?: boolean;
+  childBrowser?: ChildBrowserSummary;
   sat: {
     number: string;
     block: string;
@@ -656,6 +668,18 @@ export const registryEntries: SatnameInscription[] = [
     satname: "blobnwthems",
     tabs: ["all"],
     role: "Blobs collection parent",
+    childBrowser: {
+      count: "10,000",
+      satnameRangeStart: "blobnwthdng",
+      satnameRangeEnd: "blobnwtcgsj",
+      satRangeStart: "1749358685270829",
+      satRangeEnd: "1749358685356548",
+      browseUrl:
+        "https://ordinals.com/children/648f02fbb36d7841dbf629966ea9c82a60255044fbdd09b31533c0b9fafa573di0",
+      browseLabel: "View all 10,000 children on ordinals.com",
+      note:
+        "The full Blob child set is browsed on ordinals.com to keep this page fast while preserving verified range facts here.",
+    },
     summary:
       "The satname carries the Blobs collection parent inscription. It has one parent root inscription and 10000 visible children. Research notes in ART on Blockchain describe the collection as metadata-seeded 3D shader art built through a recursive on-chain engine stack.",
     sat: {

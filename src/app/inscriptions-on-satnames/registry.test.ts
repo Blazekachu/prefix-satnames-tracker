@@ -55,4 +55,32 @@ describe("getEntriesForTab", () => {
       "breathelast",
     ]);
   });
+
+  it("stores verified Blob child-browser metadata", () => {
+    const blob = getEntriesForTab("all").find(
+      (entry) => entry.satname === "blobnwthems",
+    );
+
+    expect(blob?.childBrowser).toEqual({
+      count: "10,000",
+      satnameRangeStart: "blobnwthdng",
+      satnameRangeEnd: "blobnwtcgsj",
+      satRangeStart: "1749358685270829",
+      satRangeEnd: "1749358685356548",
+      browseUrl:
+        "https://ordinals.com/children/648f02fbb36d7841dbf629966ea9c82a60255044fbdd09b31533c0b9fafa573di0",
+      browseLabel: "View all 10,000 children on ordinals.com",
+      note:
+        "The full Blob child set is browsed on ordinals.com to keep this page fast while preserving verified range facts here.",
+    });
+  });
+
+  it("keeps Blob child-browser metadata exclusive to blobnwthems", () => {
+    const all = getEntriesForTab("all");
+    const blob = all.find((entry) => entry.satname === "blobnwthems");
+    const doctor = all.find((entry) => entry.satname === "agooddoctor");
+
+    expect(Boolean(blob?.childBrowser)).toBe(true);
+    expect(Boolean(doctor?.childBrowser)).toBe(false);
+  });
 });
