@@ -22,6 +22,13 @@ function ordinalsPath(path: string) {
   return `${ORDINALS}${path}`;
 }
 
+export function nextFocusedSatname(
+  current: string | null,
+  target: string,
+): string | null {
+  return current === target ? null : target;
+}
+
 export function ViewModePicker({ value, onChange }: ViewModePickerProps) {
   return (
     <div className="view-mode-picker" aria-label="Registry view mode">
@@ -74,11 +81,9 @@ export function RegistryView({
   tabId,
   renderLargeCard,
 }: RegistryViewProps) {
-  const [focusedSatname, setFocusedSatname] = useState<string | null>(
-    entries[0]?.satname ?? null,
-  );
+  const [focusedSatname, setFocusedSatname] = useState<string | null>(null);
   const focusedEntry =
-    entries.find((entry) => entry.satname === focusedSatname) ?? entries[0] ?? null;
+    entries.find((entry) => entry.satname === focusedSatname) ?? null;
 
   if (mode === "large") {
     return (
@@ -137,9 +142,15 @@ export function RegistryView({
                       <button
                         type="button"
                         className="ghost-button"
-                        onClick={() => setFocusedSatname(entry.satname)}
+                        onClick={() =>
+                          setFocusedSatname((current) =>
+                            nextFocusedSatname(current, entry.satname),
+                          )
+                        }
                       >
-                        View details
+                        {focusedSatname === entry.satname
+                          ? "Hide details"
+                          : "View details"}
                       </button>
                     </div>
                   </td>
@@ -156,7 +167,11 @@ export function RegistryView({
               type="button"
               className="compact-tile"
               data-active={entry.satname === focusedEntry?.satname}
-              onClick={() => setFocusedSatname(entry.satname)}
+              onClick={() =>
+                setFocusedSatname((current) =>
+                  nextFocusedSatname(current, entry.satname),
+                )
+              }
             >
               <span className="compact-tile-preview">
                 <iframe
@@ -177,7 +192,10 @@ export function RegistryView({
 
       {focusedEntry ? (
         <div className="registry-focused-detail">
-          {renderLargeCard(focusedEntry, `${tabId}-${focusedEntry.satname}-focused`)}
+          {renderLargeCard(
+            focusedEntry,
+            `${tabId}-${focusedEntry.satname}-focused-open`,
+          )}
         </div>
       ) : null}
     </section>

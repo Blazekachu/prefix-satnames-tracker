@@ -64,10 +64,12 @@ function InscriptionCard({
   entry,
   cardKey,
   nested = false,
+  forceOpen = false,
 }: {
   entry: SatnameInscription;
   cardKey: string;
   nested?: boolean;
+  forceOpen?: boolean;
 }) {
   const inscriptionUrl = ordinalsPath(`/inscription/${entry.inscription.id}`);
   const satUrl = ordinalsPath(`/sat/${entry.satname}`);
@@ -76,6 +78,7 @@ function InscriptionCard({
     <details
       className={nested ? "asset-card nested-asset-card" : "asset-card"}
       key={cardKey}
+      open={forceOpen}
     >
       <summary>
         <span className="asset-preview">
@@ -326,7 +329,12 @@ function RegistryPanel({
         mode={viewMode}
         tabId={tabId}
         renderLargeCard={(entry, cardKey) => (
-          <InscriptionCard cardKey={cardKey} entry={entry} key={cardKey} />
+          <InscriptionCard
+            cardKey={cardKey}
+            entry={entry}
+            key={cardKey}
+            forceOpen={cardKey.endsWith("-focused-open")}
+          />
         )}
       />
     </section>
