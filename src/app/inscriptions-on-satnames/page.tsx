@@ -1,10 +1,28 @@
+"use client";
+
+import { useState } from "react";
+
+import { satnameToSat, validateSatname } from "../../core/satname";
+import {
+  lookupSatnameInscription,
+  type DiscoveryResult,
+} from "./discovery";
 import {
   type Fact,
   ORDINALS,
   REGISTRY_TABS,
+  type RegistryTabId,
   type SatnameInscription,
   getEntriesForTab,
 } from "./registry";
+import { RequestForm } from "./request-form";
+import {
+  RegistryView,
+  type RegistryViewMode,
+  ViewModePicker,
+} from "./view-modes";
+
+const REQUEST_ENDPOINT = process.env.NEXT_PUBLIC_ADD_REQUEST_ENDPOINT ?? "";
 
 function ordinalsPath(path: string) {
   return `${ORDINALS}${path}`;
@@ -55,7 +73,10 @@ function InscriptionCard({
   const satUrl = ordinalsPath(`/sat/${entry.satname}`);
 
   return (
-    <details className={nested ? "asset-card nested-asset-card" : "asset-card"} key={cardKey}>
+    <details
+      className={nested ? "asset-card nested-asset-card" : "asset-card"}
+      key={cardKey}
+    >
       <summary>
         <span className="asset-preview">
           <iframe
@@ -106,19 +127,13 @@ function InscriptionCard({
             <FieldList
               facts={[
                 { label: "ID", value: entry.inscription.id },
-                {
-                  label: "Content type",
-                  value: entry.inscription.contentType,
-                },
+                { label: "Content type", value: entry.inscription.contentType },
                 {
                   label: "Content length",
                   value: entry.inscription.contentLength,
                 },
                 { label: "Height", value: entry.inscription.height },
-                {
-                  label: "Timestamp",
-                  value: entry.inscription.timestamp,
-                },
+                { label: "Timestamp", value: entry.inscription.timestamp },
                 { label: "Value", value: entry.inscription.value },
                 { label: "Fee", value: entry.inscription.fee },
                 {
@@ -219,12 +234,84 @@ function InscriptionCard({
   );
 }
 
-function RegistryPanel({ tabId }: { tabId: "ord-father" | "all" }) {
+function DiscoveryResultCard({
+  discovery,
+  satname,
+}: {
+  discovery: DiscoveryResult;
+  satname: string;
+}) {
+  const [showRequestForm, setShowRequestForm] = useState(false);
+
+  return (
+    <div className="discovery-result">
+      <div className="discovery-result-copy">
+        <p className="eyebrow">Live discovery result</p>
+        <h2>{satname}</h2>
+        <p className="discovery-result-meta">
+          Sat {discovery.sat.toString()}
+        </p>
+      </div>
+
+      {discovery.status === "inscribed" ? (
+        <>
+          <p className="discovery-result-status discovery-result-status-success">
+            Confirmed inscription {discovery.inscriptionId}
+          </p>
+          <div className="discovery-result-actions">
+            <a
+              href={discovery.inscriptionUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="primary-button discovery-link-button"
+            >
+              View inscription
+            </a>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={() => setShowRequestForm((value) => !value)}
+            >
+              {showRequestForm ? "Hide request" : "Add Request"}
+            </button>
+          </div>
+          {showRequestForm ? (
+            <RequestForm
+              satname={satname}
+              sat={discovery.sat}
+              inscriptionId={discovery.inscriptionId}
+              inscriptionUrl={discovery.inscriptionUrl}
+              endpoint={REQUEST_ENDPOINT}
+            />
+          ) : null}
+        </>
+      ) : null}
+
+      {discovery.status === "not-inscribed" ? (
+        <p className="discovery-result-status">No inscription found.</p>
+      ) : null}
+
+      {discovery.status === "lookup-unavailable" ? (
+        <p className="discovery-result-status discovery-result-status-error">
+          {discovery.message}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
+function RegistryPanel({
+  tabId,
+  viewMode,
+}: {
+  tabId: RegistryTabId;
+  viewMode: RegistryViewMode;
+}) {
   const entries = getEntriesForTab(tabId);
   const tab = REGISTRY_TABS.find((item) => item.id === tabId);
 
   return (
-    <section className={`registry-panel registry-panel-${tabId}`}>
+    <section className={`registry-panel registry-panel-active registry-panel-${tabId}`}>
       <div className="registry-note lineage-banner">{tab?.note}</div>
       {tabId === "ord-father" ? (
         <div className="registry-note">
@@ -234,23 +321,60 @@ function RegistryPanel({ tabId }: { tabId: "ord-father" | "all" }) {
         </div>
       ) : null}
 
-      <section
-        className="asset-gallery"
-        aria-label={`${tabId} satname inscriptions`}
-      >
-        {entries.map((entry) => (
-          <InscriptionCard
-            cardKey={`${tabId}-${entry.satname}`}
-            entry={entry}
-            key={`${tabId}-${entry.satname}`}
-          />
-        ))}
-      </section>
+      <RegistryView
+        entries={entries}
+        mode={viewMode}
+        tabId={tabId}
+        renderLargeCard={(entry, cardKey) => (
+          <InscriptionCard cardKey={cardKey} entry={entry} key={cardKey} />
+        )}
+      />
     </section>
   );
 }
 
 export default function InscriptionsOnSatnamesPage() {
+  const [activeTab, setActiveTab] = useState<RegistryTabId>("ord-father");
+  const [viewMode, setViewMode] = useState<RegistryViewMode>("large");
+  const [query, setQuery] = useState("");
+  const [lookupError, setLookupError] = useState<string | null>(null);
+  const [lookupState, setLookupState] = useState<"idle" | "loading">("idle");
+  const [discovery, setDiscovery] = useState<DiscoveryResult | null>(null);
+  const [discoveredSatname, setDiscoveredSatname] = useState<string | null>(null);
+
+  async function onDiscoverySubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setLookupError(null);
+    setDiscovery(null);
+    setDiscoveredSatname(null);
+
+    const validated = validateSatname(query);
+    if (!validated.ok) {
+      setLookupError(validated.error);
+      return;
+    }
+
+    setQuery(validated.satname);
+    setLookupState("loading");
+    setDiscoveredSatname(validated.satname);
+
+    const computedSat = satnameToSat(validated.satname);
+
+    try {
+      const result = await lookupSatnameInscription(validated.satname);
+      setDiscovery(result);
+      if (result.sat !== computedSat) {
+        setDiscovery({
+          status: "lookup-unavailable",
+          sat: computedSat,
+          message: "Live lookup unavailable",
+        });
+      }
+    } finally {
+      setLookupState("idle");
+    }
+  }
+
   return (
     <main className="page-shell">
       <section className="registry-hero">
@@ -260,53 +384,66 @@ export default function InscriptionsOnSatnamesPage() {
         <p className="eyebrow">Curated registry</p>
         <h1 className="title">Inscriptions on satnames</h1>
         <p className="lede">
-          Known satnames that carry inscriptions. The featured tab foregrounds
-          the verified inscription 0 lineage on named sats, while the second
-          tab keeps the broader tracked registry on the same page.
+          Search any satname live, jump to its inscription if it exists, then
+          browse the curated registry in table, compact, or large-card view.
         </p>
+
+        <section className="discovery-shell" aria-label="Satname discovery">
+          <form className="search-form discovery-form" onSubmit={onDiscoverySubmit}>
+            <input
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Type a satname"
+              className="text-input"
+              aria-label="Satname"
+            />
+            <button
+              type="submit"
+              className="primary-button"
+              disabled={lookupState === "loading"}
+            >
+              {lookupState === "loading" ? "Checking..." : "Check live"}
+            </button>
+          </form>
+
+          {lookupError ? <p className="error-text">{lookupError}</p> : null}
+
+          {discovery && discoveredSatname ? (
+            <DiscoveryResultCard
+              discovery={discovery}
+              satname={discoveredSatname}
+            />
+          ) : null}
+        </section>
       </section>
 
       <section
         className="registry-tabs"
         aria-label="Inscriptions on satnames tabs"
       >
-        <input
-          className="registry-tab-toggle"
-          defaultChecked
-          id="registry-tab-ord-father"
-          name="registry-tab"
-          type="radio"
-        />
-        <input
-          className="registry-tab-toggle"
-          id="registry-tab-all"
-          name="registry-tab"
-          type="radio"
-        />
+        <div className="registry-toolbar">
+          <div
+            className="registry-tab-list"
+            role="tablist"
+            aria-label="Registry tabs"
+          >
+            {REGISTRY_TABS.map((tab) => (
+              <button
+                key={tab.id}
+                type="button"
+                className="registry-tab-label"
+                data-active={tab.id === activeTab}
+                onClick={() => setActiveTab(tab.id)}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
 
-        <div
-          className="registry-tab-list"
-          role="tablist"
-          aria-label="Registry tabs"
-        >
-          <label
-            className="registry-tab-label"
-            htmlFor="registry-tab-ord-father"
-            role="tab"
-          >
-            Named Sats by ORD FATHER
-          </label>
-          <label
-            className="registry-tab-label"
-            htmlFor="registry-tab-all"
-            role="tab"
-          >
-            All named sats tracked yet
-          </label>
+          <ViewModePicker value={viewMode} onChange={setViewMode} />
         </div>
 
-        <RegistryPanel tabId="ord-father" />
-        <RegistryPanel tabId="all" />
+        <RegistryPanel tabId={activeTab} viewMode={viewMode} />
       </section>
     </main>
   );
