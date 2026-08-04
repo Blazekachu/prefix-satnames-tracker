@@ -712,6 +712,25 @@ button:disabled {
   line-height: 1.1;
 }
 
+.nested-asset-card[open] > summary {
+  grid-template-columns: 1fr;
+}
+
+.nested-asset-card[open] > summary .asset-caption {
+  border-left: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px;
+}
+
+.nested-asset-card[open] > summary .asset-caption span {
+  font-size: clamp(1rem, 1.5vw, 1.45rem);
+  line-height: 1.1;
+}
+
+.nested-asset-card[open] > summary .asset-caption small {
+  max-width: none;
+}
+
 .nested-asset-card .asset-caption small {
   font-size: 0.74rem;
   line-height: 1.4;
@@ -980,6 +999,10 @@ button:disabled {
 .compact-tile[data-featured="true"] {
   border-color: rgba(247, 166, 66, 0.5);
   box-shadow: inset 0 0 0 1px rgba(247, 166, 66, 0.12);
+}
+
+.compact-tile[data-featured="true"] .compact-tile-copy strong {
+  color: #f0d99a;
 }
 
 .compact-tile-copy {
