@@ -28,6 +28,17 @@ function ordinalsPath(path: string) {
   return `${ORDINALS}${path}`;
 }
 
+function cardSummaryLabel(entry: SatnameInscription): string {
+  if (!entry.lineage) return entry.role;
+  return entry.lineage.badge === entry.role
+    ? entry.role
+    : `${entry.role} | ${entry.lineage.badge}`;
+}
+
+function displaySatname(entry: SatnameInscription): string {
+  return entry.namedSatBranch ? `${entry.satname}*` : entry.satname;
+}
+
 function FieldList({ facts }: { facts: Fact[] }) {
   return (
     <dl className="satname-fields">
@@ -73,10 +84,14 @@ function InscriptionCard({
 }) {
   const inscriptionUrl = ordinalsPath(`/inscription/${entry.inscription.id}`);
   const satUrl = ordinalsPath(`/sat/${entry.satname}`);
+  const satnameLabel = displaySatname(entry);
+  const summaryLabel = cardSummaryLabel(entry);
 
   return (
     <details
-      className={nested ? "asset-card nested-asset-card" : "asset-card"}
+      className={`${nested ? "asset-card nested-asset-card" : "asset-card"}${
+        entry.namedSatBranch ? " featured-named-sat-card" : ""
+      }`}
       key={cardKey}
       open={forceOpen}
     >
@@ -90,11 +105,8 @@ function InscriptionCard({
           />
         </span>
         <span className="asset-caption">
-          <span>{entry.satname}</span>
-          <small>
-            {entry.role}
-            {entry.lineage ? ` | ${entry.lineage.badge}` : ""}
-          </small>
+          <span>{satnameLabel}</span>
+          <small>{summaryLabel}</small>
         </span>
       </summary>
 
@@ -102,7 +114,7 @@ function InscriptionCard({
         <div className="satname-card-heading">
           <div>
             <p className="eyebrow">{entry.lineage?.badge ?? entry.role}</p>
-            <h2>{entry.satname}</h2>
+            <h2>{satnameLabel}</h2>
           </div>
           <a href={inscriptionUrl} target="_blank" rel="noreferrer">
             Inscription {entry.inscription.number}
@@ -117,7 +129,7 @@ function InscriptionCard({
             <FieldList
               facts={[
                 { label: "Sat", value: entry.sat.number },
-                { label: "Satname", value: entry.satname },
+                { label: "Satname", value: satnameLabel },
                 { label: "Block", value: entry.sat.block },
                 { label: "Timestamp", value: entry.sat.timestamp },
                 { label: "Rarity", value: entry.sat.rarity },
@@ -188,7 +200,11 @@ function InscriptionCard({
         {entry.descendants && !entry.children?.length ? (
           <div className="satname-sections">
             <DescendantList
-              label={entry.descendants.label}
+              label={
+                entry.namedSatBranch
+                  ? `${entry.descendants.label} *`
+                  : entry.descendants.label
+              }
               satnames={entry.descendants.satnames}
             />
           </div>

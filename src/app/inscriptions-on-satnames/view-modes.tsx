@@ -29,6 +29,10 @@ export function nextFocusedSatname(
   return current === target ? null : target;
 }
 
+function displaySatname(entry: SatnameInscription): string {
+  return entry.namedSatBranch ? `${entry.satname}*` : entry.satname;
+}
+
 export function ViewModePicker({ value, onChange }: ViewModePickerProps) {
   return (
     <div className="view-mode-picker" aria-label="Registry view mode">
@@ -124,7 +128,11 @@ export function RegistryView({
                     </span>
                   </td>
                   <td>
-                    <strong>{entry.satname}</strong>
+                    <strong
+                      className={entry.namedSatBranch ? "featured-named-sat-text" : undefined}
+                    >
+                      {displaySatname(entry)}
+                    </strong>
                   </td>
                   <td>{entry.role}</td>
                   <td>#{entry.inscription.number}</td>
@@ -167,6 +175,7 @@ export function RegistryView({
               type="button"
               className="compact-tile"
               data-active={entry.satname === focusedEntry?.satname}
+              data-featured={entry.namedSatBranch ? "true" : "false"}
               onClick={() =>
                 setFocusedSatname((current) =>
                   nextFocusedSatname(current, entry.satname),
@@ -182,7 +191,7 @@ export function RegistryView({
                 />
               </span>
               <span className="compact-tile-copy">
-                <strong>{entry.satname}</strong>
+                <strong>{displaySatname(entry)}</strong>
                 <small>{entry.lineage?.badge ?? entry.role}</small>
               </span>
             </button>

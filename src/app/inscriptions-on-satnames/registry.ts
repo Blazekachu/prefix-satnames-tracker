@@ -27,6 +27,7 @@ export type SatnameInscription = {
   tabs: RegistryTabId[];
   role: string;
   summary: string;
+  namedSatBranch?: boolean;
   sat: {
     number: string;
     block: string;
@@ -219,6 +220,7 @@ export const registryEntries: SatnameInscription[] = [
     satname: "falsecolors",
     tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
+    namedSatBranch: true,
     summary:
       "This direct child of inscription 0 sits on a named sat and carries the clearest small named-sat subtree currently verified under the root. The branch has 8 direct children and each confirmed child lands on its own named sat.",
     sat: {
