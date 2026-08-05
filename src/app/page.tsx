@@ -3,12 +3,16 @@
 import { useState } from "react";
 import { validatePrefix } from "@/core/prefix";
 import { buildReport, PrefixReport } from "@/core/report";
+import { SUPPLY } from "@/core/sat-math";
 import { fetchTipHeight } from "@/lib/tip";
 import { formatBigInt } from "@/lib/format";
 import { series1Banner } from "@/lib/banner";
 
 const COLLAPSE_AT = 10;
 const EXQUISITE_PREFIX = "exquisite";
+const EXQUISITE_MATCHING_SATS = 703n;
+/** Share of scheduled sat supply, shown to 15 decimal places. */
+const EXQUISITE_SUPPLY_SHARE = "0.000000000033476%";
 const EXQUISITE_INSCRIPTION_ID =
   "db044cb57073abf71bbab6111415e3c0a38cce1428d364c8f275e9d8995252dbi201";
 const EXQUISITE_INSCRIPTION_URL = `https://ordinals.com/inscription/${EXQUISITE_INSCRIPTION_ID}`;
@@ -95,10 +99,15 @@ export default function Home() {
             </div>
           </div>
           <div className="header-actions">
-            <a href="inscriptions-on-satnames/" className="header-link">
-              Inscriptions on satnames
+            <a
+              href="inscriptions-on-satnames/"
+              className="header-link header-link-cta"
+            >
+              <span>Explore inscriptions on satnames</span>
+              <span aria-hidden="true" className="header-link-cta-arrow">
+                -&gt;
+              </span>
             </a>
-            <div className="privacy-pill">Client-side math</div>
           </div>
         </div>
 
@@ -114,6 +123,7 @@ export default function Home() {
             {loading ? "Tracing..." : "Track"}
           </button>
         </form>
+        <div className="trust-note"><span className="trust-note-icon" aria-hidden="true">&#x25CF;</span><span>Runs in your browser. Only tip height is fetched.</span></div>
 
         {error && <p className="error-text">{error}</p>}
 
@@ -244,14 +254,17 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
         <h2 id="example-title">Example: exquisite</h2>
         <p className="example-copy">
           The tracker follows every sat-name that starts with a prefix. For{" "}
-          <strong>exquisite*</strong>, only <strong>703 sats</strong> exist out
-          of <strong>2,100,000,000,000,000</strong> total Bitcoin sats:{" "}
-          <strong>0.000000000033476%</strong> of the full supply.
+          <strong>exquisite*</strong>, only{" "}
+          <strong>{formatBigInt(EXQUISITE_MATCHING_SATS)} sats</strong> exist
+          out of <strong>{formatBigInt(SUPPLY)}</strong> total Bitcoin sats:{" "}
+          <strong>{EXQUISITE_SUPPLY_SHARE}</strong> of the full scheduled supply.
         </p>
 
         <div className="stat-grid" aria-label="Exquisite sat-name rarity stats">
           <div className="stat-card">
-            <span className="stat-value">703</span>
+            <span className="stat-value">
+              {formatBigInt(EXQUISITE_MATCHING_SATS)}
+            </span>
             <span className="stat-label">matching sats total</span>
           </div>
           <div className="stat-card">
@@ -260,7 +273,7 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
           </div>
           <div className="stat-card">
             <span className="stat-value stat-value-long">
-              0.000000000033476%
+              {EXQUISITE_SUPPLY_SHARE}
             </span>
             <span className="stat-label">of all Bitcoin sats</span>
           </div>
@@ -322,3 +335,4 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
     </section>
   );
 }
+

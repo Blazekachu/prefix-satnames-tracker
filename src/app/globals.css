@@ -119,6 +119,22 @@ button:disabled {
   white-space: nowrap;
 }
 
+.trust-note {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.trust-note-icon {
+  color: rgba(75, 91, 171, 0.92);
+  font-size: 0.6rem;
+  transform: translateY(-1px);
+}
+
 .header-actions {
   display: flex;
   flex: 0 0 auto;
@@ -133,6 +149,44 @@ button:disabled {
   font-size: 0.86rem;
   font-weight: 800;
   text-decoration: none;
+}
+
+.header-link-cta {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #f2a23f;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background:
+    linear-gradient(135deg, #ffb54f 0%, #f7931a 58%, #d96b06 100%);
+  box-shadow:
+    0 12px 28px rgba(247, 147, 26, 0.22),
+    inset 0 1px 0 rgba(255, 244, 220, 0.2);
+  color: #211206;
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    filter 140ms ease;
+}
+
+.header-link-cta-arrow {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.header-link-cta:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 16px 36px rgba(247, 147, 26, 0.3),
+    inset 0 1px 0 rgba(255, 244, 220, 0.24);
+  filter: saturate(1.05);
+  text-decoration: none;
+}
+
+.header-link-cta:focus-visible {
+  outline: 2px solid rgba(255, 214, 153, 0.9);
+  outline-offset: 3px;
 }
 
 .header-link:hover,
@@ -1102,6 +1156,10 @@ button:disabled {
     align-items: flex-start;
   }
 
+  .header-link-cta {
+    justify-content: center;
+  }
+
   .primary-button,
   .secondary-button {
     width: 100%;
@@ -1161,3 +1219,4 @@ button:disabled {
     justify-content: center;
   }
 }
+

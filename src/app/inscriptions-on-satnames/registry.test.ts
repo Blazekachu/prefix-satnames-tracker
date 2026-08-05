@@ -1,6 +1,10 @@
 import { describe, expect, it } from "vitest";
 
-import { getEntriesForTab } from "./registry";
+import {
+  findRegistryEntryBySatname,
+  getEntriesForTab,
+  isSatnameInRegistry,
+} from "./registry";
 
 describe("getEntriesForTab", () => {
   it("returns only named-sat branch entries in featured order", () => {
@@ -82,5 +86,28 @@ describe("getEntriesForTab", () => {
 
     expect(Boolean(blob?.childBrowser)).toBe(true);
     expect(Boolean(doctor?.childBrowser)).toBe(false);
+  });
+});
+
+describe("findRegistryEntryBySatname", () => {
+  it("finds top-level curated satnames", () => {
+    expect(findRegistryEntryBySatname("falsecolors")?.satname).toBe(
+      "falsecolors",
+    );
+    expect(findRegistryEntryBySatname("blobnwthems")?.satname).toBe(
+      "blobnwthems",
+    );
+  });
+
+  it("finds nested child cards and normalizes case", () => {
+    expect(findRegistryEntryBySatname("BadgerTooth")?.satname).toBe(
+      "badgertooth",
+    );
+    expect(isSatnameInRegistry("breathelast")).toBe(true);
+  });
+
+  it("returns null for satnames outside the curated registry", () => {
+    expect(findRegistryEntryBySatname("notarealsatname")).toBeNull();
+    expect(isSatnameInRegistry("notarealsatname")).toBe(false);
   });
 });

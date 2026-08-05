@@ -13,6 +13,7 @@ import {
   REGISTRY_TABS,
   type RegistryTabId,
   type SatnameInscription,
+  findRegistryEntryBySatname,
   getEntriesForTab,
 } from "./registry";
 import { RequestForm } from "./request-form";
@@ -334,6 +335,8 @@ function DiscoveryResultCard({
   satname: string;
 }) {
   const [showRequestForm, setShowRequestForm] = useState(false);
+  const trackedEntry = findRegistryEntryBySatname(satname);
+  const alreadyTracked = trackedEntry !== null;
 
   return (
     <div className="discovery-result">
@@ -350,6 +353,15 @@ function DiscoveryResultCard({
           <p className="discovery-result-status discovery-result-status-success">
             Confirmed inscription {discovery.inscriptionId}
           </p>
+          {alreadyTracked ? (
+            <p className="discovery-result-status">
+              Already in this curated registry
+              {trackedEntry.tabs.includes("ord-father")
+                ? " (Named Sats by ORD FATHER)"
+                : " (All named sats tracked yet)"}
+              .
+            </p>
+          ) : null}
           <div className="discovery-result-actions">
             <a
               href={discovery.inscriptionUrl}
@@ -359,15 +371,17 @@ function DiscoveryResultCard({
             >
               View inscription
             </a>
-            <button
-              type="button"
-              className="secondary-button"
-              onClick={() => setShowRequestForm((value) => !value)}
-            >
-              {showRequestForm ? "Hide request" : "Add Request"}
-            </button>
+            {!alreadyTracked ? (
+              <button
+                type="button"
+                className="secondary-button"
+                onClick={() => setShowRequestForm((value) => !value)}
+              >
+                {showRequestForm ? "Hide request" : "Add Request"}
+              </button>
+            ) : null}
           </div>
-          {showRequestForm ? (
+          {!alreadyTracked && showRequestForm ? (
             <RequestForm
               satname={satname}
               sat={discovery.sat}
@@ -432,7 +446,7 @@ function RegistryPanel({
 
 export default function InscriptionsOnSatnamesPage() {
   const [activeTab, setActiveTab] = useState<RegistryTabId>("ord-father");
-  const [viewMode, setViewMode] = useState<RegistryViewMode>("large");
+  const [viewMode, setViewMode] = useState<RegistryViewMode>("compact");
   const [query, setQuery] = useState("");
   const [lookupError, setLookupError] = useState<string | null>(null);
   const [lookupState, setLookupState] = useState<"idle" | "loading">("idle");

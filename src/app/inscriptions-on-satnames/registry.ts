@@ -851,3 +851,42 @@ export const registryEntries: SatnameInscription[] = [
 export function getEntriesForTab(tabId: RegistryTabId): SatnameInscription[] {
   return registryEntries.filter((entry) => entry.tabs.includes(tabId));
 }
+
+function walkRegistryEntries(
+  entries: SatnameInscription[],
+  visit: (entry: SatnameInscription) => boolean,
+): SatnameInscription | null {
+  for (const entry of entries) {
+    if (visit(entry)) {
+      return entry;
+    }
+
+    if (entry.children?.length) {
+      const nested = walkRegistryEntries(entry.children, visit);
+      if (nested) {
+        return nested;
+      }
+    }
+  }
+
+  return null;
+}
+
+/** Find a curated registry entry by satname, including nested child cards. */
+export function findRegistryEntryBySatname(
+  satname: string,
+): SatnameInscription | null {
+  const normalized = satname.trim().toLowerCase();
+  if (!normalized) {
+    return null;
+  }
+
+  return walkRegistryEntries(
+    registryEntries,
+    (entry) => entry.satname === normalized,
+  );
+}
+
+export function isSatnameInRegistry(satname: string): boolean {
+  return findRegistryEntryBySatname(satname) !== null;
+}

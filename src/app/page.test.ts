@@ -1,0 +1,25 @@
+﻿import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { describe, expect, it } from "vitest";
+import Home from "./page";
+
+describe("Home header CTA", () => {
+  it("renders inscriptions on satnames as a promoted call-to-action", () => {
+    const markup = renderToStaticMarkup(createElement(Home));
+
+    expect(markup).toContain('class="header-link header-link-cta"');
+    expect(markup).toContain("Explore inscriptions on satnames");
+    expect(markup).toContain('class="trust-note"');
+    expect(markup).toContain("Runs in your browser.");
+    expect(markup).toContain("Only tip height is fetched.");
+  });
+});
+
+describe("Home exquisite example supply", () => {
+  it("uses the exact scheduled sat supply, not the rounded 21M figure", () => {
+    const markup = renderToStaticMarkup(createElement(Home));
+
+    expect(markup).toContain("2,099,999,997,690,000");
+    expect(markup).not.toContain("2,100,000,000,000,000");
+  });
+});
