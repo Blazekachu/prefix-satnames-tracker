@@ -196,6 +196,18 @@ function SeriesCard({ series }: { series: PrefixReport["series"][number] }) {
         {formatBigInt(series.satCount)} sats)
       </div>
 
+      {series.overallStatus === "mined" ? (
+        <div className="series-card-actions">
+          <a
+            href="know-present-location/"
+            className="series-trace-link"
+            title="Know Present Location of Sats from This Series"
+          >
+            Trace locations
+          </a>
+        </div>
+      ) : null}
+
       {collapsed ? (
         <div className="collapsed-blocks">
           blocks {formatBigInt(BigInt(segments[0].height))} ...{" "}

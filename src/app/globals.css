@@ -313,6 +313,33 @@ button:disabled {
   margin-top: 6px;
 }
 
+.series-card-actions {
+  margin-top: 12px;
+}
+
+.series-trace-link {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface-strong);
+  color: var(--text);
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.series-trace-link:hover {
+  border-color: var(--orange);
+  color: #f7d7b0;
+}
+
+.series-trace-link:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
 .status-dot {
   color: var(--status-color);
 }
