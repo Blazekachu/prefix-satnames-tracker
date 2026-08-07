@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import { ThemeToggle } from "./theme-toggle";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -6,14 +8,22 @@ export const metadata: Metadata = {
   description: "Enumerate sat-name series for a prefix and their Bitcoin blocks.",
 };
 
+const themeInitScript = `(function(){try{var t=localStorage.getItem("pst-theme");document.documentElement.setAttribute("data-theme",(t==="light"||t==="dark")?t:"dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();`;
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body>
+        <ThemeToggle />
+        {children}
+      </body>
     </html>
   );
 }
