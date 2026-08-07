@@ -1247,3 +1247,66 @@ button:disabled {
   }
 }
 
+.guide-page .guide-section {
+  margin-top: 28px;
+}
+
+.guide-page .guide-section h2 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+}
+
+.guide-page .guide-section p,
+.guide-page .guide-section li {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.guide-page .guide-section ul,
+.guide-page .guide-section ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.guide-page .guide-code {
+  margin: 12px 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  white-space: pre;
+}
+
+.guide-table-wrap {
+  margin: 12px 0;
+  overflow-x: auto;
+}
+
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.guide-table th,
+.guide-table td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+  color: var(--muted);
+}
+
+.guide-table th {
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.guide-page a[href^="http"] {
+  color: #f7d7b0;
+}
+
