@@ -120,7 +120,7 @@ npm start`}</pre>
 
       <section className="guide-section">
         <h2>5. Wizard</h2>
-        <ol>
+        <ul>
           <li>
             Disclosure → choose mode → credentials → list mined series →
             expectations → start.
@@ -135,7 +135,7 @@ npm start`}</pre>
             Enter the same prefix you looked up on this site, then pick the
             mined series you care about.
           </li>
-        </ol>
+        </ul>
       </section>
 
       <section className="guide-section">
