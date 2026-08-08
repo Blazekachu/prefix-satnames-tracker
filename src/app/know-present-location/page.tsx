@@ -1,3 +1,5 @@
+import { BrandHero } from "@/app/brand-hero";
+
 const TRACK_PREFIX_REPO = "https://github.com/Blazekachu/track-prefix";
 const TRACK_PREFIX_README = `${TRACK_PREFIX_REPO}#readme`;
 
@@ -8,7 +10,7 @@ export default function KnowPresentLocationPage() {
         Back to tracker
       </a>
       <p className="eyebrow">Handoff to track-prefix</p>
-      <h1 className="title">Know present location of sats</h1>
+      <BrandHero pageTitle="Know present location of sats" />
       <p className="lede">
         This site shows which sat-name prefix series exist and which are
         already mined. To learn where those sats sit today, run{" "}
