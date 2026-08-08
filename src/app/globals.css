@@ -141,6 +141,8 @@ button:disabled {
 
 .brand-lockup {
   display: flex;
+  flex: 1;
+  min-width: 0;
   gap: 18px;
   align-items: flex-start;
 }
@@ -166,16 +168,18 @@ button:disabled {
 
 .title {
   margin: 0;
-  font-size: clamp(2rem, 5vw, 4.35rem);
-  line-height: 0.95;
+  font-size: clamp(1.35rem, 3.6vw, 3.05rem);
+  line-height: 1.05;
   letter-spacing: 0;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .page-title {
   margin: 10px 0 0;
   font-size: clamp(1.05rem, 2.5vw, 2.15rem);
   line-height: 1.05;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0;
   color: var(--text);
 }
