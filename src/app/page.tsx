@@ -94,8 +94,11 @@ export default function Home() {
               <p className="eyebrow">Ordinal sat names range finder</p>
               <BrandHero pageTitle="Prefix Sat Names Tracker" />
               <p className="lede">
-                Enter a prefix to see every sat name series, the exact sat
-                ranges, and the Bitcoin blocks where those names land.
+                Enter a prefix to see every sat name series,
+                <br />
+                The exact sat ranges, and
+                <br />
+                The Bitcoin blocks where those names land
               </p>
             </div>
           </div>
