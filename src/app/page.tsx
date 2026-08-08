@@ -7,6 +7,7 @@ import { SUPPLY } from "@/core/sat-math";
 import { fetchTipHeight } from "@/lib/tip";
 import { formatBigInt } from "@/lib/format";
 import { series1Banner } from "@/lib/banner";
+import { BrandHero } from "@/app/brand-hero";
 
 const COLLAPSE_AT = 10;
 const EXQUISITE_PREFIX = "exquisite";
@@ -91,7 +92,7 @@ export default function Home() {
             />
             <div>
               <p className="eyebrow">Ordinal sat-name range finder</p>
-              <h1 className="title">Prefix Satnames Tracker</h1>
+              <BrandHero pageTitle="Prefix Satnames Tracker" />
               <p className="lede">
                 Enter a prefix to see every sat-name series, the exact sat
                 ranges, and the Bitcoin blocks where those names land.
