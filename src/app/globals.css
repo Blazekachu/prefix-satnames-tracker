@@ -1364,8 +1364,26 @@ button:disabled {
 
 .guide-page .guide-section ul,
 .guide-page .guide-section ol {
-  margin: 0;
-  padding-left: 1.25rem;
+  margin: 0.35rem 0 0;
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+
+.guide-page .guide-section ul {
+  list-style-type: disc;
+}
+
+.guide-page .guide-section ol {
+  list-style-type: decimal;
+}
+
+.guide-page .guide-section li + li {
+  margin-top: 0.45rem;
+}
+
+.guide-page .guide-section li::marker {
+  color: var(--orange);
+  font-weight: 800;
 }
 
 .guide-page .guide-code {
