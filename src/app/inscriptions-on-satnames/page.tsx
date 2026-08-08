@@ -62,7 +62,7 @@ function BlobChildBrowserPanel({
           <dd>{entry.childBrowser.count}</dd>
         </div>
         <div>
-          <dt>Child satname range</dt>
+          <dt>Child sat name range</dt>
           <dd>
             {entry.childBrowser.satnameRangeStart} -&gt;{" "}
             {entry.childBrowser.satnameRangeEnd}
@@ -180,7 +180,7 @@ function InscriptionCard({
             <FieldList
               facts={[
                 { label: "Sat", value: entry.sat.number },
-                { label: "Satname", value: satnameLabel },
+                { label: "Sat name", value: satnameLabel },
                 { label: "Block", value: entry.sat.block },
                 { label: "Timestamp", value: entry.sat.timestamp },
                 { label: "Rarity", value: entry.sat.rarity },
@@ -422,7 +422,7 @@ function RegistryPanel({
       <div className="registry-note lineage-banner">{tab?.note}</div>
       {tabId === "ord-father" ? (
         <div className="registry-note">
-          Root context: inscription 0 is on satname <strong>ezcubunuovm</strong>.
+          Root context: inscription 0 is on sat name <strong>ezcubunuovm</strong>.
           This tab focuses on the verified named-sat branches under that root,
           rather than repeating the root itself as a tracked card.
         </div>
@@ -494,20 +494,20 @@ export default function InscriptionsOnSatnamesPage() {
           Back to tracker
         </a>
         <p className="eyebrow">Curated registry</p>
-        <BrandHero pageTitle="Inscriptions on satnames" />
+        <BrandHero pageTitle="Inscriptions on sat names" />
         <p className="lede">
-          Search any satname live, jump to its inscription if it exists, then
+          Search any sat name live, jump to its inscription if it exists, then
           browse the curated registry in table, compact, or large-card view.
         </p>
 
-        <section className="discovery-shell" aria-label="Satname discovery">
+        <section className="discovery-shell" aria-label="Sat name discovery">
           <form className="search-form discovery-form" onSubmit={onDiscoverySubmit}>
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Type a satname"
+              placeholder="Type a sat name"
               className="text-input"
-              aria-label="Satname"
+              aria-label="Sat name"
             />
             <button
               type="submit"
@@ -531,7 +531,7 @@ export default function InscriptionsOnSatnamesPage() {
 
       <section
         className="registry-tabs"
-        aria-label="Inscriptions on satnames tabs"
+        aria-label="Inscriptions on sat names tabs"
       >
         <div className="registry-toolbar">
           <div

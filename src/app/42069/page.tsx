@@ -12,9 +12,9 @@ export default function KnowPresentLocationPage() {
       <p className="eyebrow">Handoff to track-prefix</p>
       <BrandHero pageTitle="Know present location of sats" />
       <p className="lede">
-        This site shows which sat-name prefix series exist and which are
+        This site shows which sat name prefix series exist and which are
         already mined. To learn where those sats sit today, run{" "}
-        <strong>track-prefix</strong> locally — a FIFO sat-name prefix tracer
+        <strong>track-prefix</strong> locally — a FIFO sat name prefix tracer
         that walks from coinbase to live UTXOs on your machine.
       </p>
 
@@ -22,7 +22,7 @@ export default function KnowPresentLocationPage() {
         <h2>1. What this is</h2>
         <p>
           track-prefix is a <strong>local-first</strong> tool (v0.1, MIT). You
-          pick a mined sat-name prefix series, and a worker traces those sats
+          pick a mined sat name prefix series, and a worker traces those sats
           with ordinal FIFO accounting into a local SQLite database and
           dashboard. It is not a hosted service: credentials and databases stay
           on your computer.

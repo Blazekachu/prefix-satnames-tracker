@@ -10,7 +10,7 @@ export interface PrefixError {
 
 export type PrefixResult = PrefixOk | PrefixError;
 
-/** Validate a sat-name prefix: 1-11 lowercase letters a-z. */
+/** Validate a sat name prefix: 1-11 lowercase letters a-z. */
 export function validatePrefix(input: string): PrefixResult {
   if (input.length === 0) {
     return { ok: false, error: "Prefix cannot be empty." };

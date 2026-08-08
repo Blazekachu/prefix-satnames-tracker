@@ -13,12 +13,12 @@ describe("STORY_HERO", () => {
 describe("BrandHero", () => {
   it("renders story as h1.title and pageTitle as p.page-title", () => {
     const html = renderToStaticMarkup(
-      createElement(BrandHero, { pageTitle: "Prefix Satnames Tracker" }),
+      createElement(BrandHero, { pageTitle: "Prefix Sat Names Tracker" }),
     );
 
     expect(html).toContain('<h1 class="title">Every sat has a story</h1>');
     expect(html).toContain(
-      '<p class="page-title">Prefix Satnames Tracker</p>',
+      '<p class="page-title">Prefix Sat Names Tracker</p>',
     );
     expect(html).not.toContain("mempool.space");
   });

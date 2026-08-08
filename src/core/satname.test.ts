@@ -13,7 +13,7 @@ describe("validateSatname", () => {
   it("rejects invalid characters", () => {
     expect(validateSatname("exquisite-1")).toEqual({
       ok: false,
-      error: "Satnames must contain only letters a-z.",
+      error: "Sat names must contain only letters a-z.",
     });
   });
 });

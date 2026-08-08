@@ -87,14 +87,14 @@ export default function Home() {
           <div className="brand-lockup">
             <img
               src="satname-search-logo.png"
-              alt="Prefix Satnames Tracker logo"
+              alt="Prefix Sat Names Tracker logo"
               className="site-logo"
             />
             <div>
-              <p className="eyebrow">Ordinal sat-name range finder</p>
-              <BrandHero pageTitle="Prefix Satnames Tracker" />
+              <p className="eyebrow">Ordinal sat names range finder</p>
+              <BrandHero pageTitle="Prefix Sat Names Tracker" />
               <p className="lede">
-                Enter a prefix to see every sat-name series, the exact sat
+                Enter a prefix to see every sat name series, the exact sat
                 ranges, and the Bitcoin blocks where those names land.
               </p>
             </div>
@@ -104,7 +104,7 @@ export default function Home() {
               href="inscriptions-on-satnames/"
               className="header-link header-link-cta"
             >
-              <span>Explore inscriptions on satnames</span>
+              <span>Explore inscriptions on sat names</span>
               <span aria-hidden="true" className="header-link-cta-arrow">
                 -&gt;
               </span>
@@ -118,7 +118,7 @@ export default function Home() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="e.g. bhang"
             className="text-input"
-            aria-label="Sat-name prefix"
+            aria-label="Sat name prefix"
           />
           <button type="submit" disabled={loading} className="primary-button">
             {loading ? "Tracing..." : "Track"}
@@ -266,14 +266,14 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
         <p className="eyebrow">On-chain example</p>
         <h2 id="example-title">Example: exquisite</h2>
         <p className="example-copy">
-          The tracker follows every sat-name that starts with a prefix. For{" "}
+          The tracker follows every sat name that starts with a prefix. For{" "}
           <strong>exquisite*</strong>, only{" "}
           <strong>{formatBigInt(EXQUISITE_MATCHING_SATS)} sats</strong> exist
           out of <strong>{formatBigInt(SUPPLY)}</strong> total Bitcoin sats:{" "}
           <strong>{EXQUISITE_SUPPLY_SHARE}</strong> of the full scheduled supply.
         </p>
 
-        <div className="stat-grid" aria-label="Exquisite sat-name rarity stats">
+        <div className="stat-grid" aria-label="Exquisite sat name rarity stats">
           <div className="stat-card">
             <span className="stat-value">
               {formatBigInt(EXQUISITE_MATCHING_SATS)}
@@ -282,7 +282,7 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
           </div>
           <div className="stat-card">
             <span className="stat-value">3</span>
-            <span className="stat-label">sat-name series</span>
+            <span className="stat-label">sat name series</span>
           </div>
           <div className="stat-card">
             <span className="stat-value stat-value-long">

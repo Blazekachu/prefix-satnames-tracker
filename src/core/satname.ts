@@ -8,11 +8,11 @@ export function validateSatname(input: string): SatnameValidationResult {
   const satname = input.trim().toLowerCase();
 
   if (satname.length === 0) {
-    return { ok: false, error: "Enter a satname." };
+    return { ok: false, error: "Enter a sat name." };
   }
 
   if (!/^[a-z]+$/.test(satname)) {
-    return { ok: false, error: "Satnames must contain only letters a-z." };
+    return { ok: false, error: "Sat names must contain only letters a-z." };
   }
 
   return { ok: true, satname };

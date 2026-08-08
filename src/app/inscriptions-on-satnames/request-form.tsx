@@ -48,7 +48,7 @@ export function RequestForm({
     <form className="request-form" onSubmit={onSubmit}>
       <div className="request-form-grid">
         <label className="request-form-field">
-          <span>Satname</span>
+          <span>Sat name</span>
           <input name="satname" readOnly value={satname} />
         </label>
 

@@ -4,11 +4,11 @@ import { describe, expect, it } from "vitest";
 import Home from "./page";
 
 describe("Home header CTA", () => {
-  it("renders inscriptions on satnames as a promoted call-to-action", () => {
+  it("renders inscriptions on sat names as a promoted call-to-action", () => {
     const markup = renderToStaticMarkup(createElement(Home));
 
     expect(markup).toContain('class="header-link header-link-cta"');
-    expect(markup).toContain("Explore inscriptions on satnames");
+    expect(markup).toContain("Explore inscriptions on sat names");
     expect(markup).toContain('class="trust-note"');
     expect(markup).toContain("Runs in your browser.");
     expect(markup).toContain("Only tip height is fetched.");

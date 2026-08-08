@@ -91,7 +91,7 @@ export function RegistryView({
 
   if (mode === "large") {
     return (
-      <section className="asset-gallery" aria-label={`${tabId} satname inscriptions`}>
+      <section className="asset-gallery" aria-label={`${tabId} sat name inscriptions`}>
         {entries.map((entry) =>
           renderLargeCard(entry, `${tabId}-${entry.satname}`),
         )}
@@ -100,14 +100,14 @@ export function RegistryView({
   }
 
   return (
-    <section className="registry-view-shell" aria-label={`${tabId} satname inscriptions`}>
+    <section className="registry-view-shell" aria-label={`${tabId} sat name inscriptions`}>
       {mode === "table" ? (
         <div className="registry-table-wrap">
           <table className="registry-table">
             <thead>
               <tr>
                 <th>Preview</th>
-                <th>Satname</th>
+                <th>Sat name</th>
                 <th>Role</th>
                 <th>Inscription</th>
                 <th>Context</th>

@@ -617,7 +617,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: ["all"],
     role: "Collection parent on a named sat",
     summary:
-      "The satname carries a video inscription with no parents and one direct child. That child is an image inscription with 420 visible children, so the named sat anchors the collection lineage above it.",
+      "The sat name carries a video inscription with no parents and one direct child. That child is an image inscription with 420 visible children, so the named sat anchors the collection lineage above it.",
     sat: {
       number: "1917572203052608",
       block: "758115",
@@ -681,7 +681,7 @@ export const registryEntries: SatnameInscription[] = [
         "The full Blob child set is browsed on ordinals.com to keep this page fast while preserving verified range facts here.",
     },
     summary:
-      "The satname carries the Blobs collection parent inscription. It has one parent root inscription and 10000 visible children. Research notes in ART on Blockchain describe the collection as metadata-seeded 3D shader art built through a recursive on-chain engine stack.",
+      "The sat name carries the Blobs collection parent inscription. It has one parent root inscription and 10000 visible children. Research notes in ART on Blockchain describe the collection as metadata-seeded 3D shader art built through a recursive on-chain engine stack.",
     sat: {
       number: "1749358685270167",
       block: "559486",
@@ -736,9 +736,9 @@ export const registryEntries: SatnameInscription[] = [
           "The notes trace a recursive stack: root, collection parent, per-Blob bootstrap, Book of Blob engine, shared on-chain libraries, shader module, and metadata reader.",
       },
       {
-        label: "Satname pattern",
+        label: "Sat name pattern",
         value:
-          "The documented Blob sat range uses blob-prefixed satnames such as blobnwthfme, blobnwthems, and blobnwthdng.",
+          "The documented Blob sat range uses blob-prefixed sat names such as blobnwthfme, blobnwthems, and blobnwthdng.",
       },
     ],
     externalLinks: [],
@@ -748,7 +748,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: ["all"],
     role: "Single asset in a parented collection",
     summary:
-      "The satname carries one HTML inscription with one parent and no direct children. The parent inscription is titled Ephemera Kit / Collection and has 332 visible children.",
+      "The sat name carries one HTML inscription with one parent and no direct children. The parent inscription is titled Ephemera Kit / Collection and has 332 visible children.",
     sat: {
       number: "1263083605557421",
       block: "295233",
@@ -801,7 +801,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: ["all"],
     role: "Single asset in a parented collection",
     summary:
-      "The satname carries one JPEG inscription with one parent and no direct children. The parent inscription has 82 visible children, and this entry is tracked as a Satgods collection asset.",
+      "The sat name carries one JPEG inscription with one parent and no direct children. The parent inscription has 82 visible children, and this entry is tracked as a Satgods collection asset.",
     sat: {
       number: "1540035249036520",
       block: "406014",
@@ -842,7 +842,7 @@ export const registryEntries: SatnameInscription[] = [
       { label: "Collection", value: "Satgods" },
       { label: "Collection source", value: "Owner-provided classification" },
       { label: "Parent charm", value: "9 nineball" },
-      { label: "Parent satname", value: "nvsxsrccvbl" },
+      { label: "Parent sat name", value: "nvsxsrccvbl" },
     ],
     externalLinks: [],
   },

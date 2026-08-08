@@ -1,6 +1,6 @@
-# Prefix Satnames Tracker
+# Prefix Sat Names Tracker
 
-Type a sat-name prefix, get **every series** for it — from the longest 11-letter
+Type a sat name prefix, get **every series** for it — from the longest 11-letter
 names down to the prefix itself as a single targeted satoshi — with each series'
 sat ranges, the Bitcoin blocks they fall in, and whether each block is already
 mined or a future unmined block.
