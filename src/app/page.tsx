@@ -200,7 +200,7 @@ function SeriesCard({ series }: { series: PrefixReport["series"][number] }) {
       {series.overallStatus === "mined" ? (
         <div className="series-card-actions">
           <a
-            href="know-present-location/"
+            href="42069/"
             className="series-trace-link"
             title="Know Present Location of Sats from This Series"
           >
