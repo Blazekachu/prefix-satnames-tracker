@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Press_Start_2P } from "next/font/google";
 
-import { ThemeToggle } from "./theme-toggle";
+import { SiteControls } from "./site-controls";
 import "./globals.css";
 
 const pixelDisplay = Press_Start_2P({
@@ -34,7 +34,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body>
-        <ThemeToggle />
+        <SiteControls />
         {children}
       </body>
     </html>

@@ -365,11 +365,18 @@ button:disabled {
   font-size: 0.82rem;
 }
 
-.theme-toggle {
+.site-controls {
   position: fixed;
   top: 14px;
   right: 14px;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.theme-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -391,6 +398,17 @@ button:disabled {
 .theme-toggle:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 2px;
+}
+
+.tip-height-badge {
+  margin: 0;
+  padding: 0 2px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  user-select: text;
 }
 
 .error-text {
