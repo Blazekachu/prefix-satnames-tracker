@@ -21,7 +21,7 @@ export default function KnowPresentLocationPage() {
       <section className="guide-section">
         <h2>1. What this is</h2>
         <p>
-          track-prefix is a <strong>local-first</strong> tool (v0.1, MIT). You
+          track-prefix is a <strong>local first</strong> tool (v0.1, MIT). You
           pick a mined sat name prefix series, and a worker traces those sats
           with ordinal FIFO accounting into a local SQLite database and
           dashboard. It is not a hosted service: credentials and databases stay
@@ -84,7 +84,7 @@ npm start`}</pre>
                 <td>Public API</td>
                 <td>Nothing</td>
                 <td>Public Esplora</td>
-                <td>First-sat scan via public ordinals endpoints</td>
+                <td>First sat scan via public ordinals endpoints</td>
               </tr>
               <tr>
                 <td>Paid / subscribed API</td>
@@ -102,7 +102,7 @@ npm start`}</pre>
                 <td>BTC + ORD nodes</td>
                 <td>RPC + ord HTTP URL</td>
                 <td>bitcoind + local ord</td>
-                <td>First-sat or every sat</td>
+                <td>First sat or every sat</td>
               </tr>
             </tbody>
           </table>
@@ -114,7 +114,7 @@ npm start`}</pre>
           </li>
           <li>Node modes: not limited that way (still one lock per job).</li>
           <li>
-            Pre-filled URLs like <code>http://127.0.0.1:8332</code> are local
+            Prefilled URLs like <code>http://127.0.0.1:8332</code> are local
             defaults — change them if your node listens elsewhere.
           </li>
         </ul>
@@ -130,7 +130,7 @@ npm start`}</pre>
           <li>
             For <strong>BTC node</strong> / <strong>BTC + ORD</strong>: fill
             credentials (stored only in local <code>config.json</code>,
-            gitignored). Optional Fill from Bitcoin cookie is click-only. Test
+            gitignored). Optional Fill from Bitcoin cookie is click only. Test
             connection must succeed before Next unlocks.
           </li>
           <li>
@@ -163,7 +163,7 @@ npm start`}</pre>
         <h2>7. Optional next steps</h2>
         <p>
           After UTXO track is complete, you can scan live UTXOs for inscriptions
-          (mode-dependent). Default is first sat per UTXO; every-sat scan needs
+          (mode dependent). Default is first sat per UTXO; every sat scan needs
           BTC + ORD. Useful CLI commands:
         </p>
         <pre className="guide-code">{`npm test

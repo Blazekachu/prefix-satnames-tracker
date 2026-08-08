@@ -57,7 +57,7 @@ export default function Home() {
       compute(validated.prefix, tip);
     } catch {
       setError(
-        "Couldn't reach any block-height source. Enter the current block height manually below.",
+        "Couldn't reach any block height source. Enter the current block height manually below.",
       );
       setPendingPrefix(validated.prefix);
     } finally {
@@ -182,7 +182,7 @@ function SeriesCard({ series }: { series: PrefixReport["series"][number] }) {
     <section className="series-card">
       <div className="series-title">
         <span>
-          Series {series.id} | {series.nameLength}-letter names |{" "}
+          Series {series.id} | {series.nameLength} letter names |{" "}
           {series.satStartName} ... {series.satEndName}
         </span>
         <span
@@ -263,7 +263,7 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
         />
       </div>
       <div className="example-content">
-        <p className="eyebrow">On-chain example</p>
+        <p className="eyebrow">On chain example</p>
         <h2 id="example-title">Example: exquisite</h2>
         <p className="example-copy">
           The tracker follows every sat name that starts with a prefix. For{" "}
@@ -299,7 +299,7 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
               <small>mined in block 294,053</small>
             </span>
             <span>
-              11-letter names: <strong>exquisitezz</strong> to{" "}
+              11 letter names: <strong>exquisitezz</strong> to{" "}
               <strong>exquisiteaa</strong>
               <small>
                 sats 1,260,134,692,559,694 to 1,260,134,692,560,369
@@ -312,7 +312,7 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
               <small>future block 1,266,527, around 2033</small>
             </span>
             <span>
-              10-letter names: <strong>exquisitez</strong> to{" "}
+              10 letter names: <strong>exquisitez</strong> to{" "}
               <strong>exquisitea</strong>
               <small>
                 sats 2,067,697,485,954,220 to 2,067,697,485,954,245
@@ -325,7 +325,7 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
               <small>future block 2,265,555, around 2052</small>
             </span>
             <span>
-              exact 9-letter name: <strong>exquisite</strong>
+              exact 9 letter name: <strong>exquisite</strong>
               <small>sat 2,098,757,593,392,471</small>
             </span>
           </li>

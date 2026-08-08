@@ -233,7 +233,7 @@ function InscriptionCard({
         {entry.children?.length ? (
           <div className="nested-asset-wrap">
             <h3 className="nested-asset-heading">
-              Verified named-sat child cards
+              Verified named sat child cards
             </h3>
             <div className="nested-asset-gallery">
               {entry.children.map((child) => (
@@ -320,7 +320,7 @@ function InscriptionCard({
               </a>
             ))
           ) : (
-            <span>Pending owner-provided collection links.</span>
+            <span>Pending owner provided collection links.</span>
           )}
         </div>
       </div>
@@ -423,7 +423,7 @@ function RegistryPanel({
       {tabId === "ord-father" ? (
         <div className="registry-note">
           Root context: inscription 0 is on sat name <strong>ezcubunuovm</strong>.
-          This tab focuses on the verified named-sat branches under that root,
+          This tab focuses on the verified named sat branches under that root,
           rather than repeating the root itself as a tracked card.
         </div>
       ) : null}
@@ -497,7 +497,7 @@ export default function InscriptionsOnSatnamesPage() {
         <BrandHero pageTitle="Inscriptions on sat names" />
         <p className="lede">
           Search any sat name live, jump to its inscription if it exists, then
-          browse the curated registry in table, compact, or large-card view.
+          browse the curated registry in table, compact, or large card view.
         </p>
 
         <section className="discovery-shell" aria-label="Sat name discovery">

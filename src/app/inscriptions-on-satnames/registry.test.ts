@@ -7,7 +7,7 @@ import {
 } from "./registry";
 
 describe("getEntriesForTab", () => {
-  it("returns only named-sat branch entries in featured order", () => {
+  it("returns only named sat branch entries in featured order", () => {
     expect(getEntriesForTab("ord-father").map((entry) => entry.satname)).toEqual([
       "falsecolors",
       "daddyplease",
@@ -33,12 +33,12 @@ describe("getEntriesForTab", () => {
 
     expect(
       falsecolors?.relationship.facts.find(
-        (fact) => fact.label === "Verified named-sat descendants",
+        (fact) => fact.label === "Verified named sat descendants",
       )?.value,
     ).toContain("badgertooth");
     expect(
       falsecolors?.relationship.facts.find(
-        (fact) => fact.label === "Verified named-sat descendants",
+        (fact) => fact.label === "Verified named sat descendants",
       )?.value,
     ).toContain("breathelast");
   });

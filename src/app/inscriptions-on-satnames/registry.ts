@@ -75,7 +75,7 @@ export const REGISTRY_TABS: Array<{ id: RegistryTabId; label: string; note: stri
     id: "ord-father",
     label: "Named Sats by ORD FATHER",
     note:
-      "Curated named-sat lineage verified under inscription 0. This tab starts from the named-sat branches under inscription 0 and shows their verified descendants directly inside each branch card.",
+      "Curated named sat lineage verified under inscription 0. This tab starts from the named sat branches under inscription 0 and shows their verified descendants directly inside each branch card.",
   },
   {
     id: "all",
@@ -130,7 +130,7 @@ function createFalsecolorsChild({
       teleburnAddress,
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         { label: "Parent", value: "falsecolors" },
         {
@@ -171,7 +171,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: [],
     role: "Inscription 0 root on a named sat",
     summary:
-      "Inscription 0 sits on the named sat ezcubunuovm. This featured tab tracks the verified named-sat branch rooted there, starting with five direct named-sat children and a smaller descendant tree already confirmed from recursive child endpoints.",
+      "Inscription 0 sits on the named sat ezcubunuovm. This featured tab tracks the verified named sat branch rooted there, starting with five direct named sat children and a smaller descendant tree already confirmed from recursive child endpoints.",
     sat: {
       number: "1252201400444387",
       block: "293810",
@@ -190,19 +190,19 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0xe43A06530BdF8A4e067581f48Fae3b535559dA9e",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         { label: "Parents", value: "none" },
         { label: "Direct children", value: "5 visible children" },
         {
-          label: "Direct named-sat children",
+          label: "Direct named sat children",
           value:
             "falsecolors, daddyplease, cargobroker, acquisitive, mixnetworks",
         },
         {
           label: "Verified deeper named sats",
           value:
-            "falsecolors branch adds 8 named-sat descendants; cargobroker and mixnetworks each add 1 named-sat descendant.",
+            "falsecolors branch adds 8 named sat descendants; cargobroker and mixnetworks each add 1 named sat descendant.",
         },
       ],
     },
@@ -234,7 +234,7 @@ export const registryEntries: SatnameInscription[] = [
     role: "Direct child branch of inscription 0",
     namedSatBranch: true,
     summary:
-      "This direct child of inscription 0 sits on a named sat and carries the clearest small named-sat subtree currently verified under the root. The branch has 8 direct children and each confirmed child lands on its own named sat.",
+      "This direct child of inscription 0 sits on a named sat and carries the clearest small named sat subtree currently verified under the root. The branch has 8 direct children and each confirmed child lands on its own named sat.",
     sat: {
       number: "1244907803623325",
       block: "292262",
@@ -253,12 +253,12 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0x28b702Ce4C76C096854facfF36374fecfd4d0e9E",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         { label: "Parent", value: "inscription 0" },
         { label: "Direct children", value: "8 visible children" },
         {
-          label: "Verified named-sat descendants",
+          label: "Verified named sat descendants",
           value:
             "badgertooth, zonefruits, abysscalled, cactusseeds, carpetyarns, necrowizard, ghostflight, breathelast",
         },
@@ -272,7 +272,7 @@ export const registryEntries: SatnameInscription[] = [
       facts: [
         { label: "Depth", value: "1 hop from inscription 0" },
         { label: "Path", value: "ezcubunuovm -> falsecolors" },
-        { label: "Branch", value: "8 verified named-sat descendants" },
+        { label: "Branch", value: "8 verified named sat descendants" },
       ],
     },
     descendants: {
@@ -405,7 +405,7 @@ export const registryEntries: SatnameInscription[] = [
     metadata: [
       { label: "Burn metadata", value: "skull" },
       { label: "Address", value: "burned inscription on named sat falsecolors" },
-      { label: "Curation note", value: "This is the smallest fully mapped named-sat subtree verified so far under inscription 0." },
+      { label: "Curation note", value: "This is the smallest fully mapped named sat subtree verified so far under inscription 0." },
     ],
     externalLinks: [],
   },
@@ -414,7 +414,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
-      "This direct child of inscription 0 sits on daddyplease and opens into a much larger branch. The card anchors the branch in the featured tab, but the named-sat descendants under its 1000-child set are not fully curated yet.",
+      "This direct child of inscription 0 sits on daddyplease and opens into a much larger branch. The card anchors the branch in the featured tab, but the named sat descendants under its 1000 child set are not fully curated yet.",
     sat: {
       number: "1529026757329329",
       block: "397096",
@@ -433,13 +433,13 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0x0926b34F5CfB6e59C774006Da46c33890081fec0",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         { label: "Parent", value: "inscription 0" },
         { label: "Direct children", value: "1000 visible children" },
         {
           label: "Status",
-          value: "Large branch anchored on a named sat; named-sat descendants not fully mapped in this page yet.",
+          value: "Large branch anchored on a named sat; named sat descendants not fully mapped in this page yet.",
         },
         { label: "Charms", value: "vindicated, burned" },
       ],
@@ -451,7 +451,7 @@ export const registryEntries: SatnameInscription[] = [
       facts: [
         { label: "Depth", value: "1 hop from inscription 0" },
         { label: "Path", value: "ezcubunuovm -> daddyplease" },
-        { label: "Branch", value: "1000-child branch, partial named-sat mapping" },
+        { label: "Branch", value: "1000 child branch, partial named sat mapping" },
       ],
     },
     metadata: [
@@ -468,7 +468,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
-      "This direct child of inscription 0 sits on cargobroker and currently exposes one verified named-sat descendant. It works well as a compact example of a small branch that still retains explicit ancestry back to inscription 0.",
+      "This direct child of inscription 0 sits on cargobroker and currently exposes one verified named sat descendant. It works well as a compact example of a small branch that still retains explicit ancestry back to inscription 0.",
     sat: {
       number: "1667249431221112",
       block: "480740",
@@ -487,11 +487,11 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0xdcEdEc545861615b146Db6D00c3385E9027785Ea",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         { label: "Parent", value: "inscription 0" },
         { label: "Direct children", value: "1 visible child" },
-        { label: "Verified named-sat descendant", value: "hazasvignzf" },
+        { label: "Verified named sat descendant", value: "hazasvignzf" },
       ],
     },
     lineage: {
@@ -501,7 +501,7 @@ export const registryEntries: SatnameInscription[] = [
       facts: [
         { label: "Depth", value: "1 hop from inscription 0" },
         { label: "Path", value: "ezcubunuovm -> cargobroker" },
-        { label: "Branch", value: "1 verified named-sat descendant" },
+        { label: "Branch", value: "1 verified named sat descendant" },
       ],
     },
     descendants: {
@@ -519,7 +519,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
-      "This direct child of inscription 0 sits on acquisitive. It currently shows no visible children on its inscription page, but it still belongs in the featured tab because it is one of the verified named-sat anchors directly under inscription 0.",
+      "This direct child of inscription 0 sits on acquisitive. It currently shows no visible children on its inscription page, but it still belongs in the featured tab because it is one of the verified named sat anchors directly under inscription 0.",
     sat: {
       number: "1938822652429115",
       block: "776905",
@@ -538,7 +538,7 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0xA00402F63b9F9A2Bf65AE2a38A9f496AD589Ee5B",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         { label: "Parent", value: "inscription 0" },
         { label: "Direct children", value: "none visible on inscription page" },
@@ -566,7 +566,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: ["ord-father"],
     role: "Direct child branch of inscription 0",
     summary:
-      "This direct child of inscription 0 sits on mixnetworks and exposes one verified named-sat descendant. It rounds out the currently confirmed named-sat anchors directly under the root inscription.",
+      "This direct child of inscription 0 sits on mixnetworks and exposes one verified named sat descendant. It rounds out the currently confirmed named sat anchors directly under the root inscription.",
     sat: {
       number: "210836133200079",
       block: "50094",
@@ -585,11 +585,11 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0xbf0d1C5eA130Bc5fc416eA42d758cf05197331D3",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         { label: "Parent", value: "inscription 0" },
         { label: "Direct children", value: "1 visible child" },
-        { label: "Verified named-sat descendant", value: "highwaystar" },
+        { label: "Verified named sat descendant", value: "highwaystar" },
       ],
     },
     lineage: {
@@ -599,7 +599,7 @@ export const registryEntries: SatnameInscription[] = [
       facts: [
         { label: "Depth", value: "1 hop from inscription 0" },
         { label: "Path", value: "ezcubunuovm -> mixnetworks" },
-        { label: "Branch", value: "1 verified named-sat descendant" },
+        { label: "Branch", value: "1 verified named sat descendant" },
       ],
     },
     descendants: {
@@ -636,7 +636,7 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0xe4Dd0003D46A23f000cd58eC47232c78d12795e8",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         { label: "Parents", value: "none found by /r/parents" },
         { label: "Direct children", value: "1 child found by /r/children" },
@@ -681,7 +681,7 @@ export const registryEntries: SatnameInscription[] = [
         "The full Blob child set is browsed on ordinals.com to keep this page fast while preserving verified range facts here.",
     },
     summary:
-      "The sat name carries the Blobs collection parent inscription. It has one parent root inscription and 10000 visible children. Research notes in ART on Blockchain describe the collection as metadata-seeded 3D shader art built through a recursive on-chain engine stack.",
+      "The sat name carries the Blobs collection parent inscription. It has one parent root inscription and 10000 visible children. Research notes in ART on Blockchain describe the collection as metadata seeded 3D shader art built through a recursive on chain engine stack.",
     sat: {
       number: "1749358685270167",
       block: "559486",
@@ -700,7 +700,7 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0x9F2964577b9468162e90cF280FDbeffa49148228",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         {
           label: "Parent",
@@ -728,17 +728,17 @@ export const registryEntries: SatnameInscription[] = [
       {
         label: "Study note",
         value:
-          "ART on Blockchain notes describe Blobs as 10000 interactive 3D GPU-shader inscriptions generated from each inscription's on-chain CBOR metadata.",
+          "ART on Blockchain notes describe Blobs as 10000 interactive 3D GPU shader inscriptions generated from each inscription's on chain CBOR metadata.",
       },
       {
         label: "Stack note",
         value:
-          "The notes trace a recursive stack: root, collection parent, per-Blob bootstrap, Book of Blob engine, shared on-chain libraries, shader module, and metadata reader.",
+          "The notes trace a recursive stack: root, collection parent, per Blob bootstrap, Book of Blob engine, shared on chain libraries, shader module, and metadata reader.",
       },
       {
         label: "Sat name pattern",
         value:
-          "The documented Blob sat range uses blob-prefixed sat names such as blobnwthfme, blobnwthems, and blobnwthdng.",
+          "The documented Blob sat range uses blob prefixed sat names such as blobnwthfme, blobnwthems, and blobnwthdng.",
       },
     ],
     externalLinks: [],
@@ -767,7 +767,7 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0x1878b38D98c5C3497E1c12121a3C2705c135F87a",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         {
           label: "Parent",
@@ -820,7 +820,7 @@ export const registryEntries: SatnameInscription[] = [
       teleburnAddress: "0xd25fd327e4598c07E811f915A2f8170Ef3D67586",
     },
     relationship: {
-      label: "Parent-child trace",
+      label: "Parent child trace",
       facts: [
         {
           label: "Parent",
