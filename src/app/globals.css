@@ -195,11 +195,13 @@ button:disabled {
 }
 
 .lede {
-  max-width: 650px;
+  max-width: none;
   margin: 14px 0 0;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.65;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .lede-lines {
@@ -208,6 +210,7 @@ button:disabled {
   font-size: 0.82rem;
   line-height: 1.35;
   letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .lede-lines span {
@@ -537,6 +540,8 @@ button:disabled {
   margin: 14px 0 0;
   color: var(--muted);
   line-height: 1.65;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .example-copy strong,
@@ -643,6 +648,8 @@ button:disabled {
   color: var(--muted);
   line-height: 1.55;
   padding: 14px;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .registry-tabs {
@@ -843,6 +850,8 @@ button:disabled {
   margin: 14px 0 0;
   color: var(--muted);
   line-height: 1.65;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .satname-sections {
@@ -1404,6 +1413,11 @@ button:disabled {
 .guide-page .guide-section li {
   color: var(--muted);
   line-height: 1.55;
+}
+
+.guide-page .guide-section > p {
+  text-align: justify;
+  text-align-last: left;
 }
 
 .guide-page .guide-section ul,
