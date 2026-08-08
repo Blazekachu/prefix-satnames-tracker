@@ -89,6 +89,7 @@
 html {
   background: var(--bg);
   color-scheme: dark;
+  font-size: 12px;
 }
 
 html[data-theme="light"] {
@@ -101,7 +102,15 @@ body {
     radial-gradient(circle at 20% 0%, var(--glow), transparent 34rem),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-mid) 44%, var(--bg-end) 100%);
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-pixel), ui-monospace, monospace;
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  text-rendering: geometricPrecision;
 }
 
 button,
@@ -168,25 +177,20 @@ button:disabled {
 
 .title {
   margin: 0;
-  font-family: var(--font-pixel), ui-monospace, monospace;
-  font-size: clamp(0.62rem, 1.7vw, 1.28rem);
+  font-size: clamp(0.72rem, 1.9vw, 1.4rem);
   line-height: 1.45;
   letter-spacing: 0.06em;
   font-weight: 400;
   white-space: nowrap;
   color: var(--orange);
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: unset;
-  font-smooth: never;
-  text-rendering: geometricPrecision;
 }
 
 .page-title {
   margin: 10px 0 0;
-  font-size: clamp(1.05rem, 2.5vw, 2.15rem);
-  line-height: 1.05;
-  font-weight: 800;
-  letter-spacing: 0;
+  font-size: clamp(0.72rem, 1.6vw, 1.15rem);
+  line-height: 1.35;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   color: var(--text);
 }
 
