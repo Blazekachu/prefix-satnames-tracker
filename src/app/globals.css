@@ -171,6 +171,15 @@ button:disabled {
   letter-spacing: 0;
 }
 
+.page-title {
+  margin: 10px 0 0;
+  font-size: clamp(1.05rem, 2.5vw, 2.15rem);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--text);
+}
+
 .lede {
   max-width: 650px;
   margin: 14px 0 0;
