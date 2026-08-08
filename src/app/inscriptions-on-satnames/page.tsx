@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import { BrandHero } from "@/app/brand-hero";
 import { satnameToSat, validateSatname } from "../../core/satname";
 import {
   lookupSatnameInscription,
@@ -493,7 +494,7 @@ export default function InscriptionsOnSatnamesPage() {
           Back to tracker
         </a>
         <p className="eyebrow">Curated registry</p>
-        <h1 className="title">Inscriptions on satnames</h1>
+        <BrandHero pageTitle="Inscriptions on satnames" />
         <p className="lede">
           Search any satname live, jump to its inscription if it exists, then
           browse the curated registry in table, compact, or large-card view.
