@@ -168,11 +168,17 @@ button:disabled {
 
 .title {
   margin: 0;
-  font-size: clamp(1.35rem, 3.6vw, 3.05rem);
-  line-height: 1.05;
-  letter-spacing: 0;
-  font-weight: 800;
+  font-family: var(--font-pixel), ui-monospace, monospace;
+  font-size: clamp(0.62rem, 1.7vw, 1.28rem);
+  line-height: 1.45;
+  letter-spacing: 0.06em;
+  font-weight: 400;
   white-space: nowrap;
+  color: var(--orange);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  text-rendering: geometricPrecision;
 }
 
 .page-title {
