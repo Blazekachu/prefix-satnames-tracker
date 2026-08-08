@@ -202,6 +202,19 @@ button:disabled {
   line-height: 1.65;
 }
 
+.lede-lines {
+  max-width: none;
+  margin-top: 16px;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.lede-lines span {
+  display: block;
+  white-space: nowrap;
+}
+
 .privacy-pill {
   flex: 0 0 auto;
   border: 1px solid var(--blue);
@@ -1304,6 +1317,14 @@ button:disabled {
 
   .header-actions {
     align-items: flex-start;
+  }
+
+  .lede-lines {
+    font-size: 0.72rem;
+  }
+
+  .lede-lines span {
+    white-space: normal;
   }
 
   .header-link-cta {

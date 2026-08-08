@@ -93,13 +93,6 @@ export default function Home() {
             <div>
               <p className="eyebrow">Ordinal sat names range finder</p>
               <BrandHero pageTitle="Prefix Sat Names Tracker" />
-              <p className="lede">
-                Enter a prefix to see every sat name series,
-                <br />
-                The exact sat ranges, and
-                <br />
-                The Bitcoin blocks where those names land
-              </p>
             </div>
           </div>
           <div className="header-actions">
@@ -114,6 +107,11 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <p className="lede lede-lines">
+          <span>Enter a prefix to see every sat name series,</span>
+          <span>The exact sat ranges, and</span>
+          <span>The Bitcoin blocks where those names land</span>
+        </p>
 
         <form onSubmit={onSubmit} className="search-form">
           <input
