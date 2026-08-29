@@ -96,9 +96,6 @@ export default function Home() {
             </div>
           </div>
           <div className="header-actions">
-            <a href="42069/" className="header-link">
-              Trace sat locations locally
-            </a>
             <a
               href="inscriptions-on-satnames/"
               className="header-link header-link-cta"
@@ -339,9 +336,6 @@ function ExampleShowcase({ onTry }: { onTry: () => void }) {
           <button type="button" onClick={onTry} className="secondary-button">
             Try exquisite
           </button>
-          <a href="42069/" className="inscription-link">
-            Trace locations with track-prefix
-          </a>
           <a
             href={EXQUISITE_INSCRIPTION_URL}
             target="_blank"
