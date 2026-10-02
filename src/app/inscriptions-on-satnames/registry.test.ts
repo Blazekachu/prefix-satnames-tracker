@@ -22,6 +22,7 @@ describe("getEntriesForTab", () => {
 
     expect(allSatnames).toContain("agooddoctor");
     expect(allSatnames).toContain("blobnwthems");
+    expect(allSatnames).toContain("ecofriendly");
     expect(allSatnames).not.toContain("falsecolors");
     expect(allSatnames).not.toContain("daddyplease");
   });

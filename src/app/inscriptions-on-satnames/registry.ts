@@ -846,6 +846,81 @@ export const registryEntries: SatnameInscription[] = [
     ],
     externalLinks: [],
   },
+  {
+    satname: "ecofriendly",
+    tabs: ["all"],
+    role: "Named sat with content and reincription package",
+    summary:
+      "The sat name carries two inscriptions: generative HTML content and a later reincription that delegates to it while attaching metadata and the rune ECO•FRIENDLY•WORLD. Holder-provided socials point to Spirit Zero.",
+    sat: {
+      number: "1374689741606159",
+      block: "339875",
+      timestamp: "2015-01-21 09:50:59 UTC",
+      rarity: "common",
+    },
+    inscription: {
+      id: "1154a1916a0c2f065e11d88ebc91adfd5ee627e01171db97d9ef9c4f72e76e09i0",
+      number: "67243380",
+      contentType: "text/html;charset=utf-8",
+      contentLength: "4063 bytes",
+      timestamp: "2024-04-04 04:39:12 UTC",
+      height: "837634",
+      value: "546 sats",
+      fee: "9155 sats",
+      teleburnAddress: "0x67ba7869357d8CfE72dBDa6B2461AF1C1D6BC665",
+    },
+    relationship: {
+      label: "Parent child trace",
+      facts: [
+        { label: "Parents", value: "none found by /r/parents on content inscription" },
+        { label: "Direct children", value: "1 child found by /r/children" },
+        {
+          label: "Child inscription",
+          value:
+            "a378d22dda4915a7f71b1f86106fbdc284d66e427d0a07ed37c42f9678b53fe2i0",
+        },
+        {
+          label: "Child details",
+          value: "Inscription 67251492, text/html;charset=utf-8, 3419 bytes",
+        },
+        {
+          label: "Reinscription",
+          value:
+            "281be7e4149ce68b200f8c9fff2a5571f9d41980805e9fe42d9afce246d28d1ai0",
+        },
+        {
+          label: "Reinscription details",
+          value:
+            "Inscription 70595102, delegates to content inscription, charms reincription + vindicated, fee 12760 sats",
+        },
+        {
+          label: "Reinscription parent",
+          value:
+            "3cafb5616edd5811308c6976d3b8b83ae399213ad5e2ab62166d79587d11a0cci0",
+        },
+        {
+          label: "Reinscription parent details",
+          value: "Inscription 31096301, image/webp, 15128 bytes, nineball",
+        },
+      ],
+    },
+    metadata: [
+      { label: "Artist", value: "Spirit Zero" },
+      { label: "Socials", value: "https://x.com/SPIRITZERO" },
+      { label: "Title", value: "Eco Friendly" },
+      { label: "Filename", value: "Eco Friendly World" },
+      { label: "Rune", value: "ECO•FRIENDLY•WORLD" },
+      { label: "Medium", value: "Generative" },
+      { label: "Format", value: "P5js" },
+      { label: "Special Satribute", value: "Name Satoshi= ECOFRIENDLY" },
+    ],
+    externalLinks: [
+      {
+        label: "Holder on X",
+        href: "https://x.com/SPIRITZERO",
+      },
+    ],
+  },
 ];
 
 export function getEntriesForTab(tabId: RegistryTabId): SatnameInscription[] {
