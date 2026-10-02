@@ -906,7 +906,6 @@ export const registryEntries: SatnameInscription[] = [
     },
     metadata: [
       { label: "Artist", value: "Spirit Zero" },
-      { label: "Socials", value: "https://x.com/SPIRITZERO" },
       { label: "Title", value: "Eco Friendly" },
       { label: "Filename", value: "Eco Friendly World" },
       { label: "Rune", value: "ECO•FRIENDLY•WORLD" },
