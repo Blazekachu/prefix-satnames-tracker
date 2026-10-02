@@ -95,6 +95,7 @@ function createFalsecolorsChild({
   teleburnAddress,
   output,
   location,
+  externalLinks = [],
 }: {
   satname: string;
   sat: string;
@@ -105,6 +106,7 @@ function createFalsecolorsChild({
   teleburnAddress: string;
   output: string;
   location: string;
+  externalLinks?: SourceLink[];
 }): SatnameInscription {
   return {
     satname,
@@ -161,7 +163,7 @@ function createFalsecolorsChild({
       { label: "Output", value: output },
       { label: "Location", value: location },
     ],
-    externalLinks: [],
+    externalLinks,
   };
 }
 
@@ -302,6 +304,12 @@ export const registryEntries: SatnameInscription[] = [
           "78ccdf1ee2bf14f36e83653a99586329b2931a17f786ffa8e6e0b79650d2bc40:0",
         location:
           "78ccdf1ee2bf14f36e83653a99586329b2931a17f786ffa8e6e0b79650d2bc40:0:0",
+        externalLinks: [
+          {
+            label: "Holder on X",
+            href: "https://x.com/lifofifo",
+          },
+        ],
       }),
       createFalsecolorsChild({
         satname: "zonefruits",
@@ -344,6 +352,12 @@ export const registryEntries: SatnameInscription[] = [
           "5ad0e2ab71c31231f3a894305aeed44419fd3778d39607e429719ccc31283203:0",
         location:
           "5ad0e2ab71c31231f3a894305aeed44419fd3778d39607e429719ccc31283203:0:0",
+        externalLinks: [
+          {
+            label: "Holder on X",
+            href: "https://x.com/Brunno_UTXO",
+          },
+        ],
       }),
       createFalsecolorsChild({
         satname: "carpetyarns",
@@ -659,10 +673,14 @@ export const registryEntries: SatnameInscription[] = [
     },
     metadata: [
       { label: "Creator", value: "A Good Doctor Studios" },
-      { label: "Socials", value: "https://x.com/AGoodDoctoor" },
       { label: "Inscribed By", value: "OrdinalsBot" },
     ],
-    externalLinks: [],
+    externalLinks: [
+      {
+        label: "Holder on X",
+        href: "https://x.com/AGoodDoctoor",
+      },
+    ],
   },
   {
     satname: "blobnwthems",
@@ -851,7 +869,7 @@ export const registryEntries: SatnameInscription[] = [
     tabs: ["all"],
     role: "Named sat with content and reincription package",
     summary:
-      "The sat name carries two inscriptions: generative HTML content and a later reincription that delegates to it while attaching metadata and the rune ECO•FRIENDLY•WORLD. Holder-provided socials point to Spirit Zero.",
+      "The sat name carries two inscriptions: generative HTML content and a later reincription that delegates to it while attaching metadata and the rune ECO•FRIENDLY•WORLD.",
     sat: {
       number: "1374689741606159",
       block: "339875",

@@ -107,6 +107,32 @@ describe("findRegistryEntryBySatname", () => {
     expect(isSatnameInRegistry("breathelast")).toBe(true);
   });
 
+  it("keeps holder socials on external links, not metadata", () => {
+    const doctor = findRegistryEntryBySatname("agooddoctor");
+    const badgertooth = findRegistryEntryBySatname("badgertooth");
+    const cactusseeds = findRegistryEntryBySatname("cactusseeds");
+    const ecofriendly = findRegistryEntryBySatname("ecofriendly");
+
+    expect(doctor?.metadata.some((fact) => fact.label === "Socials")).toBe(
+      false,
+    );
+    expect(doctor?.externalLinks).toEqual([
+      { label: "Holder on X", href: "https://x.com/AGoodDoctoor" },
+    ]);
+    expect(badgertooth?.externalLinks).toEqual([
+      { label: "Holder on X", href: "https://x.com/lifofifo" },
+    ]);
+    expect(cactusseeds?.externalLinks).toEqual([
+      { label: "Holder on X", href: "https://x.com/Brunno_UTXO" },
+    ]);
+    expect(ecofriendly?.metadata.some((fact) => fact.label === "Socials")).toBe(
+      false,
+    );
+    expect(ecofriendly?.externalLinks).toEqual([
+      { label: "Holder on X", href: "https://x.com/SPIRITZERO" },
+    ]);
+  });
+
   it("returns null for satnames outside the curated registry", () => {
     expect(findRegistryEntryBySatname("notarealsatname")).toBeNull();
     expect(isSatnameInRegistry("notarealsatname")).toBe(false);
