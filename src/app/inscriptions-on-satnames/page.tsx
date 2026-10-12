@@ -500,17 +500,6 @@ export default function InscriptionsOnSatnamesPage() {
           Search any sat name live, jump to its inscription if it exists, then
           browse ORD FATHER lineage or the Osura-style named sats snapshot.
         </p>
-        <div className="header-actions registry-hero-actions">
-          <a
-            href="../named-collection-series/"
-            className="header-link header-link-cta"
-          >
-            <span>Named collection series</span>
-            <span aria-hidden="true" className="header-link-cta-arrow">
-              -&gt;
-            </span>
-          </a>
-        </div>
 
         <section className="discovery-shell" aria-label="Sat name discovery">
           <form className="search-form discovery-form" onSubmit={onDiscoverySubmit}>
@@ -562,6 +551,12 @@ export default function InscriptionsOnSatnamesPage() {
                 {tab.label}
               </button>
             ))}
+            <a
+              href="../named-collection-series/"
+              className="registry-tab-label registry-tab-link"
+            >
+              Named collection series
+            </a>
           </div>
 
           <ViewModePicker value={viewMode} onChange={setViewMode} />

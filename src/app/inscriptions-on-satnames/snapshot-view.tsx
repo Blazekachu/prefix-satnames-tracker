@@ -24,113 +24,141 @@ function splitLabel(entry: NamedSatEntry): string | null {
   return `${entry.parts[0]} · ${entry.parts[1]}`;
 }
 
-function SnapshotItem({
-  entry,
-  mode,
-}: {
-  entry: NamedSatEntry;
-  mode: RegistryViewMode;
-}) {
-  const split = splitLabel(entry);
-  const href = entryHref(entry);
-  const preview = previewHref(entry);
-
-  if (mode === "table") {
-    return (
-      <tr>
-        <td>
-          {preview ? (
-            <span className="table-preview">
-              <iframe
-                src={preview}
-                title={`${entry.satname} preview`}
-                loading="lazy"
-                sandbox="allow-scripts allow-same-origin"
-              />
-            </span>
-          ) : (
-            <span className="snapshot-preview-missing">No preview</span>
-          )}
-        </td>
-        <td>
-          <a href={href} target="_blank" rel="noreferrer">
-            {entry.satname}
-          </a>
-        </td>
-        <td>{split ?? "—"}</td>
-        <td>{entry.inscriptionCount ?? "—"}</td>
-        <td>{entry.source}</td>
-      </tr>
-    );
-  }
-
-  if (mode === "compact") {
-    return (
-      <li className="snapshot-item snapshot-item-compact">
-        <a
-          href={href}
-          target="_blank"
-          rel="noreferrer"
-          className="snapshot-item-link snapshot-item-link-compact"
-        >
-          {preview ? (
-            <span className="compact-tile-preview">
-              <iframe
-                src={preview}
-                title={`${entry.satname} compact preview`}
-                loading="lazy"
-                sandbox="allow-scripts allow-same-origin"
-              />
-            </span>
-          ) : (
-            <span className="snapshot-preview-missing compact-tile-preview">
-              No preview yet
-            </span>
-          )}
-          <span className="snapshot-item-name">{entry.satname}</span>
-          {split ? <span className="snapshot-item-split">{split}</span> : null}
-        </a>
-      </li>
-    );
-  }
-
+function TableRows({ entries }: { entries: NamedSatEntry[] }) {
   return (
-    <li className="snapshot-item snapshot-item-large">
-      <article className="asset-card snapshot-asset-card">
-        <div className="asset-preview">
-          {preview ? (
-            <iframe
-              src={preview}
-              title={`${entry.satname} inscription preview`}
-              loading="lazy"
-              sandbox="allow-scripts allow-same-origin"
-            />
-          ) : (
-            <div className="snapshot-preview-missing snapshot-preview-missing-large">
-              Preview unavailable until this sat is enriched with an inscription
-              id.
-            </div>
-          )}
-        </div>
-        <h3 className="snapshot-item-name">{entry.satname}</h3>
-        {split ? <p className="snapshot-item-split">{split}</p> : null}
-        <p className="snapshot-item-count">
-          {entry.inscriptionCount != null
-            ? `${entry.inscriptionCount} inscription${entry.inscriptionCount === 1 ? "" : "s"}`
-            : "Inscription count unknown"}
-        </p>
-        <div className="external-links">
-          <a href={href} target="_blank" rel="noreferrer">
-            {entry.primaryInscriptionId ? "View inscription" : "View sat"}
+    <div className="registry-table-wrap">
+      <table className="registry-table">
+        <thead>
+          <tr>
+            <th>Preview</th>
+            <th>Sat name</th>
+            <th>Split</th>
+            <th>Inscriptions</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          {entries.map((entry) => {
+            const preview = previewHref(entry);
+            const href = entryHref(entry);
+            const split = splitLabel(entry);
+            return (
+              <tr key={entry.satname}>
+                <td>
+                  {preview ? (
+                    <span className="table-preview">
+                      <iframe
+                        src={preview}
+                        title={`${entry.satname} preview`}
+                        loading="lazy"
+                        sandbox="allow-scripts"
+                      />
+                    </span>
+                  ) : (
+                    <span className="snapshot-preview-missing">No preview</span>
+                  )}
+                </td>
+                <td>
+                  <a href={href} target="_blank" rel="noreferrer">
+                    {entry.satname}
+                  </a>
+                </td>
+                <td>{split ?? "—"}</td>
+                <td>{entry.inscriptionCount ?? "—"}</td>
+                <td>{entry.source}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function CompactGallery({ entries }: { entries: NamedSatEntry[] }) {
+  return (
+    <div className="compact-gallery">
+      {entries.map((entry) => {
+        const preview = previewHref(entry);
+        const href = entryHref(entry);
+        const split = splitLabel(entry);
+        return (
+          <a
+            key={entry.satname}
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className="compact-tile"
+          >
+            <span className="compact-tile-preview">
+              {preview ? (
+                <iframe
+                  src={preview}
+                  title={`${entry.satname} compact preview`}
+                  loading="lazy"
+                  sandbox="allow-scripts"
+                />
+              ) : (
+                <span className="snapshot-preview-missing">No preview</span>
+              )}
+            </span>
+            <span className="compact-tile-copy">
+              <strong>{entry.satname}</strong>
+              <small>
+                {split ??
+                  (entry.inscriptionCount != null
+                    ? `${entry.inscriptionCount} inscription${entry.inscriptionCount === 1 ? "" : "s"}`
+                    : "named sat")}
+              </small>
+            </span>
           </a>
-          {preview ? (
-            <a href={preview} target="_blank" rel="noreferrer">
-              Open preview
-            </a>
-          ) : null}
-        </div>
-      </article>
-    </li>
+        );
+      })}
+    </div>
+  );
+}
+
+function LargeGallery({ entries }: { entries: NamedSatEntry[] }) {
+  return (
+    <section className="asset-gallery" aria-label="Named sat inscriptions">
+      {entries.map((entry) => {
+        const preview = previewHref(entry);
+        const href = entryHref(entry);
+        const split = splitLabel(entry);
+        return (
+          <article key={entry.satname} className="asset-card">
+            <div className="asset-preview">
+              {preview ? (
+                <iframe
+                  src={preview}
+                  title={`${entry.satname} inscription preview`}
+                  loading="lazy"
+                  sandbox="allow-scripts"
+                />
+              ) : (
+                <div className="snapshot-preview-missing snapshot-preview-missing-large">
+                  Preview unavailable
+                </div>
+              )}
+            </div>
+            <div className="asset-caption">
+              <span>{entry.satname}</span>
+              <small>
+                {split ??
+                  (entry.inscriptionCount != null
+                    ? `${entry.inscriptionCount} inscription${entry.inscriptionCount === 1 ? "" : "s"}`
+                    : "named sat")}
+              </small>
+              <div className="external-links">
+                <a href={href} target="_blank" rel="noreferrer">
+                  {entry.primaryInscriptionId ? "View inscription" : "View sat"}
+                </a>
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </section>
   );
 }
 
@@ -141,36 +169,9 @@ function SectionBody({
   entries: NamedSatEntry[];
   mode: RegistryViewMode;
 }) {
-  if (mode === "table") {
-    return (
-      <div className="registry-table-wrap">
-        <table className="registry-table">
-          <thead>
-            <tr>
-              <th>Preview</th>
-              <th>Sat name</th>
-              <th>Split</th>
-              <th>Inscriptions</th>
-              <th>Source</th>
-            </tr>
-          </thead>
-          <tbody>
-            {entries.map((entry) => (
-              <SnapshotItem key={entry.satname} entry={entry} mode={mode} />
-            ))}
-          </tbody>
-        </table>
-      </div>
-    );
-  }
-
-  return (
-    <ul className={`snapshot-list snapshot-list-${mode}`}>
-      {entries.map((entry) => (
-        <SnapshotItem key={entry.satname} entry={entry} mode={mode} />
-      ))}
-    </ul>
-  );
+  if (mode === "table") return <TableRows entries={entries} />;
+  if (mode === "compact") return <CompactGallery entries={entries} />;
+  return <LargeGallery entries={entries} />;
 }
 
 export function SnapshotView({ mode }: { mode: RegistryViewMode }) {

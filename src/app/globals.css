@@ -1577,35 +1577,23 @@ button:disabled {
   margin-bottom: 16px;
 }
 
-.registry-hero-actions {
-  margin: 14px 0 8px;
-  align-items: flex-start;
+.registry-tab-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
-.snapshot-item-link-compact {
-  gap: 8px;
-}
-
-.snapshot-asset-card {
-  height: 100%;
-}
-
-.snapshot-asset-card .snapshot-item-name {
-  margin: 10px 12px 0;
-}
-
-.snapshot-asset-card .snapshot-item-split,
-.snapshot-asset-card .snapshot-item-count {
-  margin: 4px 12px 0;
-}
-
-.snapshot-asset-card .external-links {
-  margin: 10px 12px 14px;
+.compact-gallery a.compact-tile {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .snapshot-preview-missing {
   display: grid;
   place-items: center;
+  width: 100%;
+  height: 100%;
   color: var(--muted);
   font-size: 0.8rem;
   text-align: center;
@@ -1615,6 +1603,10 @@ button:disabled {
 .snapshot-preview-missing-large {
   min-height: 180px;
   background: var(--preview-bg);
+}
+
+.asset-caption .external-links {
+  margin-top: 8px;
 }
 
 .collection-series-list {
