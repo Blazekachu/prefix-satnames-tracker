@@ -24,57 +24,6 @@ function splitLabel(entry: NamedSatEntry): string | null {
   return `${entry.parts[0]} · ${entry.parts[1]}`;
 }
 
-function TableRows({ entries }: { entries: NamedSatEntry[] }) {
-  return (
-    <div className="registry-table-wrap">
-      <table className="registry-table">
-        <thead>
-          <tr>
-            <th>Preview</th>
-            <th>Sat name</th>
-            <th>Split</th>
-            <th>Inscriptions</th>
-            <th>Source</th>
-          </tr>
-        </thead>
-        <tbody>
-          {entries.map((entry) => {
-            const preview = previewHref(entry);
-            const href = entryHref(entry);
-            const split = splitLabel(entry);
-            return (
-              <tr key={entry.satname}>
-                <td>
-                  {preview ? (
-                    <span className="table-preview">
-                      <iframe
-                        src={preview}
-                        title={`${entry.satname} preview`}
-                        loading="lazy"
-                        sandbox="allow-scripts"
-                      />
-                    </span>
-                  ) : (
-                    <span className="snapshot-preview-missing">No preview</span>
-                  )}
-                </td>
-                <td>
-                  <a href={href} target="_blank" rel="noreferrer">
-                    {entry.satname}
-                  </a>
-                </td>
-                <td>{split ?? "—"}</td>
-                <td>{entry.inscriptionCount ?? "—"}</td>
-                <td>{entry.source}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
 function CompactGallery({ entries }: { entries: NamedSatEntry[] }) {
   return (
     <div className="compact-gallery">
@@ -169,7 +118,6 @@ function SectionBody({
   entries: NamedSatEntry[];
   mode: RegistryViewMode;
 }) {
-  if (mode === "table") return <TableRows entries={entries} />;
   if (mode === "compact") return <CompactGallery entries={entries} />;
   return <LargeGallery entries={entries} />;
 }

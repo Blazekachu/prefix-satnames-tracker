@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { ORDINALS, type RegistryTabId, type SatnameInscription } from "./registry";
 
-export type RegistryViewMode = "table" | "compact" | "large";
+export type RegistryViewMode = "compact" | "large";
 
 type ViewModePickerProps = {
   value: RegistryViewMode;
@@ -36,20 +36,6 @@ function displaySatname(entry: SatnameInscription): string {
 export function ViewModePicker({ value, onChange }: ViewModePickerProps) {
   return (
     <div className="view-mode-picker" aria-label="Registry view mode">
-      <button
-        type="button"
-        className="view-mode-button"
-        aria-pressed={value === "table"}
-        onClick={() => onChange("table")}
-      >
-        <span className="view-mode-icon view-mode-icon-table" aria-hidden="true">
-          <span />
-          <span />
-          <span />
-          <span />
-        </span>
-        <span>Table</span>
-      </button>
       <button
         type="button"
         className="view-mode-button"
@@ -101,103 +87,35 @@ export function RegistryView({
 
   return (
     <section className="registry-view-shell" aria-label={`${tabId} sat name inscriptions`}>
-      {mode === "table" ? (
-        <div className="registry-table-wrap">
-          <table className="registry-table">
-            <thead>
-              <tr>
-                <th>Preview</th>
-                <th>Sat name</th>
-                <th>Role</th>
-                <th>Inscription</th>
-                <th>Context</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {entries.map((entry) => (
-                <tr key={entry.satname}>
-                  <td>
-                    <span className="table-preview">
-                      <iframe
-                        src={ordinalsPath(`/preview/${entry.inscription.id}`)}
-                        title={`${entry.satname} preview`}
-                        sandbox="allow-scripts"
-                        loading="lazy"
-                      />
-                    </span>
-                  </td>
-                  <td>
-                    <strong
-                      className={entry.namedSatBranch ? "featured-named-sat-text" : undefined}
-                    >
-                      {displaySatname(entry)}
-                    </strong>
-                  </td>
-                  <td>{entry.role}</td>
-                  <td>#{entry.inscription.number}</td>
-                  <td>{entry.lineage?.badge ?? entry.relationship.label}</td>
-                  <td>
-                    <div className="registry-table-actions">
-                      <a
-                        href={ordinalsPath(`/inscription/${entry.inscription.id}`)}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inscription-link"
-                      >
-                        View inscription
-                      </a>
-                      <button
-                        type="button"
-                        className="ghost-button"
-                        onClick={() =>
-                          setFocusedSatname((current) =>
-                            nextFocusedSatname(current, entry.satname),
-                          )
-                        }
-                      >
-                        {focusedSatname === entry.satname
-                          ? "Hide details"
-                          : "View details"}
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      ) : (
-        <div className="compact-gallery">
-          {entries.map((entry) => (
-            <button
-              key={entry.satname}
-              type="button"
-              className="compact-tile"
-              data-active={entry.satname === focusedEntry?.satname}
-              data-featured={entry.namedSatBranch ? "true" : "false"}
-              onClick={() =>
-                setFocusedSatname((current) =>
-                  nextFocusedSatname(current, entry.satname),
-                )
-              }
-            >
-              <span className="compact-tile-preview">
-                <iframe
-                  src={ordinalsPath(`/preview/${entry.inscription.id}`)}
-                  title={`${entry.satname} compact preview`}
-                  sandbox="allow-scripts"
-                  loading="lazy"
-                />
-              </span>
-              <span className="compact-tile-copy">
-                <strong>{displaySatname(entry)}</strong>
-                <small>{entry.lineage?.badge ?? entry.role}</small>
-              </span>
-            </button>
-          ))}
-        </div>
-      )}
+      <div className="compact-gallery">
+        {entries.map((entry) => (
+          <button
+            key={entry.satname}
+            type="button"
+            className="compact-tile"
+            data-active={entry.satname === focusedEntry?.satname}
+            data-featured={entry.namedSatBranch ? "true" : "false"}
+            onClick={() =>
+              setFocusedSatname((current) =>
+                nextFocusedSatname(current, entry.satname),
+              )
+            }
+          >
+            <span className="compact-tile-preview">
+              <iframe
+                src={ordinalsPath(`/preview/${entry.inscription.id}`)}
+                title={`${entry.satname} compact preview`}
+                sandbox="allow-scripts"
+                loading="lazy"
+              />
+            </span>
+            <span className="compact-tile-copy">
+              <strong>{displaySatname(entry)}</strong>
+              <small>{entry.lineage?.badge ?? entry.role}</small>
+            </span>
+          </button>
+        ))}
+      </div>
 
       {focusedEntry ? (
         <div className="registry-focused-detail">

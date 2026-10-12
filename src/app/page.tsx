@@ -105,15 +105,6 @@ export default function Home() {
                 -&gt;
               </span>
             </a>
-            <a
-              href="named-collection-series/"
-              className="header-link header-link-cta"
-            >
-              <span>Named collection series</span>
-              <span aria-hidden="true" className="header-link-cta-arrow">
-                -&gt;
-              </span>
-            </a>
           </div>
         </div>
         <p className="lede lede-lines">

@@ -10,7 +10,7 @@ import {
 } from "./view-modes";
 
 describe("ViewModePicker", () => {
-  it("renders three view mode buttons", () => {
+  it("renders compact and large view mode buttons only", () => {
     const html = renderToStaticMarkup(
       createElement(ViewModePicker, {
         value: "large",
@@ -18,26 +18,27 @@ describe("ViewModePicker", () => {
       }),
     );
 
-    expect(html).toContain("Table");
+    expect(html).not.toContain("Table");
     expect(html).toContain("Compact");
     expect(html).toContain("Large");
   });
 });
 
 describe("RegistryView", () => {
-  it("renders inscription numbers for table rows", () => {
+  it("renders compact tiles with inscription previews", () => {
     const html = renderToStaticMarkup(
       createElement(RegistryView, {
         entries: getEntriesForTab("ord-father"),
-        mode: "table",
+        mode: "compact",
         tabId: "ord-father",
         renderLargeCard: (entry: { satname: string }) =>
           createElement("div", null, entry.satname),
       }),
     );
 
-    expect(html).toContain("64228106");
-    expect(html).toContain("View details");
+    expect(html).toContain("compact-tile");
+    expect(html).toContain("falsecolors");
+    expect(html).toContain("/preview/");
   });
 
   it("does not render a focused detail card by default", () => {
