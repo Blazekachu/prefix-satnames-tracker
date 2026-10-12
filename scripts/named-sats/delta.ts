@@ -12,8 +12,8 @@ import {
 } from "../../src/core/named-sats-snapshot";
 import { candidateFromInscription } from "./delta-logic";
 import {
+  fetchInscriptionIdsPage,
   fetchInscriptionInfo,
-  fetchLatestInscriptionIds,
 } from "./ordinals";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -54,69 +54,79 @@ async function main() {
     ),
   );
 
-  const latestIds = await fetchLatestInscriptionIds();
-  if (latestIds.length === 0) {
+  const tipIds = await fetchInscriptionIdsPage(0);
+  if (tipIds.length === 0) {
     throw new Error("Could not fetch latest inscriptions from ordinals.com");
   }
-  const latestInfo = await fetchInscriptionInfo(latestIds[0]!);
-  if (!latestInfo) {
-    throw new Error(`Could not resolve latest inscription ${latestIds[0]}`);
+  const tipInfo = await fetchInscriptionInfo(tipIds[0]!);
+  if (!tipInfo) {
+    throw new Error(`Could not resolve latest inscription ${tipIds[0]}`);
   }
 
-  const start = cursor.lastInscriptionNumber + 1;
-  const end = latestInfo.number;
-  if (end < start) {
+  if (tipInfo.number <= cursor.lastInscriptionNumber) {
     console.log(
-      `Already caught up (cursor=${cursor.lastInscriptionNumber}, tip=${end})`,
+      `Already caught up (cursor=${cursor.lastInscriptionNumber}, tip=${tipInfo.number})`,
     );
     return;
   }
 
   const existingNames = new Set(snapshot.entries.map((e) => e.satname));
   const incoming: NamedSatEntry[] = [];
-  let processed = 0;
+  let inspected = 0;
   let ok = true;
-  let lastSuccessful = cursor.lastInscriptionNumber;
-
-  const limit =
-    args.max != null && Number.isFinite(args.max)
-      ? Math.min(end, start + args.max - 1)
-      : end;
+  let reachedCursor = false;
+  const maxInspect =
+    args.max != null && Number.isFinite(args.max) ? args.max : Number.POSITIVE_INFINITY;
 
   console.log(
-    `Scanning inscriptions ${start}..${limit} (tip ${end})${args.dryRun ? " [dry-run]" : ""}`,
+    `Scanning newest inscriptions above cursor ${cursor.lastInscriptionNumber} (tip ${tipInfo.number})${args.dryRun ? " [dry-run]" : ""}`,
   );
 
-  for (let n = start; n <= limit; n++) {
+  for (let page = 0; !reachedCursor && inspected < maxInspect; page++) {
+    let ids: string[];
     try {
-      const info = await fetchInscriptionInfo(n);
-      processed += 1;
-      if (info?.sat != null) {
-        const candidate = candidateFromInscription({
-          sat: info.sat,
-          inscriptionNumber: info.number,
-          inscriptionId: info.id,
-          words,
-          allowlist,
-          existingNames,
-        });
-        if (candidate) {
-          incoming.push(candidate);
-          existingNames.add(candidate.satname);
-          console.log(`+ ${candidate.satname} (inscription ${n})`);
-        }
-      }
-      lastSuccessful = n;
-      if (processed % 25 === 0) {
-        await new Promise((r) => setTimeout(r, 200));
-      } else {
-        await new Promise((r) => setTimeout(r, 40));
-      }
+      ids = await fetchInscriptionIdsPage(page);
     } catch (err) {
       ok = false;
-      console.error(`Failed at inscription ${n}: ${String(err)}`);
+      console.error(`Failed fetching inscriptions page ${page}: ${String(err)}`);
       break;
     }
+    if (ids.length === 0) break;
+
+    for (const id of ids) {
+      if (inspected >= maxInspect) break;
+      try {
+        const info = await fetchInscriptionInfo(id);
+        inspected += 1;
+        if (!info) continue;
+        if (info.number <= cursor.lastInscriptionNumber) {
+          reachedCursor = true;
+          break;
+        }
+        if (info.sat != null) {
+          const candidate = candidateFromInscription({
+            sat: info.sat,
+            inscriptionNumber: info.number,
+            inscriptionId: info.id,
+            words,
+            allowlist,
+            existingNames,
+          });
+          if (candidate) {
+            incoming.push(candidate);
+            existingNames.add(candidate.satname);
+            console.log(`+ ${candidate.satname} (inscription ${info.number})`);
+          }
+        }
+        await new Promise((r) => setTimeout(r, 40));
+      } catch (err) {
+        ok = false;
+        console.error(`Failed at inscription ${id}: ${String(err)}`);
+        break;
+      }
+    }
+    await new Promise((r) => setTimeout(r, 100));
+    if (!ok) break;
   }
 
   if (!shouldAdvanceCursor(ok)) {
@@ -124,32 +134,35 @@ async function main() {
     process.exit(1);
   }
 
-  const merged = mergeEntries(snapshot.entries, incoming);
   const takenAt = new Date().toISOString();
-  const next = nextCursor(cursor, lastSuccessful, takenAt);
+  const caughtUp = reachedCursor || tipInfo.number <= cursor.lastInscriptionNumber;
+  const canAdvance = caughtUp && !args.dryRun;
 
   if (args.dryRun) {
     console.log(
-      `Dry run: would add ${incoming.length} names; cursor -> ${next.lastInscriptionNumber}`,
+      `Dry run: inspected ${inspected}, would add ${incoming.length}; tip=${tipInfo.number}; reachedCursor=${reachedCursor}`,
     );
     return;
   }
 
-  // Only advance fully when we reached the intended limit.
-  if (lastSuccessful < limit) {
-    console.error("Incomplete scan; not writing files.");
-    process.exit(1);
-  }
-
+  const merged = mergeEntries(snapshot.entries, incoming);
   writeFileSync(
     snapshotPath,
     `${JSON.stringify({ meta: { ...snapshot.meta, generatedAt: takenAt }, entries: merged }, null, 2)}\n`,
     "utf8",
   );
-  writeFileSync(cursorPath, `${JSON.stringify(next, null, 2)}\n`, "utf8");
-  console.log(
-    `Updated snapshot (+${incoming.length}); cursor=${next.lastInscriptionNumber}`,
-  );
+
+  if (canAdvance) {
+    const next = nextCursor(cursor, tipInfo.number, takenAt);
+    writeFileSync(cursorPath, `${JSON.stringify(next, null, 2)}\n`, "utf8");
+    console.log(
+      `Updated snapshot (+${incoming.length}); cursor advanced to ${next.lastInscriptionNumber}`,
+    );
+  } else {
+    console.log(
+      `Updated snapshot (+${incoming.length}); cursor unchanged at ${cursor.lastInscriptionNumber} (pass without --max until the scan reaches the cursor, or raise cursor to tip to skip backlog)`,
+    );
+  }
 }
 
 main().catch((err) => {

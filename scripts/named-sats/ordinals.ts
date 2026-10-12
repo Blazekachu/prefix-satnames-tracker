@@ -127,31 +127,26 @@ export async function fetchSatInscriptions(
 }
 
 export async function fetchInscriptionInfo(
-  idOrNumber: string | number,
+  id: string,
   signal?: AbortSignal,
 ): Promise<InscriptionInfo | null> {
-  const path =
-    typeof idOrNumber === "number"
-      ? `/r/inscription/${idOrNumber}`
-      : `/r/inscription/${idOrNumber}`;
   try {
     const payload = await withBackoff(() =>
-      fetchJson(`${ORDINALS_BASE}${path}`, signal),
+      fetchJson(`${ORDINALS_BASE}/r/inscription/${id}`, signal),
     );
-    return parseInscriptionInfo(
-      payload,
-      typeof idOrNumber === "string" ? idOrNumber : undefined,
-    );
+    return parseInscriptionInfo(payload, id);
   } catch {
     return null;
   }
 }
 
-export async function fetchLatestInscriptionIds(
+/** Newest-first inscription id pages. Page 0 is the tip. */
+export async function fetchInscriptionIdsPage(
+  page = 0,
   signal?: AbortSignal,
 ): Promise<string[]> {
   const payload = await withBackoff(() =>
-    fetchJson(`${ORDINALS_BASE}/r/inscriptions`, signal),
+    fetchJson(`${ORDINALS_BASE}/inscriptions/${page}`, signal),
   );
   if (
     typeof payload === "object" &&
@@ -164,6 +159,12 @@ export async function fetchLatestInscriptionIds(
     );
   }
   return [];
+}
+
+export async function fetchLatestInscriptionIds(
+  signal?: AbortSignal,
+): Promise<string[]> {
+  return fetchInscriptionIdsPage(0, signal);
 }
 
 export { ORDINALS_BASE };
