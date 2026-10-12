@@ -1,0 +1,2264 @@
+{
+  "meta": {
+    "generatedAt": "2026-10-12T11:22:01.661Z",
+    "bootstrapSource": "osura+allowlist"
+  },
+  "entries": [
+    {
+      "satname": "abbotgarden",
+      "sat": "1947429501135536",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "abbothunter",
+      "sat": "1947429480174124",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "abbotliving",
+      "sat": "1947429437998937",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "abbotoffice",
+      "sat": "1947429404007241",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "abysscalled",
+      "sat": "1942594707950922",
+      "kind": "pair",
+      "parts": [
+        "abyss",
+        "called"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "abyssherald",
+      "sat": "1942594646617936",
+      "kind": "pair",
+      "parts": [
+        "abyss",
+        "herald"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "abysswithin",
+      "sat": "1942594466529576",
+      "kind": "pair",
+      "parts": [
+        "abyss",
+        "within"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "accruedtime",
+      "sat": "1941766788398773",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "acereliever",
+      "sat": "1941353991722572",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "achaemenian",
+      "sat": "1940864041099076",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "achaemenids",
+      "sat": "1940864041098993",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "acidofficer",
+      "sat": "1940628112250696",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "acknowledge",
+      "sat": "1940129935364125",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "acquisitive",
+      "sat": "1938822652429115",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "adampuzzled",
+      "sat": "1936796442215946",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "adaptivebit",
+      "sat": "1936771255902466",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "addchickpea",
+      "sat": "1936252903798085",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "addexplicit",
+      "sat": "1936231810286718",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "addinitials",
+      "sat": "1936202851718873",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "addshavings",
+      "sat": "1936124481240167",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "agooddoctor",
+      "sat": "1917572203052608",
+      "kind": "single",
+      "source": "allowlist"
+    },
+    {
+      "satname": "ahmedturkey",
+      "sat": "1912640478503369",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "aimemerriam",
+      "sat": "1907208374175445",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "airbuilding",
+      "sat": "1906185818418969",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "aircrewlife",
+      "sat": "1906178755714491",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "airdisaster",
+      "sat": "1906173347730052",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "airelements",
+      "sat": "1906164550277829",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "airposition",
+      "sat": "1906075108847080",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "alienparent",
+      "sat": "1891754739556860",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "allcourtesy",
+      "sat": "1891143945856949",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "allegracams",
+      "sat": "1891130397277183",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "allowlisted",
+      "sat": "1891045203861618",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "alphabetize",
+      "sat": "1890273035052595",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ampitheater",
+      "sat": "1884829559202484",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "andpinochet",
+      "sat": "1881853079815666",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "anewmessiah",
+      "sat": "1881586899239458",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "angelfishes",
+      "sat": "1881314119298195",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "animeleague",
+      "sat": "1880834303954357",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "anthophobia",
+      "sat": "1878574226998341",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "antipyrotic",
+      "sat": "1878565774758075",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "applymakeup",
+      "sat": "1868515350411138",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "assiniboine",
+      "sat": "1851627898680259",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "astromancer",
+      "sat": "1851346429361648",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "astromartin",
+      "sat": "1851346429279752",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "astromaster",
+      "sat": "1851346429262276",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "astrowallet",
+      "sat": "1851346310576954",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "atsurrender",
+      "sat": "1846100669333932",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "aussiekings",
+      "sat": "1840690161314391",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badassbabes",
+      "sat": "1811386866556875",
+      "kind": "pair",
+      "parts": [
+        "badass",
+        "babes"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badassbeard",
+      "sat": "1811386866486924",
+      "kind": "pair",
+      "parts": [
+        "badass",
+        "beard"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badassbiker",
+      "sat": "1811386866410184",
+      "kind": "pair",
+      "parts": [
+        "badass",
+        "biker"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badasschick",
+      "sat": "1811386865972195",
+      "kind": "pair",
+      "parts": [
+        "badass",
+        "chick"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badassmouse",
+      "sat": "1811386861270881",
+      "kind": "pair",
+      "parts": [
+        "badass",
+        "mouse"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badassvegan",
+      "sat": "1811386857343780",
+      "kind": "pair",
+      "parts": [
+        "badass",
+        "vegan"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badgertooth",
+      "sat": "1811343003917260",
+      "kind": "pair",
+      "parts": [
+        "badger",
+        "tooth"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badgertrain",
+      "sat": "1811343003874276",
+      "kind": "pair",
+      "parts": [
+        "badger",
+        "train"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "badmemories",
+      "sat": "1811294874699671",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ballerstats",
+      "sat": "1809632228728321",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ballerstein",
+      "sat": "1809632228725908",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bandtrippin",
+      "sat": "1809274199974152",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "battymonkey",
+      "sat": "1807891240748649",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "beampointer",
+      "sat": "1790199922145932",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "beatenagain",
+      "sat": "1790147113221196",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "beatendrums",
+      "sat": "1790147111643303",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bedeserving",
+      "sat": "1789636883253865",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "beergiggles",
+      "sat": "1789327307409379",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "benchwarmer",
+      "sat": "1787567868273640",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bestpassion",
+      "sat": "1786384974001136",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bitchpretty",
+      "sat": "1764596966794679",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bitchweasel",
+      "sat": "1764596889637118",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "blunttongue",
+      "sat": "1748007525487949",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bobcatmusic",
+      "sat": "1735780948772767",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bookburning",
+      "sat": "1733001619499497",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bookversion",
+      "sat": "1732995631198080",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "boredknight",
+      "sat": "1732422832066312",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "boredpeople",
+      "sat": "1732422776660587",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "boredperson",
+      "sat": "1732422776605744",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bossfitness",
+      "sat": "1732100962761803",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bottleglass",
+      "sat": "1731882303896443",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bowpolitely",
+      "sat": "1731286938969371",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "boychampion",
+      "sat": "1730975989717704",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "boysbattery",
+      "sat": "1730849330983023",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "boysbattles",
+      "sat": "1730849330978635",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "breadcoffee",
+      "sat": "1718881294757105",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "breathelast",
+      "sat": "1718876297165114",
+      "kind": "pair",
+      "parts": [
+        "breathe",
+        "last"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "breatheslow",
+      "sat": "1718876297034747",
+      "kind": "pair",
+      "parts": [
+        "breathe",
+        "slow"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "breathgroup",
+      "sat": "1718876296136194",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "brownletter",
+      "sat": "1716613132511548",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bubbabrooks",
+      "sat": "1703212170197067",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bubblychick",
+      "sat": "1703208505833827",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "bubblycreek",
+      "sat": "1703208505660719",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "buffmonster",
+      "sat": "1702340875005236",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "buffoonland",
+      "sat": "1702340257309340",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "busysending",
+      "sat": "1699471784362361",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "busyshowing",
+      "sat": "1699471747927313",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "buyamerican",
+      "sat": "1698413437002388",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "byevictoria",
+      "sat": "1680704553960421",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cactuskitty",
+      "sat": "1670275371477223",
+      "kind": "pair",
+      "parts": [
+        "cactus",
+        "kitty"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cactusmouse",
+      "sat": "1670275370457185",
+      "kind": "pair",
+      "parts": [
+        "cactus",
+        "mouse"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cactusmouth",
+      "sat": "1670275370457156",
+      "kind": "pair",
+      "parts": [
+        "cactus",
+        "mouth"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cactusparty",
+      "sat": "1670275369334303",
+      "kind": "pair",
+      "parts": [
+        "cactus",
+        "party"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cactusseeds",
+      "sat": "1670275367902281",
+      "kind": "pair",
+      "parts": [
+        "cactus",
+        "seeds"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cactussquid",
+      "sat": "1670275367680438",
+      "kind": "pair",
+      "parts": [
+        "cactus",
+        "squid"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "caesargives",
+      "sat": "1669871941182091",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "caesarmoved",
+      "sat": "1669871938334794",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "caesarsalad",
+      "sat": "1669871935845866",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "calebjerked",
+      "sat": "1668522383970974",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "campburnett",
+      "sat": "1668225070432592",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "carassembly",
+      "sat": "1667296190417407",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cargobroker",
+      "sat": "1667249431221112",
+      "kind": "pair",
+      "parts": [
+        "cargo",
+        "broker"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "carpetviper",
+      "sat": "1667180018496692",
+      "kind": "pair",
+      "parts": [
+        "carpet",
+        "viper"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "carpetyarns",
+      "sat": "1667180017264785",
+      "kind": "pair",
+      "parts": [
+        "carpet",
+        "yarns"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "carpinteria",
+      "sat": "1667178855104661",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "carszipping",
+      "sat": "1667149569153337",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cecilylarry",
+      "sat": "1648648415312019",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cerealeater",
+      "sat": "1645551692313332",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "changedface",
+      "sat": "1632739185139593",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "chesscolumn",
+      "sat": "1631860029457868",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "chicadvisor",
+      "sat": "1631158775620164",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "chiefeaster",
+      "sat": "1631141164959876",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "chillydavis",
+      "sat": "1631082850110451",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "chillyhours",
+      "sat": "1631082848036925",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "choosehappy",
+      "sat": "1629803865685519",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "citycruiser",
+      "sat": "1623254690693400",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "citycruises",
+      "sat": "1623254690693399",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cityterrace",
+      "sat": "1623249594808073",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "clambusting",
+      "sat": "1611030549604329",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "clickbeetle",
+      "sat": "1609437703347563",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "clubgeneral",
+      "sat": "1606941006290650",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "clubmonster",
+      "sat": "1606939033734708",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cockhustler",
+      "sat": "1594338594562140",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "codecleaner",
+      "sat": "1594179616600140",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "codecleanup",
+      "sat": "1594179616599726",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "crackdonkey",
+      "sat": "1578531269305865",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "creatorchen",
+      "sat": "1577709112555240",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "cyclisation",
+      "sat": "1540035249036520",
+      "kind": "single",
+      "source": "allowlist"
+    },
+    {
+      "satname": "daddyplease",
+      "sat": "1529026757329329",
+      "kind": "pair",
+      "parts": [
+        "daddy",
+        "please"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "darwinroute",
+      "sat": "1525955537515927",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "darwinrules",
+      "sat": "1525955537416931",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "darwinseeks",
+      "sat": "1525955537245747",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "darwinshook",
+      "sat": "1525955537186163",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "darwinshows",
+      "sat": "1525955537185947",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "datamaximum",
+      "sat": "1525713499374405",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "daybehavior",
+      "sat": "1524663730682740",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "deathasking",
+      "sat": "1507812141323601",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "devilgrotto",
+      "sat": "1503513816307153",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "diamonddick",
+      "sat": "1486148039388563",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dinglebells",
+      "sat": "1483482512983949",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dingleberry",
+      "sat": "1483482512979731",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dissonances",
+      "sat": "1482340962564303",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ditchschool",
+      "sat": "1482262746649234",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dogsoldiers",
+      "sat": "1452269887743373",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dogsstation",
+      "sat": "1452268558204232",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "domdominion",
+      "sat": "1451137388251800",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dongstopper",
+      "sat": "1450903144142476",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "donnestooge",
+      "sat": "1450851255906817",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dougheaders",
+      "sat": "1449444937600293",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dougheading",
+      "sat": "1449444937597705",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dougoutside",
+      "sat": "1449442576139335",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "drugcompany",
+      "sat": "1433157846636663",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "drugcontrol",
+      "sat": "1433157846097878",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "dumpsabbath",
+      "sat": "1418462894784268",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "durianpizza",
+      "sat": "1417480381620955",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "echoviruses",
+      "sat": "1376078003029831",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ecofriendly",
+      "sat": "1374689741606159",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "economyking",
+      "sat": "1374626357256369",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "eggsandwich",
+      "sat": "1354543122331550",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "eggsoutside",
+      "sat": "1354538707099719",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "elderarthur",
+      "sat": "1328129427017820",
+      "kind": "pair",
+      "parts": [
+        "elder",
+        "arthur"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "elderartist",
+      "sat": "1328129427017194",
+      "kind": "pair",
+      "parts": [
+        "elder",
+        "artist"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "elderaustin",
+      "sat": "1328129425656672",
+      "kind": "pair",
+      "parts": [
+        "elder",
+        "austin"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "elderbishop",
+      "sat": "1328129419266962",
+      "kind": "pair",
+      "parts": [
+        "elder",
+        "bishop"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "elderblight",
+      "sat": "1328129418072648",
+      "kind": "pair",
+      "parts": [
+        "elder",
+        "blight"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "elderbriggs",
+      "sat": "1328129415330819",
+      "kind": "pair",
+      "parts": [
+        "elder",
+        "briggs"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "elderbrutus",
+      "sat": "1328129415110755",
+      "kind": "pair",
+      "parts": [
+        "elder",
+        "brutus"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "emperorship",
+      "sat": "1320193832242558",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "emperorsnow",
+      "sat": "1320193832238339",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "eskimopanda",
+      "sat": "1288630364056167",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "eskimoparty",
+      "sat": "1288630364053023",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "everybishop",
+      "sat": "1273518979469906",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "everyblonde",
+      "sat": "1273518978165523",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "evilwriting",
+      "sat": "1272732289783977",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "excrescence",
+      "sat": "1263083605557421",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "falltuesday",
+      "sat": "1244959183147749",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "falsecolors",
+      "sat": "1244907803623325",
+      "kind": "pair",
+      "parts": [
+        "false",
+        "colors"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "famouscivil",
+      "sat": "1244725976576970",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fartpuffing",
+      "sat": "1243643201709801",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fartsampler",
+      "sat": "1243642509213596",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fastquantum",
+      "sat": "1243434067866097",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fastsenator",
+      "sat": "1243433634424512",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fattercakes",
+      "sat": "1243228982755991",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fiendstatus",
+      "sat": "1202973839413187",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "finaltheory",
+      "sat": "1201196331573567",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "firevolcano",
+      "sat": "1200325864540505",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fitzwilliam",
+      "sat": "1199739304606885",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "flatchicken",
+      "sat": "1187472890382508",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "flowinsight",
+      "sat": "1184523286592408",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "foggysailor",
+      "sat": "1170028907197616",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "foilsurfing",
+      "sat": "1169572916035689",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "foodbuddies",
+      "sat": "1168389466130871",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "formability",
+      "sat": "1167691230881595",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "framesbased",
+      "sat": "1154951345681782",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fridaybaked",
+      "sat": "1153354179837014",
+      "kind": "pair",
+      "parts": [
+        "friday",
+        "baked"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fridayblues",
+      "sat": "1153354179636903",
+      "kind": "pair",
+      "parts": [
+        "friday",
+        "blues"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fridaydance",
+      "sat": "1153354178921085",
+      "kind": "pair",
+      "parts": [
+        "friday",
+        "dance"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fridaydavid",
+      "sat": "1153354178915522",
+      "kind": "pair",
+      "parts": [
+        "friday",
+        "david"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fridaydiego",
+      "sat": "1153354178786447",
+      "kind": "pair",
+      "parts": [
+        "friday",
+        "diego"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fridayfever",
+      "sat": "1153354177931356",
+      "kind": "pair",
+      "parts": [
+        "friday",
+        "fever"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fridayforty",
+      "sat": "1153354177757903",
+      "kind": "pair",
+      "parts": [
+        "friday",
+        "forty"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fridaygirls",
+      "sat": "1153354177406597",
+      "kind": "pair",
+      "parts": [
+        "friday",
+        "girls"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "frieddinner",
+      "sat": "1153345467359044",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "fringeorder",
+      "sat": "1153272239633356",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "genuineurge",
+      "sat": "1081587613556149",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "genuinewall",
+      "sat": "1081587613532352",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "germcontrol",
+      "sat": "1080818397297110",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "getschicken",
+      "sat": "1080352638065196",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "getschipped",
+      "sat": "1080352637833338",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "getsuptight",
+      "sat": "1080346977400648",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "gettiresome",
+      "sat": "1080342635490389",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "getvelocity",
+      "sat": "1080327874536707",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ghostfields",
+      "sat": "1065103034509901",
+      "kind": "pair",
+      "parts": [
+        "ghost",
+        "fields"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ghostfigure",
+      "sat": "1065103034468315",
+      "kind": "pair",
+      "parts": [
+        "ghost",
+        "figure"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ghostfinder",
+      "sat": "1065103034357100",
+      "kind": "pair",
+      "parts": [
+        "ghost",
+        "finder"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ghostfishes",
+      "sat": "1065103034266515",
+      "kind": "pair",
+      "parts": [
+        "ghost",
+        "fishes"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ghostflames",
+      "sat": "1065103033208575",
+      "kind": "pair",
+      "parts": [
+        "ghost",
+        "flames"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ghostflight",
+      "sat": "1065103033071944",
+      "kind": "pair",
+      "parts": [
+        "ghost",
+        "flight"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ghostflower",
+      "sat": "1065103032955752",
+      "kind": "pair",
+      "parts": [
+        "ghost",
+        "flower"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ghostlooked",
+      "sat": "1065102960304694",
+      "kind": "pair",
+      "parts": [
+        "ghost",
+        "looked"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "giantacacia",
+      "sat": "1062637331010881",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "giantbrazil",
+      "sat": "1062637312259306",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "giantbridge",
+      "sat": "1062637312133629",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "givenevents",
+      "sat": "1058326046154933",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "goatfactory",
+      "sat": "1030016442554519",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "gogopenguin",
+      "sat": "1028800497732620",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "goldenfilms",
+      "sat": "1027848007089459",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "goldenfinch",
+      "sat": "1027848007088378",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "gooseperson",
+      "sat": "1027101025274352",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "granddeacon",
+      "sat": "1013776703994264",
+      "kind": "pair",
+      "parts": [
+        "grand",
+        "deacon"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "granddealer",
+      "sat": "1013776703988436",
+      "kind": "pair",
+      "parts": [
+        "grand",
+        "dealer"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "granddeaths",
+      "sat": "1013776703982949",
+      "kind": "pair",
+      "parts": [
+        "grand",
+        "deaths"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "granddebate",
+      "sat": "1013776703977919",
+      "kind": "pair",
+      "parts": [
+        "grand",
+        "debate"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "granddecree",
+      "sat": "1013776703949241",
+      "kind": "pair",
+      "parts": [
+        "grand",
+        "decree"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "granddefeat",
+      "sat": "1013776703905390",
+      "kind": "pair",
+      "parts": [
+        "grand",
+        "defeat"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "grayishness",
+      "sat": "1013686629681931",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "greatdanger",
+      "sat": "1013040868212800",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "greychicago",
+      "sat": "1012853305352799",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "greysubject",
+      "sat": "1012848211315690",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "guystudying",
+      "sat": "992431039751953",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "healeyshoes",
+      "sat": "943208654834703",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "herecooking",
+      "sat": "939715555832465",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "heropreston",
+      "sat": "939631190603172",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "highbastard",
+      "sat": "920271016670628",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "highpriests",
+      "sat": "920266494687537",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "highwayrace",
+      "sat": "920264526733017",
+      "kind": "pair",
+      "parts": [
+        "highway",
+        "race"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "highwayride",
+      "sat": "920264526727583",
+      "kind": "pair",
+      "parts": [
+        "highway",
+        "ride"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "highwaysign",
+      "sat": "920264526709920",
+      "kind": "pair",
+      "parts": [
+        "highway",
+        "sign"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "highwaystar",
+      "sat": "920264526702636",
+      "kind": "pair",
+      "parts": [
+        "highway",
+        "star"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "highwayvibe",
+      "sat": "920264526657331",
+      "kind": "pair",
+      "parts": [
+        "highway",
+        "vibe"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "homestretch",
+      "sat": "886459651033666",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "homewatcher",
+      "sat": "886458640245956",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "howpatricia",
+      "sat": "884288590900977",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "hungrybeing",
+      "sat": "853657995102545",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "impactcomes",
+      "sat": "755562158121183",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "impactdrill",
+      "sat": "755562157614008",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "impactdummy",
+      "sat": "755562157558537",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "impactflash",
+      "sat": "755562156810742",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "infrequency",
+      "sat": "752083794077113",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ingridnunes",
+      "sat": "751873888724891",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "ingridrossi",
+      "sat": "751873886998709",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "instadragon",
+      "sat": "749354370183928",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "intrafamily",
+      "sat": "749161590533347",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "jedistudent",
+      "sat": "660267811513644",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "juliodamian",
+      "sat": "571726570877516",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "juliodaniel",
+      "sat": "571726570859838",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "juliodelano",
+      "sat": "571726569072257",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "jumphurdles",
+      "sat": "571463473956203",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "keymessages",
+      "sat": "514687557931271",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "killedhomer",
+      "sat": "495692509862288",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "killedlater",
+      "sat": "495692508275716",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "kissmetrics",
+      "sat": "494172008997755",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "knownaffair",
+      "sat": "467827416844032",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "lacksweight",
+      "sat": "399844369945432",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "largeskates",
+      "sat": "396748460953907",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "livelightly",
+      "sat": "352491144992159",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "longvolumes",
+      "sat": "321565512860095",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "lordrandall",
+      "sat": "320755701427464",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "lostpuppies",
+      "sat": "320418744474007",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "lovealready",
+      "sat": "319917480386755",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "lovelytrips",
+      "sat": "319913926707177",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "lovesociety",
+      "sat": "319911891039875",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "lunchthings",
+      "sat": "289024885479015",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "lunchthrown",
+      "sat": "289024885319744",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "luxurycamps",
+      "sat": "286788896111377",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mailrapidly",
+      "sat": "257416845375655",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "manymonkeys",
+      "sat": "256269675637895",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "miamieagles",
+      "sat": "215646140251331",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "miamieaster",
+      "sat": "215646140035012",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mightyblock",
+      "sat": "214429700666875",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mileslanded",
+      "sat": "213410124577402",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mileslawson",
+      "sat": "213410124408808",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mindchanger",
+      "sat": "213005492434304",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mindchanges",
+      "sat": "213005492434303",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "misslesions",
+      "sat": "211838127217597",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "misslessons",
+      "sat": "211838127041837",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "misspresley",
+      "sat": "211836743320765",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mixnetworks",
+      "sat": "210836133200079",
+      "kind": "pair",
+      "parts": [
+        "mix",
+        "networks"
+      ],
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "moistoyster",
+      "sat": "181346782728772",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "moonrabbits",
+      "sat": "180134774379297",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "moretorment",
+      "sat": "179579787804244",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "moretoronto",
+      "sat": "179579787762857",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mrsleathers",
+      "sat": "163031026281237",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mysqlshould",
+      "sat": "124981970552360",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "mysqlsimply",
+      "sat": "124981970133895",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "nachoferrer",
+      "sat": "117535711550164",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "notdelaying",
+      "sat": "38007746767649",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundminsk",
+      "sat": "1998963479030887",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundmodel",
+      "sat": "1998963478932554",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundsnorm",
+      "sat": "1998963476200499",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundspaws",
+      "sat": "1998963476174675",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundspers",
+      "sat": "1998963476172101",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundspiel",
+      "sat": "1998963476169742",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundspius",
+      "sat": "1998963476169319",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundspulp",
+      "sat": "1998963476161444",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundsrana",
+      "sat": "1998963476139775",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundsroms",
+      "sat": "1998963476130319",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundsserb",
+      "sat": "1998963476119390",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundsteen",
+      "sat": "1998963476102140",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "roundtyres",
+      "sat": "1998963475548491",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "sivareeled",
+      "sat": "1994782759222850",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "soaralbion",
+      "sat": "1993693412119944",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "staffliber",
+      "sat": "1992652924261452",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "stafflikud",
+      "sat": "1992652924254966",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "stepsnicht",
+      "sat": "1992617552490392",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "wordkitten",
+      "sat": "1971843063685536",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "youngbobby",
+      "sat": "1960956922563747",
+      "kind": "single",
+      "source": "osura-bootstrap"
+    },
+    {
+      "satname": "zonefruits",
+      "sat": "1955586426257097",
+      "kind": "pair",
+      "parts": [
+        "zone",
+        "fruits"
+      ],
+      "source": "osura-bootstrap"
+    }
+  ]
+}

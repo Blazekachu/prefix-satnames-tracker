@@ -9,7 +9,9 @@
     "start": "next start",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prefix": "npx tsx scripts/cli.ts"
+    "prefix": "npx tsx scripts/cli.ts",
+    "named-sats:bootstrap": "npx tsx scripts/named-sats/bootstrap.ts",
+    "named-sats:delta": "npx tsx scripts/named-sats/delta.ts"
   },
   "dependencies": {
     "next": "16.3.0",
