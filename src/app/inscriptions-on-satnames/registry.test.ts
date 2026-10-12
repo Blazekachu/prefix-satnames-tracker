@@ -17,14 +17,8 @@ describe("getEntriesForTab", () => {
     ]);
   });
 
-  it("keeps the broader tracked registry separate from the featured tab", () => {
-    const allSatnames = getEntriesForTab("all").map((entry) => entry.satname);
-
-    expect(allSatnames).toContain("agooddoctor");
-    expect(allSatnames).toContain("blobnwthems");
-    expect(allSatnames).toContain("ecofriendly");
-    expect(allSatnames).not.toContain("falsecolors");
-    expect(allSatnames).not.toContain("daddyplease");
+  it("leaves the All tab empty in the manual registry (snapshot-owned)", () => {
+    expect(getEntriesForTab("all")).toEqual([]);
   });
 
   it("keeps the verified falsecolors descendants available on the featured branch card", () => {
@@ -60,43 +54,12 @@ describe("getEntriesForTab", () => {
       "breathelast",
     ]);
   });
-
-  it("stores verified Blob child-browser metadata", () => {
-    const blob = getEntriesForTab("all").find(
-      (entry) => entry.satname === "blobnwthems",
-    );
-
-    expect(blob?.childBrowser).toEqual({
-      count: "10,000",
-      satnameRangeStart: "blobnwthdng",
-      satnameRangeEnd: "blobnwtcgsj",
-      satRangeStart: "1749358685270829",
-      satRangeEnd: "1749358685356548",
-      browseUrl:
-        "https://ordinals.com/children/648f02fbb36d7841dbf629966ea9c82a60255044fbdd09b31533c0b9fafa573di0",
-      browseLabel: "View all 10,000 children on ordinals.com",
-      note:
-        "The full Blob child set is browsed on ordinals.com to keep this page fast while preserving verified range facts here.",
-    });
-  });
-
-  it("keeps Blob child-browser metadata exclusive to blobnwthems", () => {
-    const all = getEntriesForTab("all");
-    const blob = all.find((entry) => entry.satname === "blobnwthems");
-    const doctor = all.find((entry) => entry.satname === "agooddoctor");
-
-    expect(Boolean(blob?.childBrowser)).toBe(true);
-    expect(Boolean(doctor?.childBrowser)).toBe(false);
-  });
 });
 
 describe("findRegistryEntryBySatname", () => {
   it("finds top-level curated satnames", () => {
     expect(findRegistryEntryBySatname("falsecolors")?.satname).toBe(
       "falsecolors",
-    );
-    expect(findRegistryEntryBySatname("blobnwthems")?.satname).toBe(
-      "blobnwthems",
     );
   });
 
@@ -108,33 +71,21 @@ describe("findRegistryEntryBySatname", () => {
   });
 
   it("keeps holder socials on external links, not metadata", () => {
-    const doctor = findRegistryEntryBySatname("agooddoctor");
     const badgertooth = findRegistryEntryBySatname("badgertooth");
     const cactusseeds = findRegistryEntryBySatname("cactusseeds");
-    const ecofriendly = findRegistryEntryBySatname("ecofriendly");
 
-    expect(doctor?.metadata.some((fact) => fact.label === "Socials")).toBe(
-      false,
-    );
-    expect(doctor?.externalLinks).toEqual([
-      { label: "Holder on X", href: "https://x.com/AGoodDoctoor" },
-    ]);
     expect(badgertooth?.externalLinks).toEqual([
       { label: "Holder on X", href: "https://x.com/lifofifo" },
     ]);
     expect(cactusseeds?.externalLinks).toEqual([
       { label: "Holder on X", href: "https://x.com/Brunno_UTXO" },
     ]);
-    expect(ecofriendly?.metadata.some((fact) => fact.label === "Socials")).toBe(
-      false,
-    );
-    expect(ecofriendly?.externalLinks).toEqual([
-      { label: "Holder on X", href: "https://x.com/SPIRITZERO" },
-    ]);
   });
 
   it("returns null for satnames outside the curated registry", () => {
     expect(findRegistryEntryBySatname("notarealsatname")).toBeNull();
     expect(isSatnameInRegistry("notarealsatname")).toBe(false);
+    expect(findRegistryEntryBySatname("blobnwthems")).toBeNull();
+    expect(findRegistryEntryBySatname("agooddoctor")).toBeNull();
   });
 });
