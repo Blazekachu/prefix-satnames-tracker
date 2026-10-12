@@ -18,6 +18,7 @@ import {
   getEntriesForTab,
 } from "./registry";
 import { RequestForm } from "./request-form";
+import { SnapshotView } from "./snapshot-view";
 import {
   RegistryView,
   type RegistryViewMode,
@@ -497,7 +498,10 @@ export default function InscriptionsOnSatnamesPage() {
         <BrandHero pageTitle="Inscriptions on sat names" />
         <p className="lede">
           Search any sat name live, jump to its inscription if it exists, then
-          browse the curated registry in table, compact, or large card view.
+          browse ORD FATHER lineage or the Osura-style named sats snapshot.
+        </p>
+        <p className="registry-note">
+          <a href="../named-collection-series/">Named collection series</a>
         </p>
 
         <section className="discovery-shell" aria-label="Sat name discovery">
@@ -555,7 +559,11 @@ export default function InscriptionsOnSatnamesPage() {
           <ViewModePicker value={viewMode} onChange={setViewMode} />
         </div>
 
-        <RegistryPanel tabId={activeTab} viewMode={viewMode} />
+        {activeTab === "all" ? (
+          <SnapshotView mode={viewMode} />
+        ) : (
+          <RegistryPanel tabId={activeTab} viewMode={viewMode} />
+        )}
       </section>
     </main>
   );

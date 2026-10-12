@@ -105,6 +105,9 @@ export default function Home() {
                 -&gt;
               </span>
             </a>
+            <a href="named-collection-series/" className="header-link">
+              Named collection series
+            </a>
           </div>
         </div>
         <p className="lede lede-lines">

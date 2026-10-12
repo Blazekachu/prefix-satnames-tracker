@@ -7,11 +7,13 @@ Public, **LIVE** tool (GitHub Pages `blazekachu.github.io/prefix-satnames-tracke
 
 ## Rules
 - ⚠️ **Public + live** — pushing to `master` (rebuild `out/` first) deploys publicly. Push only when asked.
-- Keep `src/core/*` **pure and deterministic** (no `Date.now()`/`Math.random()` in core). All I/O stays in `src/lib/tip.ts`.
+- Keep `src/core/*` **pure and deterministic** (no `Date.now()`/`Math.random()` in core). Tip I/O stays in `src/lib/tip.ts`; named-sats network I/O stays in `scripts/named-sats/`.
 - Every core module has a colocated `.test.ts` — keep that bar.
+- Named-sats All tab is snapshot-driven; never rescan from inscription 0. Advance `named-sats-cursor.json` only after a successful delta.
 
 ## Run / test
-- CLI: `npm run prefix -- bhang` (`--tip <h>` for offline). Web: `npm run dev` · `npm run build` (static export → `out/`) · `npm test` (~52 tests).
+- CLI: `npm run prefix -- bhang` (`--tip <h>` for offline). Web: `npm run dev` · `npm run build` (static export → `out/`) · `npm test`.
+- Named sats: `npm run named-sats:bootstrap -- --cursor <n>` · `npm run named-sats:delta` (`--dry-run` / `--max N`).
 - Commit as `Blazekachu <237100058+Blazekachu@users.noreply.github.com>`; one fix = one commit.
 
 <!-- BEGIN:nextjs-agent-rules -->

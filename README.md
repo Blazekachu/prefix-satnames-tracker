@@ -63,14 +63,39 @@ npm run build      # static export to ./out
 npm test
 ```
 
+### Named sats snapshot (All tab)
+
+The **All named sats tracked yet** tab is an Osura-style snapshot (single words /
+series / two-word names), bootstrapped from Osura’s published list plus an
+allowlist (`agooddoctor`, `cyclisation`). Blobs live under
+`/named-collection-series/` instead.
+
+Bootstrap (once):
+
+```bash
+npm run named-sats:bootstrap -- --cursor <inscriptionNumber>
+# optional: --no-enrich
+```
+
+Monthly delta (new inscriptions only, never from 0):
+
+```bash
+npm run named-sats:delta
+npm run named-sats:delta -- --dry-run --max 50
+```
+
+Then commit updated `named-sats-snapshot.json` + `named-sats-cursor.json`,
+`npm run build`, and deploy. On failure the cursor does not advance.
+
 ## How it works
 
 - `src/core/` — pure, fully tested computation: name ↔ sat math, series
-  enumeration, per-block segmentation, mined/future classification.
-- `src/lib/tip.ts` — the only I/O: fetches the current tip height from
-  mempool.space.
+  enumeration, per-block segmentation, mined/future classification, named-sat
+  classify/sections.
+- `src/lib/tip.ts` — tip height I/O from mempool.space.
 - `src/app/` — the Next.js web UI (a static export).
 - `scripts/cli.ts` — the command line interface.
+- `scripts/named-sats/` — bootstrap + monthly ordinals.com delta for the All tab.
 
 Design notes are in `docs/superpowers/`.
 
