@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-12T11:22:01.661Z",
+    "generatedAt": "2026-10-12T11:54:09.351Z",
     "bootstrapSource": "osura+allowlist"
   },
   "entries": [
@@ -8,25 +8,33 @@
       "satname": "abbotgarden",
       "sat": "1947429501135536",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7db1e934409fce4462650a52633e6bfe2fcc853d14cc372da6bceab5e53f3a91i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "abbothunter",
       "sat": "1947429480174124",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8d3ae1085c26a2f30c257caf73ba2996475b7392362726a9ab11ea7f9685e4f5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "abbotliving",
       "sat": "1947429437998937",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0af9363e08933d312e9ff91c573e5fe824e326164dcd03d7f414b16c13718334i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "abbotoffice",
       "sat": "1947429404007241",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "969253575b48693c19a4a83d754264f003bcdcf99c5e87a5638ae70fe866297ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "abysscalled",
@@ -36,7 +44,9 @@
         "abyss",
         "called"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei2",
+      "inscriptionCount": 1
     },
     {
       "satname": "abyssherald",
@@ -46,7 +56,9 @@
         "abyss",
         "herald"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2c90fffa77af8c9cc692c0ff3dc8884d9124f6928794c20b6d83ab3588920dbbi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "abysswithin",
@@ -56,253 +68,337 @@
         "abyss",
         "within"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "10d09272107141b978973073e299584425c47ad4ec3ccad6303496f4a05d7ffbi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "accruedtime",
       "sat": "1941766788398773",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "21fab03305ceef9c76e62fe6600367569f0885b59d0ba76c3b9cb8d95dd8b8a2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "acereliever",
       "sat": "1941353991722572",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6500ca190dff6c6c84956a649303ae8416dcad4406f5946f43c6556a0f332546i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "achaemenian",
       "sat": "1940864041099076",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "00f09955b934dfe043f4f3a34416e105abc8ecf266ca4843f0935a60a6556f0bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "achaemenids",
       "sat": "1940864041098993",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "3584f3fe7c19922cb4387ce8f85230c26c3297bf823200ac8de996a667eeb598i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "acidofficer",
       "sat": "1940628112250696",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7499fce1369843edc8eadf1ca5d0be6f99ac4027cb4a0e21c71fbdf86201d999i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "acknowledge",
       "sat": "1940129935364125",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b5091b76f78d73677ad6b81e4785b0dfebc62b1079a0bf78b8366859a1ffacbci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "acquisitive",
       "sat": "1938822652429115",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1b07f02356aed6ddca37db8226c6292f2953d55ea741d7f58d44427976e7d4eei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "adampuzzled",
       "sat": "1936796442215946",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a9bd398c04288f1044c50081094c283693f0857515d714c152382abb74f02b9bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "adaptivebit",
       "sat": "1936771255902466",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "546d3247d6a854b4e26ddcb8ff656f7c2ab658f1cd6d14d32b53516f37e36ebci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "addchickpea",
       "sat": "1936252903798085",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1bbc3854afe0dd11e3813ee5cfc39204651db6f36f70c6d201e31b23c2acd641i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "addexplicit",
       "sat": "1936231810286718",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e92d41001fcd4dc40427eab959b439536c98b80cf6d48ce9f4bfa9c55c3509ddi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "addinitials",
       "sat": "1936202851718873",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8a0f6f1de9e919be0ebd802bda5c1ca0555daaf6777c9d4e3a4f9d653933606ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "addshavings",
       "sat": "1936124481240167",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9a84d253e27e2f580c155c973656170a88852b6a1eb9705e3d780fb65772dec7i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "agooddoctor",
       "sat": "1917572203052608",
       "kind": "single",
-      "source": "allowlist"
+      "source": "allowlist",
+      "primaryInscriptionId": "fcfdefb824c1a0efbaa59663f649cb36d9891d78a0f50ec3a1b5c2f1e034269di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ahmedturkey",
       "sat": "1912640478503369",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "ed8e2daf5bf48cbb372bd53645b69b8a49c88a813e69fd4a7627a521080933adi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "aimemerriam",
       "sat": "1907208374175445",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1f56bd3627e7a1f0f6834b81faf5dcd1a69cf993184b373dad624372f31a4dbfi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "airbuilding",
       "sat": "1906185818418969",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "214b2cf923c16874c71aed82cf5a0b271f0f538fdbb0b53487eedc8bd71fc8d5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "aircrewlife",
       "sat": "1906178755714491",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "11e7dbbf09c519b9a6ac59f1d195f2e6e5e7529baf8d9cbd4ca7a215cf38eec4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "airdisaster",
       "sat": "1906173347730052",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7b7e99f8488d177d0e3c1a56571642f26d8254bdd972bbe3f0bb5a14ba23435ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "airelements",
       "sat": "1906164550277829",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9f19cc84b42845b37c371003e320e9f715a84b771f95bf64021f4ebfa9040fd5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "airposition",
       "sat": "1906075108847080",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "307e1b7726f2741e0015bdf0b7bd60c9891d3e01c197dcd21702547887a9c13fi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "alienparent",
       "sat": "1891754739556860",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "daaf6f1ff7271636028214afd41c8eae31c63e3b16a8693b6a575036ec9e73a9i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "allcourtesy",
       "sat": "1891143945856949",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "03515a9358fd59fd8a6fe654ae6b942637263a13d62d6f8f68a75c12279b9e1di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "allegracams",
       "sat": "1891130397277183",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "df1d694f8cf04c43144a7372f1976cfce079363177b160a2b715418b1d3a522ai11",
+      "inscriptionCount": 1
     },
     {
       "satname": "allowlisted",
       "sat": "1891045203861618",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f38ab05a972b79c6dd1d3b767ed93b9b59d0b2afa2e478fb94ab33ba9ffaf8f3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "alphabetize",
       "sat": "1890273035052595",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "67d4c0a5c8a412d8e0315e1e4b7b6abb0be0fb8c2547cc8697bce7c83142a1e0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ampitheater",
       "sat": "1884829559202484",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "05e79dbc0fd0b3acdd913039d6185395cac7fbd6d2b0762c47bc596d6773e8fdi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "andpinochet",
       "sat": "1881853079815666",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c1acbf19b4a18b8b2f0f6bfd68a3471a85678212062ab7314a4632d34d330c96i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "anewmessiah",
       "sat": "1881586899239458",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9ace5e601bc04f7b61d1c6eca7e19ea4dbc4836b2326fdac66027fdcc061ab3bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "angelfishes",
       "sat": "1881314119298195",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "3426e4e160742fe62b34184eb157be2711dd4338e8f20ca928b78993cdf58558i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "animeleague",
       "sat": "1880834303954357",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e8483e120769083e3e06eb583bef073c1909a83c0ea0cf927b03b0632dfbb9dai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "anthophobia",
       "sat": "1878574226998341",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9b82c946ee66af39f9048f192fece5b024082a37422b1691c824c9ac5ffa75b2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "antipyrotic",
       "sat": "1878565774758075",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2028dec72dce635af0e2d6f27fa284dce5eb5a17d34b87717ea0d3468d506a2bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "applymakeup",
       "sat": "1868515350411138",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6f0e6d74a30f3457d959e8f97abd96ef41958b13bbb7d7fce3b024984ae5c9cai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "assiniboine",
       "sat": "1851627898680259",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d269ce83bf69f3a66114aabb91c1dcf8acaa7b1e2e3738357230f8f583912acai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "astromancer",
       "sat": "1851346429361648",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5adb625d4d6678bb019bcfb734e104e6c64c583cef909aa9241e13df1f589daai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "astromartin",
       "sat": "1851346429279752",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d2809b91923f0e39e1dc1635f33824ac6fa0c7da591ed9e9bf11b1db86c5621fi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "astromaster",
       "sat": "1851346429262276",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d1f04acd85ea6438bf34584ac3b9462bcd065c420a9b945deaad37871bacc4d6i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "astrowallet",
       "sat": "1851346310576954",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f83ab6a409df88f9c8f71e543d3878de2e56a73cbab0b06cd24ae961aa32f25fi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "atsurrender",
       "sat": "1846100669333932",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d8152c86c689ab8ab4cd2f9e05d54fdf761d43f72e800ef397735e077628ddb9i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "aussiekings",
       "sat": "1840690161314391",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "95e496f9824767212fe02edb72720dd6c082396d7235a9b9ab6f8cde7ed98addi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badassbabes",
@@ -312,7 +408,9 @@
         "badass",
         "babes"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "59e45edbe0df57583621a6e8bac56daff09f4d46a5af65556b0af13c4d63e990i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badassbeard",
@@ -322,7 +420,9 @@
         "badass",
         "beard"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4b0673471b9c2c30b360cf921e2f16e598b2b3aa6fa97b010fbaeb6777a09e26i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badassbiker",
@@ -332,7 +432,9 @@
         "badass",
         "biker"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7ffbeef2efc2aa60011c563db9f81c60d907947682e83af370310bf78b462922i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badasschick",
@@ -342,7 +444,9 @@
         "badass",
         "chick"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c5c36d11910feb3b6a0af3fd8b13439ac41f706a2a8f5cd19298d27ecf604a88i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badassmouse",
@@ -352,7 +456,9 @@
         "badass",
         "mouse"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c91c876777e328ca385cec7610fcf8cb1cd5369452bc9f7fb5dc826aabd683fai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badassvegan",
@@ -362,7 +468,9 @@
         "badass",
         "vegan"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "00a64edbe6d3089ad11bbf8d6e2b7e560bc5113c738210271e2e1f1c190d9fdei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badgertooth",
@@ -372,7 +480,9 @@
         "badger",
         "tooth"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badgertrain",
@@ -382,175 +492,233 @@
         "badger",
         "train"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1c47aa678d417f2a3ecbaf3deefb77e66245f9d2b1176916d6075fbc1d07faf7i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "badmemories",
       "sat": "1811294874699671",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "14e78a293cc12e73b9cc59b4d121066b4c24460ddfb71c38b54eb944355f9441i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ballerstats",
       "sat": "1809632228728321",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1d0dce21fb800eee243e768532517108fc7a3c2b8f0e27f850ba3f805a823b00i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ballerstein",
       "sat": "1809632228725908",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "101b47fb3b8fc965c7d6b386eabb96b3e813f594db76bbd0c52ab7b9e2c25559i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bandtrippin",
       "sat": "1809274199974152",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c9bf27710e625a72d04e4fe14a476b771363ae19cae0f9edb2299a2ce02381c4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "battymonkey",
       "sat": "1807891240748649",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7bc98c8d2c2e8bc1bb7ed86273f745670d167cf5f80984cda22696df4e43d221i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "beampointer",
       "sat": "1790199922145932",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8106f72a2d237b9a6bd43e46d54a0368f1dcf491cd2a6a488c10099877c6cfb0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "beatenagain",
       "sat": "1790147113221196",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "32a039e22649d9c33b60033c2d6f9c934b770ba32b6301e8ae89bc9d81ec3a4ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "beatendrums",
       "sat": "1790147111643303",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e9560ea30baaca73cbc4fdc42095a24d1454f0454b852b850dce97b5786d4ad1i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bedeserving",
       "sat": "1789636883253865",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c3aa274b4fd01aed68dfe503363860a0cb9c69317adb3beffe4c94b1e661d146i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "beergiggles",
       "sat": "1789327307409379",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "213860d78cb270d2ab46f5b120e9dc2896d110f6cbc52e43f27059e8826b47f2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "benchwarmer",
       "sat": "1787567868273640",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "bada10eb861aee67933fa84ec457694927fc3d37e2ea0fdd4ae92f7d79c578dei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bestpassion",
       "sat": "1786384974001136",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "000005aee040fcc23845cdd123c2cdcc5a90c8b083c4880a09be8f0c1ef4a000i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bitchpretty",
       "sat": "1764596966794679",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6c3fdbf384c8fa3231a6a5522c88c90c0b758621e3424a3f1e2715ffc0ee5022i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bitchweasel",
       "sat": "1764596889637118",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d47ee2234690005ac6aa6018a8eafa10fb3044bbd76bac02aaaf2302f206b245i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "blunttongue",
       "sat": "1748007525487949",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "cd8690896226d95681ff35189d4a84806d275b5ea70a974bc0ced6d72fc889f3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bobcatmusic",
       "sat": "1735780948772767",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "99a4c8c40da411a4901448a019c70bbe6973b28f44c5353469bd86b382d5daa5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bookburning",
       "sat": "1733001619499497",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1cf3b04b380d511b683ef562c0956a10fc3bbb891040b42416cb15b1bfa79a71i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bookversion",
       "sat": "1732995631198080",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7de4a1a70d886709e01fbd5600761b29fd3e9fbf7acfe84817696c86ff032ed0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "boredknight",
       "sat": "1732422832066312",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7f5e71a955229e0dee4e530acdda65c747f4b04561d0e4083ec5d65237b9166ai0",
+      "inscriptionCount": 29
     },
     {
       "satname": "boredpeople",
       "sat": "1732422776660587",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "32c58823e36b98dea03cef1b3c1f117bc2fa548444131c787c76604da843c4eci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "boredperson",
       "sat": "1732422776605744",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "361f8458c918921427253b13589d06fb0bc05f348b78adfc7db67ed0c9074866i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bossfitness",
       "sat": "1732100962761803",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a3fe7b058805846428ea3d66c845114716b8b108df869aaffd2e977da189afd8i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bottleglass",
       "sat": "1731882303896443",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "683ab58060fb6330f644685614b7beeed093894aec03b37a270fe1ada6c49380i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bowpolitely",
       "sat": "1731286938969371",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6943014b5b48365f206e63e8c385698fdd465b21754a50ef26076f99581b28eai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "boychampion",
       "sat": "1730975989717704",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "693e3c5c2aba971df4fe4e5106ee05ea441b4e1071935dc015fe61bacf49c93di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "boysbattery",
       "sat": "1730849330983023",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "96fe1f43b41a4fc8ff0cab3552f1523f551622a4c7b1c0f3f7e9cee568a49f3di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "boysbattles",
       "sat": "1730849330978635",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "898df53d98f47a7b7104614be4bc3a421d158ae0bbca7217d36b398b498f9b96i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "breadcoffee",
       "sat": "1718881294757105",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "113172252993cf16c32da56143fd9630f833bdcdf8e24021ec6515a4a16bac09i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "breathelast",
@@ -560,7 +728,9 @@
         "breathe",
         "last"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei7",
+      "inscriptionCount": 1
     },
     {
       "satname": "breatheslow",
@@ -570,73 +740,97 @@
         "breathe",
         "slow"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4f927a15881f38f4e188916ee1067fab21dae39b5c0080b5e9fd46413f72260i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "breathgroup",
       "sat": "1718876296136194",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "bf4d9e60f664fd5c7b42c703599855add3f4d9ff9f7e75440ff5cf31e56d2fbfi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "brownletter",
       "sat": "1716613132511548",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "26af2a26265723405a1784df43e317e4e1849c1845b6fee858004c1aa50f7dc9i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bubbabrooks",
       "sat": "1703212170197067",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "43cdd989822fea03c7d1c60f953056cbf62f52cf8348af9af6532ec451d4f405i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bubblychick",
       "sat": "1703208505833827",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6511723b431d6e135ff523d0e3714deee6bf84da53f8578ce9a58cfecbfe8ef3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "bubblycreek",
       "sat": "1703208505660719",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8a8ed539eeba089a64f95a16fb031724474ec4326ae8009bf4ec703d87a94673i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "buffmonster",
       "sat": "1702340875005236",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c6bafaba5cb4eb9ba0020c91a28a6041249efcde762ac7b78bfeae2954bfe312i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "buffoonland",
       "sat": "1702340257309340",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5d3c464320ca265fd1cf830f18eebdaf26fe176d6ccdb002350c18ef1793cc9bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "busysending",
       "sat": "1699471784362361",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "cfded16e237ddbe2a7d58270597307c8d742a2dc9f14a7cc27b0dbb4dcdaefd0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "busyshowing",
       "sat": "1699471747927313",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "ef6ad65f3780201cd08bb7b52f6f1405dc20f8afff37eb5eb59701a5eeaa4292i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "buyamerican",
       "sat": "1698413437002388",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f6c1a372f224d9eb572302c5257f80617828d78f5fc018ac620a774e26ab1f0bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "byevictoria",
       "sat": "1680704553960421",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "3972fe4ee4a302051fae7422d1b0bea2fd1a7680d1c96f68fad2cd72d2e90528i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cactuskitty",
@@ -646,7 +840,9 @@
         "cactus",
         "kitty"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0d07a4a320b657d0ba41a6572fcba3e40dd42b10cfb84e9e5b556ad8697ddb37i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cactusmouse",
@@ -656,7 +852,9 @@
         "cactus",
         "mouse"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "ead41eb8d9e582c95c16453463a83d73ca91fe5e9dc3b7230aeac11c724660eci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cactusmouth",
@@ -666,7 +864,9 @@
         "cactus",
         "mouth"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "21bbc5ce265d42bf293860ee7bf9be912f9518a6d7ac3fe21a8eb7def1963f0ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cactusparty",
@@ -676,7 +876,9 @@
         "cactus",
         "party"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9be025640d8976b4138798352f066edaa2b08e0bdefb57350fbdaf56d4ee426ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cactusseeds",
@@ -686,7 +888,9 @@
         "cactus",
         "seeds"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei3",
+      "inscriptionCount": 1
     },
     {
       "satname": "cactussquid",
@@ -696,43 +900,57 @@
         "cactus",
         "squid"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "55a6f9d10e0928ecf021c626db578a4ed5d2087c06614ea5e649f5aa7618dfe0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "caesargives",
       "sat": "1669871941182091",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "13957c7c02fde415066ac837a38121c7a23fed53d1ae83c4d9c3541361d16defi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "caesarmoved",
       "sat": "1669871938334794",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "dfdd56c6bf8dbd368d43874a6e89517d6561a51b0206133d0f681a4c248e760ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "caesarsalad",
       "sat": "1669871935845866",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7fe13107816b46d0d9fb55258535fb16e484a640f42496e38d2359f3f3159f34i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "calebjerked",
       "sat": "1668522383970974",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4a4a5ffe0818b0ccf18829ae38f204213e874fa74d567444e39431c34a1fd813i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "campburnett",
       "sat": "1668225070432592",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f8ebbf5cb53365c68fec8fbe1196808b7650ea7e1d3c5f32869be6db24795631i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "carassembly",
       "sat": "1667296190417407",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9f6b48d315c7607938c4036fe914491f58d301120dbbf653b7d96bc49f6267c4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cargobroker",
@@ -742,7 +960,9 @@
         "cargo",
         "broker"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "47c7260764af2ee17aa584d9c035f2e5429aefd96b8016cfe0e3f0bcf04869a3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "carpetviper",
@@ -752,7 +972,9 @@
         "carpet",
         "viper"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "556565ebd266dab82de4e5c254e3f33d9c3e8b6f6abe0c06fdba55073d7bbf91i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "carpetyarns",
@@ -762,151 +984,201 @@
         "carpet",
         "yarns"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei4",
+      "inscriptionCount": 1
     },
     {
       "satname": "carpinteria",
       "sat": "1667178855104661",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "095a3f045b0b602cbe36d57875f118a1ef22c3ee7dd9b0d0c056cb3885cf377di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "carszipping",
       "sat": "1667149569153337",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1554e435c582b2658287bfc399a5974c07fd525f0c471df64f5e313cdcf1f674i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cecilylarry",
       "sat": "1648648415312019",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "bf959f6205d2c2fac827a94f39b910e98d536c2a156a37c5b7edf0ff05004b4ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cerealeater",
       "sat": "1645551692313332",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5845d611c90545afb42038d601f4e85fdd57dc45d9e29d26561815cb9e27cbbfi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "changedface",
       "sat": "1632739185139593",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f29f792a2c89f1c88a89d1f1d2795d048594ffd6b216fe14670f5a58346ba310i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "chesscolumn",
       "sat": "1631860029457868",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "01c56aca9ef44f9568b08ff628fbbf616e295b3d7a6ce10fc1a8c1a4deb4ea3di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "chicadvisor",
       "sat": "1631158775620164",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1fc2c49b33890df77412ff1a4dc8626b79d21c5a62bc85ec81f18fa1bf867bdci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "chiefeaster",
       "sat": "1631141164959876",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d780a0bfad6b83aae653586d409a150ff555ced47281c65e84d3777fbbaa2596i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "chillydavis",
       "sat": "1631082850110451",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "dfa89c55d3336bb2f61b333ae69af1b17ed3dc70a5ea5e57ff5ba0f98e577661i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "chillyhours",
       "sat": "1631082848036925",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e68d4647475ce6ddf318a5065071cb51e2d5def6c99bf42373e67ca805107b7ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "choosehappy",
       "sat": "1629803865685519",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6210afc4eebf96b0bd7d189c4719cf22c194e12a242dcb8eabacc23fd41261f3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "citycruiser",
       "sat": "1623254690693400",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "be91d6451de39ce60198d3703bd5abce7a617f863ced84f79920dfe38b72ae73i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "citycruises",
       "sat": "1623254690693399",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4eec76662a9de34ce8bf21bbcf4810a88fb3da438ab02dc77b14d9d985c17d20i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cityterrace",
       "sat": "1623249594808073",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "20a9d7615b1ebfb26ca326bc0a5af4d92ec6b3419dcaff3b4ec642c65bb7c44ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "clambusting",
       "sat": "1611030549604329",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1d8c27e2522fc4fba2c373d0e4a104d57d6b34274a6470c935508fa7ca2d430bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "clickbeetle",
       "sat": "1609437703347563",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f5838a65cd1e21e02a0d06e0a85ee5bd85fc0b0ae7654d4695ff50f01190bf92i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "clubgeneral",
       "sat": "1606941006290650",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "db9caf4602f39c878a561f996af6e67c3187e83578f3eb032ba9a83dd4d629a4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "clubmonster",
       "sat": "1606939033734708",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a8b171190a5c7582990e52efef0e5b22f6ed4007ed5527efadd744d835a27e35i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cockhustler",
       "sat": "1594338594562140",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "94be6aeac0af39e8a35033f4a58a800db1cd96dde72c797b7ba5e7a374408c2fi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "codecleaner",
       "sat": "1594179616600140",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7060f32aaf473a9c0ae414d9ccf23e891c72138c773b987ba1073bed8ef49838i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "codecleanup",
       "sat": "1594179616599726",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "cee81b8e2464960381a0bf6051f28987c675db066a391226f84fda1c5e21a6d9i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "crackdonkey",
       "sat": "1578531269305865",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8cc548253cc11368682e5a86bc157fa8828c2bc9b37e78ab4898808f366e957bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "creatorchen",
       "sat": "1577709112555240",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "759ab601a92f936a018eabf413bb235cb3e33e2e7e0fa64820ec4782b75282c9i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "cyclisation",
       "sat": "1540035249036520",
       "kind": "single",
-      "source": "allowlist"
+      "source": "allowlist",
+      "primaryInscriptionId": "3c201fe5d5cf26ddee63dbb115c68f40f80b8dad837da0292da97950cadcb785i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "daddyplease",
@@ -916,193 +1188,257 @@
         "daddy",
         "please"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b1ef66c2d1a047cbaa6260b74daac43813924378fe08ef8545da4cb79e8fcf00i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "darwinroute",
       "sat": "1525955537515927",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f6566f075543135b832cf7de20317482779c0c55b676bea97477192de646cbc2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "darwinrules",
       "sat": "1525955537416931",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2ae30a624c272d5cc845c445c11459bccf597902244812c8454c0440e4e209b4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "darwinseeks",
       "sat": "1525955537245747",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c6b473634de8180ced1c5879c7a23fa7589c2ec65ac2db76c9f3a845cf6ced94i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "darwinshook",
       "sat": "1525955537186163",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e1e300f377fb8207ebb0a67baeb6144c111dbaa97d8e85df4bda13674b27844bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "darwinshows",
       "sat": "1525955537185947",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7856665c67ccb4569d2b791fc51facd26fce8f11308461ea2edb7d485abd3fddi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "datamaximum",
       "sat": "1525713499374405",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "71aa090ee89a2fdcfb40c62395e60010dc45fc8c61000e66ad151af847eb80c2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "daybehavior",
       "sat": "1524663730682740",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0cea10efdfcc1fd0a11b8ad55079fea854f485f8b08a15c02f027bab5611d7ddi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "deathasking",
       "sat": "1507812141323601",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7bf603eb63acb1faf3071378a6b9032e7c9a085bc5b332e1afcb2c065e658ac4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "devilgrotto",
       "sat": "1503513816307153",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b8624b79cd50c394e92b4ebcb53474a2f7af01eae4571d0dbc166dd0a5be0753i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "diamonddick",
       "sat": "1486148039388563",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4eb277caa3d05182952ce6ab4d2cca78f36bd2b5914472890465ca590377e56bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dinglebells",
       "sat": "1483482512983949",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7eed849a8fe153b5de15e3a39b599443b53992f6a2c217016c739e6e6b4c784ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dingleberry",
       "sat": "1483482512979731",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a12f26bf0c1adb76903cc7afae0efa1b390bc77d90fcbefbdd535bd73472e934i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dissonances",
       "sat": "1482340962564303",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7472885d27eb50a61facc1c0b437a7ac0c4027a255491b8770a788d818e0ce82i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ditchschool",
       "sat": "1482262746649234",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "21da513888eab13594a3e554bcd293b96513b86d18b71c54fe05ab68997466a3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dogsoldiers",
       "sat": "1452269887743373",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "dcfb760a11d6a864d2951347c94429f57e0f82aea17da728355c2ec819aff4cdi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dogsstation",
       "sat": "1452268558204232",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "ffbf7121bd63c4d7e203e26b4a0aac421e55dede6d779fc58a534f652eff0e7fi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "domdominion",
       "sat": "1451137388251800",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1f565f9ee7d4a17d9d0e431e3021759fa154748c88d49d66fd9031287339cb82i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dongstopper",
       "sat": "1450903144142476",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a31b0c89ad82425480ee30a89a8246da9b2af92358d2469ab2e3a443596f1db6i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "donnestooge",
       "sat": "1450851255906817",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "75d0c56611570214ab1a825511670611d314a23b12bd98859cf02c97098af945i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dougheaders",
       "sat": "1449444937600293",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8e675fd9d5440792c069a7007263889d519917956925c8a861ac747baed0006bi0",
+      "inscriptionCount": 4
     },
     {
       "satname": "dougheading",
       "sat": "1449444937597705",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "64120e8c2eea31d91ae7b30a4c557ec183e6af4ff28a41e40e460f7f6505a53ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dougoutside",
       "sat": "1449442576139335",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8aa262fa8dc7de31d64a9c133ce0c406ccb8bd81f761457eb539748059b29402i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "drugcompany",
       "sat": "1433157846636663",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "de9429f7f4b30f9f85d0f9b0c7b745b3986662ff132a0f555a7e72e5e276e74fi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "drugcontrol",
       "sat": "1433157846097878",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "713f14832c01ff5f66dfc473a878a6c0dc72d039c303d799db6d4e5ba1f53f41i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "dumpsabbath",
       "sat": "1418462894784268",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5b66d9771ed65d1b5bde7e690e5f65ee9c44fa7ed5834bc36309470696dfd5cci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "durianpizza",
       "sat": "1417480381620955",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "66c7e674cba5b76ca20fb4836fa0ed539766554bc704e8e8eb5b3b4cc8d5cee0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "echoviruses",
       "sat": "1376078003029831",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "75f339a8390f8d298176040d5f5fa5ed1a1ee8f08214a6cf5e669cbbafcc094di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ecofriendly",
       "sat": "1374689741606159",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1154a1916a0c2f065e11d88ebc91adfd5ee627e01171db97d9ef9c4f72e76e09i0",
+      "inscriptionCount": 2
     },
     {
       "satname": "economyking",
       "sat": "1374626357256369",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f8e3815e12d8dfcbcd12bdc36379217ccdff5b6df9f4522945abb27a069b3a6bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "eggsandwich",
       "sat": "1354543122331550",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "3acd167423984fc6c85eb376e46e0fc80d8808bfecf00dafb20706a04b253ef2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "eggsoutside",
       "sat": "1354538707099719",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "314f1aad2b1395632cf14ede3011cc3f9474942dcad00e4e2d5a7565b5e486f5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "elderarthur",
@@ -1112,7 +1448,9 @@
         "elder",
         "arthur"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1c3cb5c0b755408f005802624684baad7284ab07847b7aa58cf773f3c321ada0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "elderartist",
@@ -1122,7 +1460,9 @@
         "elder",
         "artist"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0709e8064ba8dea8bf01019e717b8a6eea150efdc4a408a1c3c6fd5b51c32fa1i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "elderaustin",
@@ -1132,7 +1472,9 @@
         "elder",
         "austin"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b75dfd84b08052486d123f07d8410146d81c36ab0e9de487d8918145b91a876ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "elderbishop",
@@ -1142,7 +1484,9 @@
         "elder",
         "bishop"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6b4d94d25c6c83a85a2bbf9edbad2ec9298588d175ab0de7993daf225124ca17i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "elderblight",
@@ -1152,7 +1496,9 @@
         "elder",
         "blight"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b4bd960356353ddc57dfca86d3e41170fce2c6db42cd6fd16c420cf710bbbd98i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "elderbriggs",
@@ -1162,7 +1508,9 @@
         "elder",
         "briggs"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "624a161076db44985092d9011c526723e63127fa91a059483031177f49ee47dci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "elderbrutus",
@@ -1172,61 +1520,81 @@
         "elder",
         "brutus"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "3b46855f9ec7f3cd255e1b3a764fddd58f69fbd87c3fd3e90b7a868158bd63fci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "emperorship",
       "sat": "1320193832242558",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "91719174596f10189ca8084886506dea3838b0f5c16e134235c03f08d59ff1d2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "emperorsnow",
       "sat": "1320193832238339",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "12de596dcfad74429b8e03ac5bdc426eda56251f86457759b08d7b06cbecdf34i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "eskimopanda",
       "sat": "1288630364056167",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4a720fdbd5fde1ce3edfd68e043bf5987babcf373a5671558e7413be0870266i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "eskimoparty",
       "sat": "1288630364053023",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "61c497ac94574d087dde36cf706933ebe6a3d9953ae9426b2c9d08231799fde0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "everybishop",
       "sat": "1273518979469906",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e68f84803db89b44a9e324b3a67c94e3f9c85c57532868d0861896b3be02821di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "everyblonde",
       "sat": "1273518978165523",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7d9fec2f2bb6950e215bcceb21f7e5ce21cc0c315a2c73f419e9da37afa1412di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "evilwriting",
       "sat": "1272732289783977",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "19508739a4200f5b1c18b6dd06aaa345c4d29918ed65040e9e1fa03d57b77963i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "excrescence",
       "sat": "1263083605557421",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "07d3229fb454ff55117c675d6a0571f2e61ec2ff1deebc769e5b19aebdf0377ei5",
+      "inscriptionCount": 1
     },
     {
       "satname": "falltuesday",
       "sat": "1244959183147749",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6cc0ad698f3342d4da0b8cfa68f396bb565b153b2ba92ff04bc7241e801c4594i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "falsecolors",
@@ -1236,109 +1604,145 @@
         "false",
         "colors"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "681b5373c03e3f819231afd9227f54101395299c9e58356bda278e2f32bef2cdi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "famouscivil",
       "sat": "1244725976576970",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2c2a3c3bd3828a544611281752c785779aa428d85c96b12e4e544b89ea89715ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fartpuffing",
       "sat": "1243643201709801",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "eaa94bc0de16923ffa301da23c752bd4eb468c7036e4ef181cda2f75bffaf270i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fartsampler",
       "sat": "1243642509213596",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "306f84cd2d49f119b38b7b65de1ea4445e99928266605a037adc5b11dca11634i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fastquantum",
       "sat": "1243434067866097",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2ff6a77ddb2794033eb296210460ddc2c9e712f9c7646569a36d8307ca678639i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fastsenator",
       "sat": "1243433634424512",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d5db5ac5bc5f723b63cd8f4bebc0114d057b40d3cff0c1596c61b8176547f398i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fattercakes",
       "sat": "1243228982755991",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "271b68c1ced9d10b51046338b5b0121381b64ab6630158ee878cc3c6b00442ddi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fiendstatus",
       "sat": "1202973839413187",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "80f254c0e38b07b8f616f51821f13da7ab6a25f61ccea2bd9e4569272184564ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "finaltheory",
       "sat": "1201196331573567",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "60e82aef75ec8354c18217024180b6e73fee8cc877d57d093b179cb645a78998i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "firevolcano",
       "sat": "1200325864540505",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "af859d3dbe59863712581f6ea9fc5887c8f183e8f876f46071416d506d31e484i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fitzwilliam",
       "sat": "1199739304606885",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8dd42bfebe9b407c47ad07ac6918b364a4118c1bf2841952029525eed9c2a649i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "flatchicken",
       "sat": "1187472890382508",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "04a95b42515d5376de27400735293c357144ec1c262bd5a694c67b6e3aac9ab9i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "flowinsight",
       "sat": "1184523286592408",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0957e35125a6485db46568e8ef924fdfddaaeed5221689b9a669beb70264e73bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "foggysailor",
       "sat": "1170028907197616",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "37fc142c5846745b8b954e6e6753deddb7e0409c9c6120684e1d3e3b034eaec5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "foilsurfing",
       "sat": "1169572916035689",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0b795295644dca1ea8d8b8ab6bc804ad4b43e9eadec57c6a194f3b6a1f5f198bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "foodbuddies",
       "sat": "1168389466130871",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e8be25af9527db531cf66e5b1a9fa7039bb3932dd6431d917f06bfacc1adc643i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "formability",
       "sat": "1167691230881595",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "51ecc6aec0f1f9e6be70765ec98ce01c88cfa14413e94db42362987434218362i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "framesbased",
       "sat": "1154951345681782",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4f59fc257a7c78d4074dcd7a4a55360d56986f474700adc7dc37ac231901fc40i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fridaybaked",
@@ -1348,7 +1752,9 @@
         "friday",
         "baked"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "ae1403c9c8e2d56d71231518a09fd0a4fec20f3ae7204a651a066217fe08d0a3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fridayblues",
@@ -1358,7 +1764,9 @@
         "friday",
         "blues"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "75ee848f49ab99bf36577cba18d79c869f1679191f5e9fe0b1c1f40da0db5c85i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fridaydance",
@@ -1368,7 +1776,9 @@
         "friday",
         "dance"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "10d9a7e4ca1e1cc10c7c51ac8f0a5cb5e3edaa91ceb137edf7ce67617a8557e2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fridaydavid",
@@ -1378,7 +1788,9 @@
         "friday",
         "david"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "196673466cf7f49e6e10b169074daa7ca6ce08f1b3bd96247350995f608e425ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fridaydiego",
@@ -1388,7 +1800,9 @@
         "friday",
         "diego"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1fac834310652eda9a0aefcfbef39f7e7239b3e9f784d049be8f428020860bd5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fridayfever",
@@ -1398,7 +1812,9 @@
         "friday",
         "fever"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d6be0d626091127fdb7ea4a834cf6d7c27d1bad3e4591adbd3fe734c296fc8dfi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fridayforty",
@@ -1408,7 +1824,9 @@
         "friday",
         "forty"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a57c8c91bfa303601bbe519d87d2370d6a87e799090e6364893d65234f531449i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fridaygirls",
@@ -1418,67 +1836,89 @@
         "friday",
         "girls"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "28beab1250b6de66250e7bb66d0ff197dc0f80c050c2611aa34f33fc949ae3abi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "frieddinner",
       "sat": "1153345467359044",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0228c11393feadd3badaeba9e759f3fb9a15cf908cbb825e5e6aa4fecc8c02ffi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "fringeorder",
       "sat": "1153272239633356",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "31776e60887792416932b99d37416d93e8a48b0c9de4580d06dade6d6cbece1ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "genuineurge",
       "sat": "1081587613556149",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "fae8cb1932d8abd9e9cce37bb227513e65ca2ff3aed5ddd822fc0773f06060ddi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "genuinewall",
       "sat": "1081587613532352",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4de24e91ea15bb30077fd4106015364589c4776998ae52d2af08ca60df00e89ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "germcontrol",
       "sat": "1080818397297110",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9adeb7317428c31c566fac805b1caf665fb26e399e08452d1c33e9593fbf28d4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "getschicken",
       "sat": "1080352638065196",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "63b53977236ab0c249aa292eff3d5164e8a523ff87d3d654694b63693d5d39a3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "getschipped",
       "sat": "1080352637833338",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8c9a9aa8660c473c8161e9a924258c4d4f77c7b87b84eee36f28759d0c6b0674i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "getsuptight",
       "sat": "1080346977400648",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b77df429678d08f20408676e301b28324a885f08b2c46dfc5058e5cbae437244i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "gettiresome",
       "sat": "1080342635490389",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5e4aaed006b970c9f19df6d6f68e3d4f0b5f34ab841524a13caefef18be320d2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "getvelocity",
       "sat": "1080327874536707",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9a8077cb9286a907960485bab6708b80189de9a51d12a58c731678df96dbfc6di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ghostfields",
@@ -1488,7 +1928,9 @@
         "ghost",
         "fields"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b553a5564573768c136a036087e2c9144321975b89ca3db0b44ca335f60269c7i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ghostfigure",
@@ -1498,7 +1940,9 @@
         "ghost",
         "figure"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f718f9b775ba0c0af5201b7fd996c7345246c8214ee82ce16acad0315f6dcb62i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ghostfinder",
@@ -1508,7 +1952,9 @@
         "ghost",
         "finder"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "28e37de245727aa55cd9d0a038f88e3179a5d49ae0d0c6f725d14a17db3d4981i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ghostfishes",
@@ -1518,7 +1964,9 @@
         "ghost",
         "fishes"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "45a1a7485c5521562593775329816069f4cbeab75af03d06abc6d6d433a8593bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ghostflames",
@@ -1528,7 +1976,9 @@
         "ghost",
         "flames"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0b31c01f896fa6b65fb5f2cbb0e7e2746c7e9a7787800a03bdfe5fe7cdffcb13i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ghostflight",
@@ -1538,7 +1988,9 @@
         "ghost",
         "flight"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei6",
+      "inscriptionCount": 1
     },
     {
       "satname": "ghostflower",
@@ -1548,7 +2000,9 @@
         "ghost",
         "flower"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "ac17b7c4e8e4bbef1cd0e49adfe1608686425168e84e9d7924459c6a217406a8i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ghostlooked",
@@ -1558,61 +2012,81 @@
         "ghost",
         "looked"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "51171b713ba78d3ed44a1443214cf4dae4d639e5a261ae377a1f5c394887eeedi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "giantacacia",
       "sat": "1062637331010881",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "760c4588772f7d7ba9bd36610ac05a21a83314c9c26402d315aca2be551b5166i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "giantbrazil",
       "sat": "1062637312259306",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "01ac139a84dc17c284e334e912bb54c4f687a3130694874237b4daf7862faa49i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "giantbridge",
       "sat": "1062637312133629",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b95a561fb0475e246014bb9a4632cca893513922d85b8a5db189490c7d774457i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "givenevents",
       "sat": "1058326046154933",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "7adf65d134fc4648f046c8d4d82ad3e3b561ba213d9ddb1b26a2dfd12b17d499i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "goatfactory",
       "sat": "1030016442554519",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e44a9084ae8c0b470ff385aa8d9bc2c430d0244c5b5603973aa18b697b7253c3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "gogopenguin",
       "sat": "1028800497732620",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "cc58f96118bf039683091d0fe61b7fdfad111d11c85bb85865967f6f8fd87f72i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "goldenfilms",
       "sat": "1027848007089459",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "84a804fc3782c0bcbe0d022969749d9a5e8f14854aa1d1064a4be7a403a4da73i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "goldenfinch",
       "sat": "1027848007088378",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d33188c16554900dd0f3bf6a77f244d93425a7845c61ca421df2ab18cdf58d7ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "gooseperson",
       "sat": "1027101025274352",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4cc5636d035d914c1e7bd4e9c09b1912da75a860e5e67df4b6090a4721b818d7i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "granddeacon",
@@ -1622,7 +2096,9 @@
         "grand",
         "deacon"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c56b2eb79326643e58644ced6311c9c6dbc305f872e36754d205bf82a6b1b587i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "granddealer",
@@ -1632,7 +2108,9 @@
         "grand",
         "dealer"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2e314e8de8903ced7226a17caf7d9975e6f00608af163955ecd367f5a7a79c72i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "granddeaths",
@@ -1642,7 +2120,9 @@
         "grand",
         "deaths"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "48dd7fb1f8c2b5528b5e16c83bec3319b8a5c5ebe61b4395d9737db8d8c4353di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "granddebate",
@@ -1652,7 +2132,9 @@
         "grand",
         "debate"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b99c1ad392ae5a144252409195e5994f0daacb458e6c77fa241751a50ea10df7i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "granddecree",
@@ -1662,7 +2144,9 @@
         "grand",
         "decree"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5faada364641512fd340612471592a805899ad6b867cab108eefccff5def9cc5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "granddefeat",
@@ -1672,67 +2156,89 @@
         "grand",
         "defeat"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1762f10eb059fc7c067bd1f80480675b422a1c23c436eb26d77229a6cec9c30di0",
+      "inscriptionCount": 11
     },
     {
       "satname": "grayishness",
       "sat": "1013686629681931",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e679c66293a77dcf802f76d4d6ba6c5eae96158072b3e17a8c45817148757fc5i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "greatdanger",
       "sat": "1013040868212800",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d899f0f57bdc576c9788d198509b81640b416a73975597d8cb12a608520b0d96i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "greychicago",
       "sat": "1012853305352799",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "ea9acc02e56b791b509db6ea145c9439374b7d4cc26c5bb73e308fa9393cc294i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "greysubject",
       "sat": "1012848211315690",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "bedf5e4f6469a87ef9daf0b7b0be24c0e7e3e2b10117664fa57cf2010ab44e55i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "guystudying",
       "sat": "992431039751953",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9ae58b18a4f6e2a393d984c19788887ca76fe92ef3f4d24d6126dbadd6cbdd33i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "healeyshoes",
       "sat": "943208654834703",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "75b9e190401917e034ef53dde9c4fe980237a768d58112eed5af704c5d0cf7c9i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "herecooking",
       "sat": "939715555832465",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "fd78fb6e406f5963c8cb4097f923d50f243bd717ec24ebd1b4988b072059b5a3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "heropreston",
       "sat": "939631190603172",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "155128c95b63f99564dd4d77ae2d1c696ab18b05cddc349afacc05886915bb37i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "highbastard",
       "sat": "920271016670628",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1a499c639a35a220e5c6bd1b53ecd3580baae85e9d40d4c780b13af86b9c2666i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "highpriests",
       "sat": "920266494687537",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c6574504f5088ecea43501daafd016f7ec86bd7b0986a99bbb4c002daf83660ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "highwayrace",
@@ -1742,7 +2248,9 @@
         "highway",
         "race"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8f117968d9d6a81aa004c384559113444be14ec5d519fafd775cdac85bc7ccc0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "highwayride",
@@ -1752,7 +2260,9 @@
         "highway",
         "ride"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2d0ac5335d0b9a9e7868603da3cc23437cd8e5abcc806d742971ad94d3e86a1ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "highwaysign",
@@ -1762,7 +2272,9 @@
         "highway",
         "sign"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2bf32e99ebf26a3bf6189c43780dc825af1ef95bc9fa01b576b29f59029885cbi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "highwaystar",
@@ -1772,7 +2284,9 @@
         "highway",
         "star"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4cc8711257a5990c577c3c18b6a5727f68462a6d0228807450c3faa6ba364117i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "highwayvibe",
@@ -1782,289 +2296,385 @@
         "highway",
         "vibe"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "70714c1ea8bc65faee9901a3c3b07afc5d86fc43cc2c55c729d1c400df4dbb32i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "homestretch",
       "sat": "886459651033666",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "48d419535af99c2497fc57d87e960be1fee366c50fff503332f2b03dad2cf788i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "homewatcher",
       "sat": "886458640245956",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "dcc209bb0572c749270fa40fc6f13d283071261c27406ad2b2a0977ef29077f1i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "howpatricia",
       "sat": "884288590900977",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "04a1ac4b701a275cc0e346d214ac8023055fa00de83d3cf66a88e3465e088e57i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "hungrybeing",
       "sat": "853657995102545",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "aa632ce782ebf7798e6ef86f53bfc52426856d40461c1b970ac5a790e91a1fd2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "impactcomes",
       "sat": "755562158121183",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4d58d080cd510d05a6c4db27c809d72a4f76d77e01a2da32deea1255f24026aci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "impactdrill",
       "sat": "755562157614008",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b559060ba1ae442ceedc77e33595bd1d0ba4c534e1d4f78bd6534a1c0ccff7b8i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "impactdummy",
       "sat": "755562157558537",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9af2168e662d78aaf91fe5c8d040435e73d3ec522a769ecd770871b74d8df70bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "impactflash",
       "sat": "755562156810742",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1332ecc9a41d4b719996262a9bd1c74deab7af42ddbca1ca7bee58668f4300d9i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "infrequency",
       "sat": "752083794077113",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "82bf6c1ba4d832e3766317fe8b809ea60ecc8a77e3f8eb19dd8ff2e73a1bb9c6i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ingridnunes",
       "sat": "751873888724891",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "cd6d18952ad648ebbd3e752979115512ce018e46b69bc6937b952108d2fc17bci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "ingridrossi",
       "sat": "751873886998709",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "28fb7e7150738609e128d17fe787472a630c31c315f41b7e9e05ca13f3a1d015i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "instadragon",
       "sat": "749354370183928",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "76dc7cb598906a03a2165b24b1531ae65e8002c5266eaa9ab5e60a448c18fa2di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "intrafamily",
       "sat": "749161590533347",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1916432e1bde6636dcc4f502924555308a4e42cc18c9e49bd2e15729279d97cdi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "jedistudent",
       "sat": "660267811513644",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c11a4111ffbd312014b041c7a793733f20f0f41b4e011cdd0b91d06eae4ed35ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "juliodamian",
       "sat": "571726570877516",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e08899a41632d9f295181390910f63208d8c8a22f2551497e2a1593c9809c615i8",
+      "inscriptionCount": 1
     },
     {
       "satname": "juliodaniel",
       "sat": "571726570859838",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e08899a41632d9f295181390910f63208d8c8a22f2551497e2a1593c9809c615i7",
+      "inscriptionCount": 1
     },
     {
       "satname": "juliodelano",
       "sat": "571726569072257",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "3493a73c3db6b193e667802855efb25212e5516307ad0b42c6f81231c8828c3fi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "jumphurdles",
       "sat": "571463473956203",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "ada897c957966883608da8a3ce4f65f965ca5d3820c3e40f45ae6ba2092c673bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "keymessages",
       "sat": "514687557931271",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6ea041386035ce1f439169ac6e4cdb22dcb15607e31e37fa62784638b7b5cb7di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "killedhomer",
       "sat": "495692509862288",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "fa80473edd73d0e7ad8ad38de866daf66ba404172f600e6ba3812a65f003b633i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "killedlater",
       "sat": "495692508275716",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d721dc0f21ce9bdc2defaac51846126dc1d8862057d98b3df07bf9a7d9c4d76di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "kissmetrics",
       "sat": "494172008997755",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "6832c0d595163f5be58e356f90cdb9e070838b9bc9827892ea99bcb1f3401cb3i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "knownaffair",
       "sat": "467827416844032",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "210943703928e04e89f071e525868fb67d9920fd3fd9ec9c96017c4200fe88e8i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "lacksweight",
       "sat": "399844369945432",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "54defb12f82203731a6e362cbcc006dd2cd7beec38eeaa9fbac4de3056ce64c8i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "largeskates",
       "sat": "396748460953907",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "fc582fb7280c1c3a4e539f379cc952d0e411f643d30210774d809671b062f13ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "livelightly",
       "sat": "352491144992159",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "bc12e19e97c2f98323a9a0a0cc56164b8face523d728a8ee9a9c35f75ff422d7i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "longvolumes",
       "sat": "321565512860095",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "18f59e09c119a872424ecb9229ed9d9814d5a2278aa19180d1451ead3aa9769ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "lordrandall",
       "sat": "320755701427464",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "1d40ff4991fad4147f8814d701ce34e7da818533121d2a65dcfa8de0f90246e8i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "lostpuppies",
       "sat": "320418744474007",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "b4a6839711e3fd36ad388524d128d92da0475868fd1b969662e568885c001891i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "lovealready",
       "sat": "319917480386755",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0c3d988330f8d85fd500db1d5254e909669f201a0d4f16f0d0a0a77f3221da18i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "lovelytrips",
       "sat": "319913926707177",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "941ea5169f76099ebe7a1ec248e49cc4a7c9d1d34d15456278575f9a2084ddd6i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "lovesociety",
       "sat": "319911891039875",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "99ff98d34b7864b9983a204c68fb79726ae01c0a8b96306700f5c8725932c6bfi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "lunchthings",
       "sat": "289024885479015",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "deb5cbd6c8c7f16515d538811d66f9d581f4893e6cc87f3d772d76bf393d59cbi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "lunchthrown",
       "sat": "289024885319744",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0794be80a28d71caa5d92ca25c732da61eb009a98225b797c28a2e5aa8b36c73i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "luxurycamps",
       "sat": "286788896111377",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9bcb24cce2acc6c3ff39620e70cf454b8baa38f95ad3929d64a1437effa2c230i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mailrapidly",
       "sat": "257416845375655",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0ec9d92d30f3830262fe351cb4f059de1fb1bfd86bfe3f29c8132e92400a0c7ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "manymonkeys",
       "sat": "256269675637895",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "05044123c4fd67b641c74da17f6c6d6052b52587181a8d914eeadd94b14eb265i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "miamieagles",
       "sat": "215646140251331",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a3c0863a36b846b6ddd9bbaac7fa1013d24036a27f754dd9c741d69da4ad6a19i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "miamieaster",
       "sat": "215646140035012",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e37b0d65c4624bf6ecca82d8ccb260bcbef72579f51a41e21a0751aae5d5db06i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mightyblock",
       "sat": "214429700666875",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "aad3c976876c74da9b890a05a6ed11f08dd56a1dbd73227b8e95bcd7a86241dai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mileslanded",
       "sat": "213410124577402",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c88e0932080012199f6ce31a5f0e8058a0d75e272d87625791fb5b17c94f27bbi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mileslawson",
       "sat": "213410124408808",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f497232ee32ad5032b8f22f5ad1accd50a90b770be7fbef16645c36ba70a7375i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mindchanger",
       "sat": "213005492434304",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4ce80e6fdd5aafcefc0ed98326f82fbf1fa87644a83fb69dfd5ca6076dcd10f1i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mindchanges",
       "sat": "213005492434303",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e660839f02ef9b6934f7fe9ead5081a8572724a5045b772cccb7f5f470f064f4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "misslesions",
       "sat": "211838127217597",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "837f8eec3c0137d0ab882aeff53b62bf182aff321c1b2e6800ac351cec6c7e48i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "misslessons",
       "sat": "211838127041837",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "af30f90e6e33fd89e645f8c97ad201bcfb8484246d3e1d51f74ab2ae41e2a8a1i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "misspresley",
       "sat": "211836743320765",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "01259d78cc7a50cae2727b45619831d090734597cc2defb128c08b7e95005da2i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mixnetworks",
@@ -2074,181 +2684,241 @@
         "mix",
         "networks"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "717d25914a1191c30f4c1d709e3ec0e1fab79cc7bf92cd12a93bed68db63416ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "moistoyster",
       "sat": "181346782728772",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "d06708b40d058da10c51fea4091f938b55700e6a5267fa2d771df2f496327d46i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "moonrabbits",
       "sat": "180134774379297",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "8978f0da0500ed845f5d944422a15dc3eb0497982f870feb64415d78820373f4i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "moretorment",
       "sat": "179579787804244",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5a02ddf326d51076bcc2581399ad9a49a0a1964912d47cccb1773feb31d9c2a0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "moretoronto",
       "sat": "179579787762857",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "4b4a5c9396568083db7e72e15424d5bb32704595e6dc8596f4b1a65028896290i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mrsleathers",
       "sat": "163031026281237",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "14ecd376aba0a6e444d47f3ebdba425a4503c0737b64a9c2cfbcb304c10ee853i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mysqlshould",
       "sat": "124981970552360",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "cc198fd6977bea3f26451ea747f08719e6dee7ee5cccdf6d1adc7a5488a638bei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "mysqlsimply",
       "sat": "124981970133895",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9a236286538f08ec8200197780cd1d4f6c8703b405e5450ab3c93b95123cd23di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "nachoferrer",
       "sat": "117535711550164",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c05b2b20223b0294cbe4aa4c2623a53c73fd40b93d4e4badb5b8451298e2dabbi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "notdelaying",
       "sat": "38007746767649",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a8ceaa2d5ef5508f794d001b0bad38dd6b933bd07e40993036b8f6a67fe4cf2ci0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundminsk",
       "sat": "1998963479030887",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "9d1476aebbd88f7df7fb27074a83783f62685ece271527302e0f73b6afd29e6bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundmodel",
       "sat": "1998963478932554",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e0e8a7eb74805952dacfe2724d4753a6cab87f1b617a4e612a5d7f7351af742di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundsnorm",
       "sat": "1998963476200499",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "94e9ea6c316269241a6ffa3d22a21ff2148b476460aafc1e959554374b75683ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundspaws",
       "sat": "1998963476174675",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c84f4031e4c676ba7795dbcbba38bfb705c0523af7996e38393b6578ce0a4301i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundspers",
       "sat": "1998963476172101",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "31f97a4602b1edb149e57e2ac60a1b79ed5fdd88fa7c5f374779e00840eadb79i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundspiel",
       "sat": "1998963476169742",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "523ecdbe1d359e8c25378eb741081ed19faf07be4ba9dbc43d9359048d33d6ebi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundspius",
       "sat": "1998963476169319",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "853531759a4c8b9e4f3b48bf7c6819d5891493fab71d1b7095c69c935af61d0bi0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundspulp",
       "sat": "1998963476161444",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "80d93211563105164cfd7786a603625235fedd5f22bdae02f59aa07717fb62a6i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundsrana",
       "sat": "1998963476139775",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0f35e17c2b41a58154d61459598cd459012bfef4fe9f99b62b19c0e153c714d8i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundsroms",
       "sat": "1998963476130319",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "2f43c74e9266580a1e9de1de41b3473254f12694cf67cc66ebd0a10266b07d6di0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundsserb",
       "sat": "1998963476119390",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "370ba5b931880fd7919576c94bdb098eb10c975b503ab393f9760d74009dc6a0i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundsteen",
       "sat": "1998963476102140",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "c3422791bc0ac9d094d17e095b446090d4ffa994b13786c5e61fcdda692905dai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "roundtyres",
       "sat": "1998963475548491",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5a6dc02d3c756e69be18abb6d30b99be1de1c73b96612182da46d15716dd5e29i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "sivareeled",
       "sat": "1994782759222850",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "5c3d84f3ddba258f818c01c15dbc4d5e458f4fa2a786b4f008b8409608e7b701i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "soaralbion",
       "sat": "1993693412119944",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "3b55765f35dbc076c43d4c75ca5f637c7816874d1ce4ba79dd872c29ccdae780i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "staffliber",
       "sat": "1992652924261452",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "dcf8d921b968c35269a7d9a20056422ffacfc7e8f215c1452ddd7d41543cbf3ei0",
+      "inscriptionCount": 1
     },
     {
       "satname": "stafflikud",
       "sat": "1992652924254966",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "57028378d89a0a16b9afb806a92da146f81aeefd5b71a494f0b71863bc4db5a6i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "stepsnicht",
       "sat": "1992617552490392",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "f8c407a965f14e8778efb9099a971cb74bfc4f7024514e76fcd739ac4cd8070ai0",
+      "inscriptionCount": 1
     },
     {
       "satname": "wordkitten",
       "sat": "1971843063685536",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "e48f39b25b7255a352917cafccfd801e557148b055145596f9635a9f06532037i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "youngbobby",
       "sat": "1960956922563747",
       "kind": "single",
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "0c803aa5d8519abf8f1d8abc975549cf467c2e0fa37335ac105190e4fbbb3492i0",
+      "inscriptionCount": 1
     },
     {
       "satname": "zonefruits",
@@ -2258,7 +2928,9 @@
         "zone",
         "fruits"
       ],
-      "source": "osura-bootstrap"
+      "source": "osura-bootstrap",
+      "primaryInscriptionId": "a4676e57277b70171d69dc6ad2781485b491fe0ff5870f6f6b01999e7180b29ei1",
+      "inscriptionCount": 1
     }
   ]
 }

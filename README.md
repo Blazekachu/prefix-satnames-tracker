@@ -77,6 +77,13 @@ npm run named-sats:bootstrap -- --cursor <inscriptionNumber>
 # optional: --no-enrich
 ```
 
+Enrich inscription ids/previews for snapshot entries:
+
+```bash
+npm run named-sats:enrich
+npm run named-sats:enrich -- --concurrency 3 --limit 50
+```
+
 Monthly delta (new inscriptions only, never from 0):
 
 ```bash

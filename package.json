@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "prefix": "npx tsx scripts/cli.ts",
     "named-sats:bootstrap": "npx tsx scripts/named-sats/bootstrap.ts",
-    "named-sats:delta": "npx tsx scripts/named-sats/delta.ts"
+    "named-sats:delta": "npx tsx scripts/named-sats/delta.ts",
+    "named-sats:enrich": "npx tsx scripts/named-sats/enrich.ts"
   },
   "dependencies": {
     "next": "16.3.0",

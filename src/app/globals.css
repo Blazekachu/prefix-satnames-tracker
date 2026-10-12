@@ -1577,6 +1577,46 @@ button:disabled {
   margin-bottom: 16px;
 }
 
+.registry-hero-actions {
+  margin: 14px 0 8px;
+  align-items: flex-start;
+}
+
+.snapshot-item-link-compact {
+  gap: 8px;
+}
+
+.snapshot-asset-card {
+  height: 100%;
+}
+
+.snapshot-asset-card .snapshot-item-name {
+  margin: 10px 12px 0;
+}
+
+.snapshot-asset-card .snapshot-item-split,
+.snapshot-asset-card .snapshot-item-count {
+  margin: 4px 12px 0;
+}
+
+.snapshot-asset-card .external-links {
+  margin: 10px 12px 14px;
+}
+
+.snapshot-preview-missing {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 8px;
+}
+
+.snapshot-preview-missing-large {
+  min-height: 180px;
+  background: var(--preview-bg);
+}
+
 .collection-series-list {
   list-style: none;
   margin: 16px 0 0;

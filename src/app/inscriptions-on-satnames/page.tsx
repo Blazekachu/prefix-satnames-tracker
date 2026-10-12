@@ -448,7 +448,7 @@ function RegistryPanel({
 
 export default function InscriptionsOnSatnamesPage() {
   const [activeTab, setActiveTab] = useState<RegistryTabId>("ord-father");
-  const [viewMode, setViewMode] = useState<RegistryViewMode>("compact");
+  const [viewMode, setViewMode] = useState<RegistryViewMode>("large");
   const [query, setQuery] = useState("");
   const [lookupError, setLookupError] = useState<string | null>(null);
   const [lookupState, setLookupState] = useState<"idle" | "loading">("idle");
@@ -500,9 +500,17 @@ export default function InscriptionsOnSatnamesPage() {
           Search any sat name live, jump to its inscription if it exists, then
           browse ORD FATHER lineage or the Osura-style named sats snapshot.
         </p>
-        <p className="registry-note">
-          <a href="../named-collection-series/">Named collection series</a>
-        </p>
+        <div className="header-actions registry-hero-actions">
+          <a
+            href="../named-collection-series/"
+            className="header-link header-link-cta"
+          >
+            <span>Named collection series</span>
+            <span aria-hidden="true" className="header-link-cta-arrow">
+              -&gt;
+            </span>
+          </a>
+        </div>
 
         <section className="discovery-shell" aria-label="Sat name discovery">
           <form className="search-form discovery-form" onSubmit={onDiscoverySubmit}>
